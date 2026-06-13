@@ -197,9 +197,23 @@
 
   .match-stats {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     margin-top: 10px;
     flex-wrap: wrap;
+    align-items: center;
+  }
+  .match-stats.market-row {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--border);
+  }
+  .stat-row-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    width: 46px;
+    flex-shrink: 0;
   }
   .stat-pill {
     background: var(--surface2);
@@ -208,8 +222,19 @@
     padding: 3px 8px;
     font-size: 11px;
     color: var(--muted);
+    white-space: nowrap;
   }
   .stat-pill span { color: var(--text); font-weight: 600; }
+  .stat-pill.market {
+    border-color: rgba(245,158,11,0.25);
+    background: rgba(245,158,11,0.06);
+  }
+  .stat-pill.market span { color: var(--gold); }
+  .stat-pill.empty {
+    color: var(--muted);
+    opacity: 0.5;
+    font-style: italic;
+  }
 
   .vb-indicator {
     margin-top: 10px;
@@ -784,38 +809,44 @@ function renderFixtureCards(preds, dateFilter) {
       `<div class="scoreline-pill"><span class="score">${s.score}</span><span class="pct">${(s.probability*100).toFixed(0)}%</span></div>`
     ).join("");
 
-    // Build "current market odds" row -- always shown when odds exist,
-    // regardless of whether the model flags a value bet
+    // Build "current market odds" row -- always shown for every card,
+    // regardless of whether the model flags a value bet. Falls back to
+    // a dimmed placeholder if a market hasn't opened yet, so cards stay
+    // visually consistent.
     const mo = pred.market_odds || {};
     const oddsItems = [];
-    if (mo["1x2"]) {
+
+    if (mo["1x2"] && (mo["1x2"].home || mo["1x2"].draw || mo["1x2"].away)) {
       const o = mo["1x2"];
       const parts = [];
-      if (o.home) parts.push(`H ${o.home}`);
-      if (o.draw) parts.push(`D ${o.draw}`);
-      if (o.away) parts.push(`A ${o.away}`);
-      if (parts.length) oddsItems.push(`<span class="stat-pill">1X2 <span>${parts.join(" / ")}</span></span>`);
+      if (o.home) parts.push(`H ${o.home.toFixed(2)}`);
+      if (o.draw) parts.push(`D ${o.draw.toFixed(2)}`);
+      if (o.away) parts.push(`A ${o.away.toFixed(2)}`);
+      oddsItems.push(`<span class="stat-pill market">1X2 <span>${parts.join(" / ")}</span></span>`);
+    } else {
+      oddsItems.push(`<span class="stat-pill empty">1X2 odds not yet available</span>`);
     }
-    if (mo["totals_2_5"]) {
+
+    if (mo["totals_2_5"] && (mo["totals_2_5"].over || mo["totals_2_5"].under)) {
       const o = mo["totals_2_5"];
       const parts = [];
-      if (o.over) parts.push(`O ${o.over}`);
-      if (o.under) parts.push(`U ${o.under}`);
-      if (parts.length) oddsItems.push(`<span class="stat-pill">2.5 <span>${parts.join(" / ")}</span></span>`);
+      if (o.over) parts.push(`O ${o.over.toFixed(2)}`);
+      if (o.under) parts.push(`U ${o.under.toFixed(2)}`);
+      oddsItems.push(`<span class="stat-pill market">O/U 2.5 <span>${parts.join(" / ")}</span></span>`);
     }
-    if (mo["btts"]) {
+
+    if (mo["btts"] && (mo["btts"].yes || mo["btts"].no)) {
       const o = mo["btts"];
       const parts = [];
-      if (o.yes) parts.push(`Y ${o.yes}`);
-      if (o.no) parts.push(`N ${o.no}`);
-      if (parts.length) oddsItems.push(`<span class="stat-pill">BTTS <span>${parts.join(" / ")}</span></span>`);
+      if (o.yes) parts.push(`Y ${o.yes.toFixed(2)}`);
+      if (o.no) parts.push(`N ${o.no.toFixed(2)}`);
+      oddsItems.push(`<span class="stat-pill market">BTTS <span>${parts.join(" / ")}</span></span>`);
     }
-    const marketOddsHtml = oddsItems.length
-      ? `<div class="match-stats" style="margin-top:6px">
-           <span style="font-size:10px;color:var(--muted);align-self:center">MARKET:</span>
-           ${oddsItems.join("")}
-         </div>`
-      : "";
+
+    const marketOddsHtml = `<div class="match-stats market-row">
+        <span class="stat-row-label">MARKET</span>
+        ${oddsItems.join("")}
+      </div>`;
 
     return `
     <div class="match-card">
@@ -839,7 +870,7 @@ function renderFixtureCards(preds, dateFilter) {
         <span class="prob-label-a">${(pa*100).toFixed(0)}%</span>
       </div>
       <div class="match-stats">
-        <span style="font-size:10px;color:var(--muted);align-self:center">MODEL:</span>
+        <span class="stat-row-label">MODEL</span>
         <span class="stat-pill">xG <span>${m.lambda_home?.toFixed(1)||"?"} – ${m.lambda_away?.toFixed(1)||"?"}</span></span>
         <span class="stat-pill">O2.5 <span>${((m.p_over_2_5||0)*100).toFixed(0)}%</span></span>
         <span class="stat-pill">BTTS <span>${((m.p_btts||0)*100).toFixed(0)}%</span></span>
