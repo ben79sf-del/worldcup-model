@@ -1,7 +1,7 @@
 {
   "date": "2026-06-13",
-  "generated": "2026-06-13T13:14:27.567539",
-  "count": 40,
+  "generated": "2026-06-13T13:17:18.646525",
+  "count": 41,
   "value_bets": [
     {
       "match": "Jordan vs Algeria",
@@ -148,6 +148,18 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
+      "match": "Tunisia vs Japan",
+      "date": "2026-06-21",
+      "group": "GROUP_F",
+      "market": "Away Win",
+      "edge_pct": 21.58,
+      "model_prob": 0.6766,
+      "market_prob": 0.5565,
+      "best_odds": 1.7143,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
       "match": "Uzbekistan vs Colombia",
       "date": "2026-06-18",
       "group": "GROUP_K",
@@ -169,18 +181,6 @@
       "market_prob": 0.1017,
       "best_odds": 10.0,
       "kelly_pct": 0.66,
-      "rating": "\ud83d\udd25 STRONG"
-    },
-    {
-      "match": "Tunisia vs Japan",
-      "date": "2026-06-21",
-      "group": "GROUP_F",
-      "market": "Away Win",
-      "edge_pct": 20.99,
-      "model_prob": 0.6766,
-      "market_prob": 0.5592,
-      "best_odds": 1.7143,
-      "kelly_pct": 5.0,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -256,18 +256,6 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
-      "match": "England vs Ghana",
-      "date": "2026-06-23",
-      "group": "GROUP_L",
-      "market": "Home Win",
-      "edge_pct": 16.02,
-      "model_prob": 0.8356,
-      "market_prob": 0.7202,
-      "best_odds": 1.3125,
-      "kelly_pct": 5.0,
-      "rating": "\ud83d\udd25 STRONG"
-    },
-    {
       "match": "Jordan vs Algeria",
       "date": "2026-06-23",
       "group": "GROUP_J",
@@ -277,6 +265,18 @@
       "market_prob": 0.1444,
       "best_odds": 7.0,
       "kelly_pct": 0.72,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "England vs Ghana",
+      "date": "2026-06-23",
+      "group": "GROUP_L",
+      "market": "Home Win",
+      "edge_pct": 15.93,
+      "model_prob": 0.8356,
+      "market_prob": 0.7208,
+      "best_odds": 1.3125,
+      "kelly_pct": 5.0,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -481,6 +481,18 @@
       "market_prob": 0.2726,
       "best_odds": 3.6,
       "kelly_pct": 0.21,
+      "rating": "\ud83d\udc40 WATCH"
+    },
+    {
+      "match": "Ecuador vs Cura\u00e7ao",
+      "date": "2026-06-21",
+      "group": "GROUP_E",
+      "market": "Home Win",
+      "edge_pct": 3.63,
+      "model_prob": 0.8225,
+      "market_prob": 0.7937,
+      "best_odds": 1.2198,
+      "kelly_pct": 0.37,
       "rating": "\ud83d\udc40 WATCH"
     }
   ]
