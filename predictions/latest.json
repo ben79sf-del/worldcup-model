@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T12:34:26.417279",
+  "generated_at": "2026-06-13T12:55:16.753110",
   "tournament": "FIFA World Cup 2026",
   "total_fixtures": 72,
   "total_value_bets": 39,
@@ -126,7 +126,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:24.901717",
+      "generated_at": "2026-06-13T12:55:15.270324",
+      "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -171,7 +172,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:24.904623",
+      "generated_at": "2026-06-13T12:55:15.272710",
+      "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -297,7 +299,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:24.940670",
+      "generated_at": "2026-06-13T12:55:15.308475",
+      "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -423,7 +426,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:24.976693",
+      "generated_at": "2026-06-13T12:55:15.343748",
+      "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -557,18 +561,25 @@
         },
         "draw": {
           "model_prob": 0.1765,
-          "market_prob": 0.1334,
-          "edge_pct": 32.31,
+          "market_prob": 0.1335,
+          "edge_pct": 32.21,
           "best_odds": 7.8
         },
         "away_win": {
           "model_prob": 0.7306,
-          "market_prob": 0.8016,
-          "edge_pct": -8.86,
+          "market_prob": 0.8014,
+          "edge_pct": -8.83,
           "best_odds": 1.2198
         }
       },
-      "generated_at": "2026-06-13T12:34:25.011753",
+      "generated_at": "2026-06-13T12:55:15.379201",
+      "market_odds": {
+        "1x2": {
+          "home": 17.0,
+          "draw": 7.8,
+          "away": 1.22
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -696,24 +707,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.4164,
-          "market_prob": 0.5675,
-          "edge_pct": -26.63,
+          "market_prob": 0.567,
+          "edge_pct": -26.56,
           "best_odds": 1.7194
         },
         "draw": {
           "model_prob": 0.3514,
-          "market_prob": 0.2598,
-          "edge_pct": 35.26,
+          "market_prob": 0.26,
+          "edge_pct": 35.15,
           "best_odds": 3.9
         },
         "away_win": {
           "model_prob": 0.2323,
-          "market_prob": 0.1728,
-          "edge_pct": 34.43,
+          "market_prob": 0.173,
+          "edge_pct": 34.28,
           "best_odds": 6.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.047106",
+      "generated_at": "2026-06-13T12:55:15.414369",
+      "market_odds": {
+        "1x2": {
+          "home": 1.72,
+          "draw": 3.9,
+          "away": 6.0
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -760,24 +778,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.2205,
-          "market_prob": 0.1558,
-          "edge_pct": 41.53,
-          "best_odds": 6.4
+          "market_prob": 0.1595,
+          "edge_pct": 38.24,
+          "best_odds": 6.2
         },
         "draw": {
           "model_prob": 0.2061,
-          "market_prob": 0.2152,
-          "edge_pct": -4.23,
+          "market_prob": 0.215,
+          "edge_pct": -4.14,
           "best_odds": 4.7
         },
         "away_win": {
           "model_prob": 0.5734,
-          "market_prob": 0.629,
-          "edge_pct": -8.84,
+          "market_prob": 0.6255,
+          "edge_pct": -8.33,
           "best_odds": 1.5714
         }
       },
-      "generated_at": "2026-06-13T12:34:25.047898",
+      "generated_at": "2026-06-13T12:55:15.415154",
+      "market_odds": {
+        "1x2": {
+          "home": 6.2,
+          "draw": 4.7,
+          "away": 1.57
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -905,11 +930,11 @@
         {
           "market": "Under 2.5",
           "model_prob": 0.7031,
-          "market_prob": 0.5413,
-          "edge_pct": 29.89,
-          "best_odds": 1.8475,
+          "market_prob": 0.5434,
+          "edge_pct": 29.39,
+          "best_odds": 1.8403,
           "kelly_pct": 5.0,
-          "ev_per_unit": 0.299,
+          "ev_per_unit": 0.2939,
           "rating": "\ud83d\udd25 STRONG",
           "match": "Australia vs Turkey",
           "date": "2026-06-14"
@@ -918,32 +943,43 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.3245,
-          "market_prob": 0.1841,
-          "edge_pct": 76.26,
-          "best_odds": 5.5
+          "market_prob": 0.1844,
+          "edge_pct": 75.98,
+          "best_odds": 5.6
         },
         "draw": {
           "model_prob": 0.3714,
-          "market_prob": 0.2542,
-          "edge_pct": 46.11,
+          "market_prob": 0.2549,
+          "edge_pct": 45.7,
           "best_odds": 4.0
         },
         "away_win": {
           "model_prob": 0.304,
-          "market_prob": 0.5617,
-          "edge_pct": -45.88,
-          "best_odds": 1.7519
+          "market_prob": 0.5607,
+          "edge_pct": -45.78,
+          "best_odds": 1.7407
         },
         "over_2.5": {
           "model_prob": 0.2968835420465026,
-          "market_prob": 0.4831,
-          "edge_pct": -38.55,
-          "best_odds": 2.07
+          "market_prob": 0.4808,
+          "edge_pct": -38.25,
+          "best_odds": 2.08
         }
       },
-      "generated_at": "2026-06-13T12:34:25.086589",
+      "generated_at": "2026-06-13T12:55:15.450613",
+      "market_odds": {
+        "1x2": {
+          "home": 5.6,
+          "draw": 4.0,
+          "away": 1.74
+        },
+        "totals_2_5": {
+          "over": 2.08,
+          "under": 1.84
+        }
+      },
       "confidence": "LOW",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.8475 (+29.9% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.8403 (+29.4% edge)"
     },
     {
       "home_team": "Germany",
@@ -988,24 +1024,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.8148,
-          "market_prob": 0.9257,
-          "edge_pct": -11.98,
+          "market_prob": 0.9275,
+          "edge_pct": -12.15,
           "best_odds": 1.06
         },
         "draw": {
           "model_prob": 0.1186,
-          "market_prob": 0.0513,
-          "edge_pct": 131.19,
+          "market_prob": 0.0498,
+          "edge_pct": 138.15,
           "best_odds": 25.0
         },
         "away_win": {
           "model_prob": 0.0666,
-          "market_prob": 0.0231,
-          "edge_pct": 188.31,
-          "best_odds": 44.0
+          "market_prob": 0.0228,
+          "edge_pct": 192.11,
+          "best_odds": 46.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.087358",
+      "generated_at": "2026-06-13T12:55:15.451687",
+      "market_odds": {
+        "1x2": {
+          "home": 1.06,
+          "draw": 25.0,
+          "away": 46.0
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -1075,7 +1118,18 @@
           "best_odds": 1.9709
         }
       },
-      "generated_at": "2026-06-13T12:34:25.089706",
+      "generated_at": "2026-06-13T12:55:15.453762",
+      "market_odds": {
+        "1x2": {
+          "home": 2.08,
+          "draw": 3.7,
+          "away": 3.95
+        },
+        "totals_2_5": {
+          "over": 1.97,
+          "under": 1.92
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -1203,24 +1257,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.2001,
-          "market_prob": 0.2635,
-          "edge_pct": -24.06,
+          "market_prob": 0.2632,
+          "edge_pct": -23.97,
           "best_odds": 3.9
         },
         "draw": {
           "model_prob": 0.4982,
-          "market_prob": 0.3331,
-          "edge_pct": 49.56,
+          "market_prob": 0.3327,
+          "edge_pct": 49.74,
           "best_odds": 2.92
         },
         "away_win": {
           "model_prob": 0.3016,
-          "market_prob": 0.4035,
-          "edge_pct": -25.25,
-          "best_odds": 2.48
+          "market_prob": 0.4041,
+          "edge_pct": -25.37,
+          "best_odds": 2.46
         }
       },
-      "generated_at": "2026-06-13T12:34:25.126261",
+      "generated_at": "2026-06-13T12:55:15.489203",
+      "market_odds": {
+        "1x2": {
+          "home": 3.9,
+          "draw": 2.92,
+          "away": 2.46
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -1284,7 +1345,14 @@
           "best_odds": 4.6
         }
       },
-      "generated_at": "2026-06-13T12:34:25.127043",
+      "generated_at": "2026-06-13T12:55:15.489987",
+      "market_odds": {
+        "1x2": {
+          "home": 1.97,
+          "draw": 3.6,
+          "away": 4.6
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -1329,7 +1397,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:25.129293",
+      "generated_at": "2026-06-13T12:55:15.492100",
+      "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -1493,7 +1562,18 @@
           "best_odds": 2.01
         }
       },
-      "generated_at": "2026-06-13T12:34:25.165958",
+      "generated_at": "2026-06-13T12:55:15.528991",
+      "market_odds": {
+        "1x2": {
+          "home": 1.66,
+          "draw": 4.1,
+          "away": 6.2
+        },
+        "totals_2_5": {
+          "over": 2.01,
+          "under": 1.88
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.8772 (+27.5% edge)"
     },
@@ -1644,7 +1724,18 @@
           "best_odds": 2.07
         }
       },
-      "generated_at": "2026-06-13T12:34:25.201774",
+      "generated_at": "2026-06-13T12:55:15.565689",
+      "market_odds": {
+        "1x2": {
+          "home": 8.8,
+          "draw": 4.6,
+          "away": 1.48
+        },
+        "totals_2_5": {
+          "over": 2.07,
+          "under": 1.83
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -1772,8 +1863,8 @@
         {
           "market": "Away Win",
           "model_prob": 0.2459,
-          "market_prob": 0.2062,
-          "edge_pct": 19.25,
+          "market_prob": 0.2061,
+          "edge_pct": 19.31,
           "best_odds": 5.0,
           "kelly_pct": 1.43,
           "ev_per_unit": 0.2295,
@@ -1785,26 +1876,33 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.3856,
-          "market_prob": 0.5234,
-          "edge_pct": -26.33,
-          "best_odds": 1.9009
+          "market_prob": 0.5237,
+          "edge_pct": -26.37,
+          "best_odds": 1.8929
         },
         "draw": {
           "model_prob": 0.3686,
-          "market_prob": 0.2704,
-          "edge_pct": 36.32,
+          "market_prob": 0.2702,
+          "edge_pct": 36.42,
           "best_odds": 3.6
         },
         "away_win": {
           "model_prob": 0.2459,
-          "market_prob": 0.2062,
-          "edge_pct": 19.25,
+          "market_prob": 0.2061,
+          "edge_pct": 19.31,
           "best_odds": 5.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.237715",
+      "generated_at": "2026-06-13T12:55:15.601772",
+      "market_odds": {
+        "1x2": {
+          "home": 1.89,
+          "draw": 3.6,
+          "away": 5.0
+        }
+      },
       "confidence": "LOW",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 5.0 (+19.2% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 5.0 (+19.3% edge)"
     },
     {
       "home_team": "France",
@@ -1930,11 +2028,11 @@
         {
           "market": "Away Win",
           "model_prob": 0.1644,
-          "market_prob": 0.132,
-          "edge_pct": 24.55,
-          "best_odds": 8.0,
-          "kelly_pct": 1.13,
-          "ev_per_unit": 0.3152,
+          "market_prob": 0.1311,
+          "edge_pct": 25.4,
+          "best_odds": 8.2,
+          "kelly_pct": 1.21,
+          "ev_per_unit": 0.3481,
           "rating": "\ud83d\udd25 STRONG",
           "match": "France vs Senegal",
           "date": "2026-06-16"
@@ -1942,8 +2040,8 @@
         {
           "market": "Draw",
           "model_prob": 0.2676,
-          "market_prob": 0.2198,
-          "edge_pct": 21.75,
+          "market_prob": 0.22,
+          "edge_pct": 21.64,
           "best_odds": 4.6,
           "kelly_pct": 1.6,
           "ev_per_unit": 0.231,
@@ -1967,21 +2065,21 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.5679,
-          "market_prob": 0.6482,
-          "edge_pct": -12.39,
+          "market_prob": 0.6489,
+          "edge_pct": -12.48,
           "best_odds": 1.5
         },
         "draw": {
           "model_prob": 0.2676,
-          "market_prob": 0.2198,
-          "edge_pct": 21.75,
+          "market_prob": 0.22,
+          "edge_pct": 21.64,
           "best_odds": 4.6
         },
         "away_win": {
           "model_prob": 0.1644,
-          "market_prob": 0.132,
-          "edge_pct": 24.55,
-          "best_odds": 8.0
+          "market_prob": 0.1311,
+          "edge_pct": 25.4,
+          "best_odds": 8.2
         },
         "over_2.5": {
           "model_prob": 0.5229248266258233,
@@ -1990,9 +2088,20 @@
           "best_odds": 2.01
         }
       },
-      "generated_at": "2026-06-13T12:34:25.273568",
+      "generated_at": "2026-06-13T12:55:15.637255",
+      "market_odds": {
+        "1x2": {
+          "home": 1.5,
+          "draw": 4.6,
+          "away": 8.2
+        },
+        "totals_2_5": {
+          "over": 2.01,
+          "under": 1.88
+        }
+      },
       "confidence": "MEDIUM",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 8.0 (+24.6% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 8.2 (+25.4% edge)"
     },
     {
       "home_team": "Iraq",
@@ -2054,7 +2163,14 @@
           "best_odds": 1.2198
         }
       },
-      "generated_at": "2026-06-13T12:34:25.274335",
+      "generated_at": "2026-06-13T12:55:15.637985",
+      "market_odds": {
+        "1x2": {
+          "home": 16.5,
+          "draw": 7.8,
+          "away": 1.22
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -2218,7 +2334,18 @@
           "best_odds": 1.9709
         }
       },
-      "generated_at": "2026-06-13T12:34:25.310215",
+      "generated_at": "2026-06-13T12:55:15.673807",
+      "market_odds": {
+        "1x2": {
+          "home": 1.43,
+          "draw": 4.9,
+          "away": 10.0
+        },
+        "totals_2_5": {
+          "over": 1.97,
+          "under": 1.92
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 10.0 (+9.2% edge)"
     },
@@ -2363,7 +2490,14 @@
           "best_odds": 9.8
         }
       },
-      "generated_at": "2026-06-13T12:34:25.346849",
+      "generated_at": "2026-06-13T12:55:15.709228",
+      "market_odds": {
+        "1x2": {
+          "home": 1.36,
+          "draw": 5.9,
+          "away": 9.8
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -2489,7 +2623,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:25.384932",
+      "generated_at": "2026-06-13T12:55:15.745601",
+      "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -2536,24 +2671,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.4945,
-          "market_prob": 0.5534,
-          "edge_pct": -10.64,
-          "best_odds": 1.7692
+          "market_prob": 0.5539,
+          "edge_pct": -10.72,
+          "best_odds": 1.7576
         },
         "draw": {
           "model_prob": 0.2275,
-          "market_prob": 0.2525,
-          "edge_pct": -9.9,
+          "market_prob": 0.2521,
+          "edge_pct": -9.76,
           "best_odds": 3.9
         },
         "away_win": {
           "model_prob": 0.278,
-          "market_prob": 0.1942,
-          "edge_pct": 43.15,
+          "market_prob": 0.194,
+          "edge_pct": 43.3,
           "best_odds": 5.4
         }
       },
-      "generated_at": "2026-06-13T12:34:25.385626",
+      "generated_at": "2026-06-13T12:55:15.746290",
+      "market_odds": {
+        "1x2": {
+          "home": 1.76,
+          "draw": 3.9,
+          "away": 5.4
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -2600,24 +2742,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.202,
-          "market_prob": 0.4374,
-          "edge_pct": -53.82,
+          "market_prob": 0.4369,
+          "edge_pct": -53.77,
           "best_odds": 2.28
         },
         "draw": {
           "model_prob": 0.1986,
-          "market_prob": 0.2822,
-          "edge_pct": -29.62,
+          "market_prob": 0.2819,
+          "edge_pct": -29.55,
           "best_odds": 3.5
         },
         "away_win": {
           "model_prob": 0.5995,
-          "market_prob": 0.2804,
-          "edge_pct": 113.8,
-          "best_odds": 3.6
+          "market_prob": 0.2813,
+          "edge_pct": 113.12,
+          "best_odds": 3.55
         }
       },
-      "generated_at": "2026-06-13T12:34:25.387595",
+      "generated_at": "2026-06-13T12:55:15.746934",
+      "market_odds": {
+        "1x2": {
+          "home": 2.28,
+          "draw": 3.5,
+          "away": 3.55
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -2781,7 +2930,18 @@
           "best_odds": 1.9709
         }
       },
-      "generated_at": "2026-06-13T12:34:25.426013",
+      "generated_at": "2026-06-13T12:55:15.782775",
+      "market_odds": {
+        "1x2": {
+          "home": 10.5,
+          "draw": 4.9,
+          "away": 1.41
+        },
+        "totals_2_5": {
+          "over": 1.97,
+          "under": 1.92
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.9174 (+21.6% edge)"
     },
@@ -2858,7 +3018,14 @@
           "best_odds": 4.9
         }
       },
-      "generated_at": "2026-06-13T12:34:25.426844",
+      "generated_at": "2026-06-13T12:55:15.783578",
+      "market_odds": {
+        "1x2": {
+          "home": 1.84,
+          "draw": 3.95,
+          "away": 4.9
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 1.8403 (+12.1% edge)"
     },
@@ -2984,7 +3151,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:25.464282",
+      "generated_at": "2026-06-13T12:55:15.821107",
+      "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -3135,7 +3303,18 @@
           "best_odds": 1.8065
         }
       },
-      "generated_at": "2026-06-13T12:34:25.499867",
+      "generated_at": "2026-06-13T12:55:15.856092",
+      "market_odds": {
+        "1x2": {
+          "home": 1.33,
+          "draw": 5.8,
+          "away": 12.0
+        },
+        "totals_2_5": {
+          "over": 1.81,
+          "under": 1.99
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -3293,7 +3472,14 @@
           "best_odds": 4.3
         }
       },
-      "generated_at": "2026-06-13T12:34:25.537302",
+      "generated_at": "2026-06-13T12:55:15.891460",
+      "market_odds": {
+        "1x2": {
+          "home": 2.04,
+          "draw": 3.45,
+          "away": 4.3
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 3.45 (+9.5% edge)"
     },
@@ -3444,7 +3630,18 @@
           "best_odds": 1.9174
         }
       },
-      "generated_at": "2026-06-13T12:34:25.572717",
+      "generated_at": "2026-06-13T12:55:15.927231",
+      "market_odds": {
+        "1x2": {
+          "home": 1.6,
+          "draw": 4.5,
+          "away": 6.2
+        },
+        "totals_2_5": {
+          "over": 1.92,
+          "under": 1.87
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -3533,7 +3730,14 @@
           "best_odds": 2.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.573467",
+      "generated_at": "2026-06-13T12:55:15.928026",
+      "market_odds": {
+        "1x2": {
+          "home": 4.5,
+          "draw": 3.5,
+          "away": 2.0
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 2.0 (+13.0% edge)"
     },
@@ -3597,7 +3801,14 @@
           "best_odds": 29.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.575676",
+      "generated_at": "2026-06-13T12:55:15.930031",
+      "market_odds": {
+        "1x2": {
+          "home": 1.09,
+          "draw": 16.0,
+          "away": 29.0
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -3755,7 +3966,14 @@
           "best_odds": 4.3
         }
       },
-      "generated_at": "2026-06-13T12:34:25.612318",
+      "generated_at": "2026-06-13T12:55:15.967388",
+      "market_odds": {
+        "1x2": {
+          "home": 2.04,
+          "draw": 3.45,
+          "away": 4.3
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 3.45 (+19.1% edge)"
     },
@@ -3838,7 +4056,18 @@
           "best_odds": 1.8929
         }
       },
-      "generated_at": "2026-06-13T12:34:25.613053",
+      "generated_at": "2026-06-13T12:55:15.968188",
+      "market_odds": {
+        "1x2": {
+          "home": 1.68,
+          "draw": 4.2,
+          "away": 5.4
+        },
+        "totals_2_5": {
+          "over": 1.89,
+          "under": 1.89
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 1.6803 (+14.5% edge)"
     },
@@ -3983,7 +4212,14 @@
           "best_odds": 6.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.651249",
+      "generated_at": "2026-06-13T12:55:16.005128",
+      "market_odds": {
+        "1x2": {
+          "home": 1.56,
+          "draw": 4.8,
+          "away": 6.0
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -4047,7 +4283,14 @@
           "best_odds": 15.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.652048",
+      "generated_at": "2026-06-13T12:55:16.005883",
+      "market_odds": {
+        "1x2": {
+          "home": 1.22,
+          "draw": 8.2,
+          "away": 15.0
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -4094,8 +4337,8 @@
         {
           "market": "Away Win",
           "model_prob": 0.6766,
-          "market_prob": 0.5592,
-          "edge_pct": 20.99,
+          "market_prob": 0.5598,
+          "edge_pct": 20.86,
           "best_odds": 1.7143,
           "kelly_pct": 5.0,
           "ev_per_unit": 0.1599,
@@ -4107,26 +4350,33 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.1489,
-          "market_prob": 0.1754,
-          "edge_pct": -15.11,
+          "market_prob": 0.1756,
+          "edge_pct": -15.21,
           "best_odds": 5.9
         },
         "draw": {
           "model_prob": 0.1745,
-          "market_prob": 0.2654,
-          "edge_pct": -34.25,
-          "best_odds": 3.8
+          "market_prob": 0.2646,
+          "edge_pct": -34.05,
+          "best_odds": 3.85
         },
         "away_win": {
           "model_prob": 0.6766,
-          "market_prob": 0.5592,
-          "edge_pct": 20.99,
+          "market_prob": 0.5598,
+          "edge_pct": 20.86,
           "best_odds": 1.7143
         }
       },
-      "generated_at": "2026-06-13T12:34:25.654680",
+      "generated_at": "2026-06-13T12:55:16.007860",
+      "market_odds": {
+        "1x2": {
+          "home": 5.9,
+          "draw": 3.85,
+          "away": 1.71
+        }
+      },
       "confidence": "HIGH",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 1.7143 (+21.0% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 1.7143 (+20.9% edge)"
     },
     {
       "home_team": "Spain",
@@ -4252,24 +4502,31 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.7799,
-          "market_prob": 0.8616,
-          "edge_pct": -9.48,
+          "market_prob": 0.8632,
+          "edge_pct": -9.65,
           "best_odds": 1.12
         },
         "draw": {
           "model_prob": 0.1904,
-          "market_prob": 0.0952,
-          "edge_pct": 100.0,
-          "best_odds": 11.5
+          "market_prob": 0.0941,
+          "edge_pct": 102.34,
+          "best_odds": 12.0
         },
         "away_win": {
           "model_prob": 0.0297,
-          "market_prob": 0.0432,
-          "edge_pct": -31.25,
+          "market_prob": 0.0426,
+          "edge_pct": -30.28,
           "best_odds": 28.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.692187",
+      "generated_at": "2026-06-13T12:55:16.044485",
+      "market_odds": {
+        "1x2": {
+          "home": 1.12,
+          "draw": 12.0,
+          "away": 28.0
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -4410,20 +4667,20 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.489,
-          "market_prob": 0.6738,
-          "edge_pct": -27.43,
+          "market_prob": 0.6731,
+          "edge_pct": -27.35,
           "best_odds": 1.4202
         },
         "draw": {
           "model_prob": 0.3192,
-          "market_prob": 0.2016,
-          "edge_pct": 58.33,
+          "market_prob": 0.2014,
+          "edge_pct": 58.49,
           "best_odds": 5.0
         },
         "away_win": {
           "model_prob": 0.1918,
-          "market_prob": 0.1245,
-          "edge_pct": 54.06,
+          "market_prob": 0.1255,
+          "edge_pct": 52.83,
           "best_odds": 8.0
         },
         "over_2.5": {
@@ -4433,7 +4690,18 @@
           "best_odds": 1.8197
         }
       },
-      "generated_at": "2026-06-13T12:34:25.733353",
+      "generated_at": "2026-06-13T12:55:16.080412",
+      "market_odds": {
+        "1x2": {
+          "home": 1.42,
+          "draw": 5.0,
+          "away": 8.0
+        },
+        "totals_2_5": {
+          "over": 1.82,
+          "under": 1.97
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.9709 (+19.9% edge)"
     },
@@ -4478,7 +4746,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:25.734114",
+      "generated_at": "2026-06-13T12:55:16.082439",
+      "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -4623,7 +4892,14 @@
           "best_odds": 1.8
         }
       },
-      "generated_at": "2026-06-13T12:34:25.771587",
+      "generated_at": "2026-06-13T12:55:16.119814",
+      "market_odds": {
+        "1x2": {
+          "home": 5.2,
+          "draw": 3.85,
+          "away": 1.8
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -4751,21 +5027,21 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.5109,
-          "market_prob": 0.5763,
-          "edge_pct": -11.35,
+          "market_prob": 0.5822,
+          "edge_pct": -12.25,
           "best_odds": 1.6452
         },
         "draw": {
           "model_prob": 0.401,
-          "market_prob": 0.2517,
-          "edge_pct": 59.32,
-          "best_odds": 3.95
+          "market_prob": 0.2468,
+          "edge_pct": 62.48,
+          "best_odds": 4.2
         },
         "away_win": {
           "model_prob": 0.0881,
-          "market_prob": 0.172,
-          "edge_pct": -48.78,
-          "best_odds": 5.8
+          "market_prob": 0.171,
+          "edge_pct": -48.48,
+          "best_odds": 5.9
         },
         "over_2.5": {
           "model_prob": 0.1299684129133387,
@@ -4774,7 +5050,18 @@
           "best_odds": 1.9524
         }
       },
-      "generated_at": "2026-06-13T12:34:25.807841",
+      "generated_at": "2026-06-13T12:55:16.156196",
+      "market_odds": {
+        "1x2": {
+          "home": 1.65,
+          "draw": 4.2,
+          "away": 5.9
+        },
+        "totals_2_5": {
+          "over": 1.95,
+          "under": 1.83
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -4821,8 +5108,8 @@
         {
           "market": "Draw",
           "model_prob": 0.1284,
-          "market_prob": 0.1113,
-          "edge_pct": 15.36,
+          "market_prob": 0.1086,
+          "edge_pct": 18.23,
           "best_odds": 10.5,
           "kelly_pct": 0.92,
           "ev_per_unit": 0.3482,
@@ -4834,26 +5121,33 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.7944,
-          "market_prob": 0.8507,
-          "edge_pct": -6.62,
+          "market_prob": 0.8535,
+          "edge_pct": -6.92,
           "best_odds": 1.13
         },
         "draw": {
           "model_prob": 0.1284,
-          "market_prob": 0.1113,
-          "edge_pct": 15.36,
+          "market_prob": 0.1086,
+          "edge_pct": 18.23,
           "best_odds": 10.5
         },
         "away_win": {
           "model_prob": 0.0772,
-          "market_prob": 0.038,
-          "edge_pct": 103.16,
+          "market_prob": 0.0379,
+          "edge_pct": 103.69,
           "best_odds": 26.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.808622",
+      "generated_at": "2026-06-13T12:55:16.157169",
+      "market_odds": {
+        "1x2": {
+          "home": 1.13,
+          "draw": 10.5,
+          "away": 26.0
+        }
+      },
       "confidence": "HIGH",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 10.5 (+15.4% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 10.5 (+18.2% edge)"
     },
     {
       "home_team": "Norway",
@@ -4898,8 +5192,8 @@
         {
           "market": "Home Win",
           "model_prob": 0.4759,
-          "market_prob": 0.4403,
-          "edge_pct": 8.09,
+          "market_prob": 0.4397,
+          "edge_pct": 8.23,
           "best_odds": 2.24,
           "kelly_pct": 1.33,
           "ev_per_unit": 0.066,
@@ -4911,20 +5205,20 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.4759,
-          "market_prob": 0.4403,
-          "edge_pct": 8.09,
+          "market_prob": 0.4397,
+          "edge_pct": 8.23,
           "best_odds": 2.24
         },
         "draw": {
           "model_prob": 0.2324,
-          "market_prob": 0.276,
-          "edge_pct": -15.8,
+          "market_prob": 0.277,
+          "edge_pct": -16.1,
           "best_odds": 3.6
         },
         "away_win": {
           "model_prob": 0.2917,
-          "market_prob": 0.2837,
-          "edge_pct": 2.82,
+          "market_prob": 0.2833,
+          "edge_pct": 2.97,
           "best_odds": 3.45
         },
         "over_2.5": {
@@ -4934,9 +5228,20 @@
           "best_odds": 1.9434
         }
       },
-      "generated_at": "2026-06-13T12:34:25.810696",
+      "generated_at": "2026-06-13T12:55:16.159362",
+      "market_odds": {
+        "1x2": {
+          "home": 2.24,
+          "draw": 3.6,
+          "away": 3.45
+        },
+        "totals_2_5": {
+          "over": 1.94,
+          "under": 1.85
+        }
+      },
       "confidence": "MEDIUM",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 2.24 (+8.1% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 2.24 (+8.2% edge)"
     },
     {
       "home_team": "Jordan",
@@ -5062,11 +5367,11 @@
         {
           "market": "Under 2.5",
           "model_prob": 0.6788,
-          "market_prob": 0.5283,
-          "edge_pct": 28.5,
-          "best_odds": 1.8929,
+          "market_prob": 0.5238,
+          "edge_pct": 29.6,
+          "best_odds": 1.9091,
           "kelly_pct": 5.0,
-          "ev_per_unit": 0.285,
+          "ev_per_unit": 0.296,
           "rating": "\ud83d\udd25 STRONG",
           "match": "Jordan vs Algeria",
           "date": "2026-06-23"
@@ -5074,8 +5379,8 @@
         {
           "market": "Home Win",
           "model_prob": 0.1675,
-          "market_prob": 0.1474,
-          "edge_pct": 13.64,
+          "market_prob": 0.1444,
+          "edge_pct": 16.0,
           "best_odds": 7.0,
           "kelly_pct": 0.72,
           "ev_per_unit": 0.1725,
@@ -5087,32 +5392,43 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.1675,
-          "market_prob": 0.1474,
-          "edge_pct": 13.64,
+          "market_prob": 0.1444,
+          "edge_pct": 16.0,
           "best_odds": 7.0
         },
         "draw": {
           "model_prob": 0.3356,
-          "market_prob": 0.2254,
-          "edge_pct": 48.89,
+          "market_prob": 0.2236,
+          "edge_pct": 50.09,
           "best_odds": 4.6
         },
         "away_win": {
           "model_prob": 0.4969,
-          "market_prob": 0.6272,
-          "edge_pct": -20.77,
+          "market_prob": 0.6319,
+          "edge_pct": -21.36,
           "best_odds": 1.5263
         },
         "over_2.5": {
           "model_prob": 0.3211538139218449,
-          "market_prob": 0.5283,
-          "edge_pct": -39.21,
-          "best_odds": 1.8929
+          "market_prob": 0.5327,
+          "edge_pct": -39.71,
+          "best_odds": 1.8772
         }
       },
-      "generated_at": "2026-06-13T12:34:25.848028",
+      "generated_at": "2026-06-13T12:55:16.194966",
+      "market_odds": {
+        "1x2": {
+          "home": 7.0,
+          "draw": 4.6,
+          "away": 1.53
+        },
+        "totals_2_5": {
+          "over": 1.88,
+          "under": 1.91
+        }
+      },
       "confidence": "MEDIUM",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.8929 (+28.5% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.9091 (+29.6% edge)"
     },
     {
       "home_team": "Portugal",
@@ -5268,7 +5584,14 @@
           "best_odds": 12.5
         }
       },
-      "generated_at": "2026-06-13T12:34:25.884548",
+      "generated_at": "2026-06-13T12:55:16.231279",
+      "market_odds": {
+        "1x2": {
+          "home": 1.26,
+          "draw": 6.5,
+          "away": 12.5
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 12.5 (+28.2% edge)"
     },
@@ -5345,7 +5668,14 @@
           "best_odds": 10.5
         }
       },
-      "generated_at": "2026-06-13T12:34:25.885589",
+      "generated_at": "2026-06-13T12:55:16.232040",
+      "market_odds": {
+        "1x2": {
+          "home": 1.31,
+          "draw": 5.9,
+          "away": 10.5
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 1.3125 (+16.0% edge)"
     },
@@ -5409,7 +5739,14 @@
           "best_odds": 1.5714
         }
       },
-      "generated_at": "2026-06-13T12:34:25.887279",
+      "generated_at": "2026-06-13T12:55:16.232722",
+      "market_odds": {
+        "1x2": {
+          "home": 6.8,
+          "draw": 4.1,
+          "away": 1.57
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -5535,7 +5872,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:25.925409",
+      "generated_at": "2026-06-13T12:55:16.269392",
+      "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -5693,7 +6031,14 @@
           "best_odds": 3.6
         }
       },
-      "generated_at": "2026-06-13T12:34:25.961256",
+      "generated_at": "2026-06-13T12:55:16.304222",
+      "market_odds": {
+        "1x2": {
+          "home": 2.15,
+          "draw": 3.5,
+          "away": 3.6
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udc40 WATCH \u2014 Away Win @ 3.6 (+4.5% edge)"
     },
@@ -5819,7 +6164,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:25.997651",
+      "generated_at": "2026-06-13T12:55:16.339642",
+      "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -5896,7 +6242,14 @@
           "best_odds": 10.0
         }
       },
-      "generated_at": "2026-06-13T12:34:25.998384",
+      "generated_at": "2026-06-13T12:55:16.340412",
+      "market_odds": {
+        "1x2": {
+          "home": 1.36,
+          "draw": 5.5,
+          "away": 10.0
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 10.0 (+21.5% edge)"
     },
@@ -5979,7 +6332,18 @@
           "best_odds": 1.813
         }
       },
-      "generated_at": "2026-06-13T12:34:26.002189",
+      "generated_at": "2026-06-13T12:55:16.342539",
+      "market_odds": {
+        "1x2": {
+          "home": 7.0,
+          "draw": 5.0,
+          "away": 1.47
+        },
+        "totals_2_5": {
+          "over": 1.81,
+          "under": 1.98
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 7.0 (+14.4% edge)"
     },
@@ -6026,8 +6390,8 @@
         {
           "market": "Home Win",
           "model_prob": 0.2434,
-          "market_prob": 0.2078,
-          "edge_pct": 17.13,
+          "market_prob": 0.2081,
+          "edge_pct": 16.96,
           "best_odds": 4.8,
           "kelly_pct": 1.11,
           "ev_per_unit": 0.1683,
@@ -6038,8 +6402,8 @@
         {
           "market": "Away Win",
           "model_prob": 0.5418,
-          "market_prob": 0.5191,
-          "edge_pct": 4.37,
+          "market_prob": 0.5198,
+          "edge_pct": 4.23,
           "best_odds": 1.8333,
           "kelly_pct": 0,
           "ev_per_unit": -0.0067,
@@ -6051,26 +6415,33 @@
       "market_comparison": {
         "home_win": {
           "model_prob": 0.2434,
-          "market_prob": 0.2078,
-          "edge_pct": 17.13,
+          "market_prob": 0.2081,
+          "edge_pct": 16.96,
           "best_odds": 4.8
         },
         "draw": {
           "model_prob": 0.2148,
-          "market_prob": 0.2731,
-          "edge_pct": -21.35,
+          "market_prob": 0.2721,
+          "edge_pct": -21.06,
           "best_odds": 3.6
         },
         "away_win": {
           "model_prob": 0.5418,
-          "market_prob": 0.5191,
-          "edge_pct": 4.37,
+          "market_prob": 0.5198,
+          "edge_pct": 4.23,
           "best_odds": 1.8333
         }
       },
-      "generated_at": "2026-06-13T12:34:26.002847",
+      "generated_at": "2026-06-13T12:55:16.344495",
+      "market_odds": {
+        "1x2": {
+          "home": 4.8,
+          "draw": 3.6,
+          "away": 1.83
+        }
+      },
       "confidence": "MEDIUM",
-      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 4.8 (+17.1% edge)"
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 4.8 (+17.0% edge)"
     },
     {
       "home_team": "South Africa",
@@ -6232,7 +6603,18 @@
           "best_odds": 2.0
         }
       },
-      "generated_at": "2026-06-13T12:34:26.038740",
+      "generated_at": "2026-06-13T12:55:16.380432",
+      "market_odds": {
+        "1x2": {
+          "home": 6.0,
+          "draw": 4.3,
+          "away": 1.61
+        },
+        "totals_2_5": {
+          "over": 2.0,
+          "under": 1.8
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.8 (+27.1% edge)"
     },
@@ -6383,7 +6765,18 @@
           "best_odds": 1.9091
         }
       },
-      "generated_at": "2026-06-13T12:34:26.075738",
+      "generated_at": "2026-06-13T12:55:16.417740",
+      "market_odds": {
+        "1x2": {
+          "home": 5.1,
+          "draw": 3.9,
+          "away": 1.75
+        },
+        "totals_2_5": {
+          "over": 1.91,
+          "under": 1.88
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -6460,7 +6853,14 @@
           "best_odds": 1.2353
         }
       },
-      "generated_at": "2026-06-13T12:34:26.076674",
+      "generated_at": "2026-06-13T12:55:16.418495",
+      "market_odds": {
+        "1x2": {
+          "home": 15.0,
+          "draw": 7.0,
+          "away": 1.24
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 7.0 (+20.0% edge)"
     },
@@ -6543,7 +6943,18 @@
           "best_odds": 1.8333
         }
       },
-      "generated_at": "2026-06-13T12:34:26.079175",
+      "generated_at": "2026-06-13T12:55:16.420479",
+      "market_odds": {
+        "1x2": {
+          "home": 6.5,
+          "draw": 4.4,
+          "away": 1.5
+        },
+        "totals_2_5": {
+          "over": 1.83,
+          "under": 1.95
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 1.5 (+9.7% edge)"
     },
@@ -6607,7 +7018,14 @@
           "best_odds": 3.6
         }
       },
-      "generated_at": "2026-06-13T12:34:26.080863",
+      "generated_at": "2026-06-13T12:55:16.422182",
+      "market_odds": {
+        "1x2": {
+          "home": 2.1,
+          "draw": 3.5,
+          "away": 3.6
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -6783,7 +7201,18 @@
           "best_odds": 1.8065
         }
       },
-      "generated_at": "2026-06-13T12:34:26.117612",
+      "generated_at": "2026-06-13T12:55:16.457832",
+      "market_odds": {
+        "1x2": {
+          "home": 2.7,
+          "draw": 3.65,
+          "away": 2.5
+        },
+        "totals_2_5": {
+          "over": 1.81,
+          "under": 1.99
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 2.7 (+10.2% edge)"
     },
@@ -6928,7 +7357,14 @@
           "best_odds": 3.75
         }
       },
-      "generated_at": "2026-06-13T12:34:26.153151",
+      "generated_at": "2026-06-13T12:55:16.494112",
+      "market_odds": {
+        "1x2": {
+          "home": 2.1,
+          "draw": 3.35,
+          "away": 3.75
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -7023,7 +7459,18 @@
           "best_odds": 1.9709
         }
       },
-      "generated_at": "2026-06-13T12:34:26.153876",
+      "generated_at": "2026-06-13T12:55:16.494875",
+      "market_odds": {
+        "1x2": {
+          "home": 4.5,
+          "draw": 3.7,
+          "away": 1.87
+        },
+        "totals_2_5": {
+          "over": 1.97,
+          "under": 1.82
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 1.8696 (+8.5% edge)"
     },
@@ -7093,7 +7540,18 @@
           "best_odds": 1.8475
         }
       },
-      "generated_at": "2026-06-13T12:34:26.155844",
+      "generated_at": "2026-06-13T12:55:16.496786",
+      "market_odds": {
+        "1x2": {
+          "home": 1.42,
+          "draw": 4.8,
+          "away": 8.0
+        },
+        "totals_2_5": {
+          "over": 1.85,
+          "under": 1.93
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -7244,7 +7702,18 @@
           "best_odds": 1.8696
         }
       },
-      "generated_at": "2026-06-13T12:34:26.193346",
+      "generated_at": "2026-06-13T12:55:16.534292",
+      "market_odds": {
+        "1x2": {
+          "home": 5.5,
+          "draw": 4.0,
+          "away": 1.65
+        },
+        "totals_2_5": {
+          "over": 1.87,
+          "under": 1.92
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -7289,7 +7758,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:26.194108",
+      "generated_at": "2026-06-13T12:55:16.535073",
+      "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -7434,7 +7904,14 @@
           "best_odds": 1.2941
         }
       },
-      "generated_at": "2026-06-13T12:34:26.232071",
+      "generated_at": "2026-06-13T12:55:16.571854",
+      "market_odds": {
+        "1x2": {
+          "home": 11.0,
+          "draw": 6.0,
+          "away": 1.29
+        }
+      },
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
     },
@@ -7592,7 +8069,14 @@
           "best_odds": 3.65
         }
       },
-      "generated_at": "2026-06-13T12:34:26.268879",
+      "generated_at": "2026-06-13T12:55:16.608236",
+      "market_odds": {
+        "1x2": {
+          "home": 2.3,
+          "draw": 3.1,
+          "away": 3.65
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 3.1 (+28.2% edge)"
     },
@@ -7681,7 +8165,14 @@
           "best_odds": 1.2941
         }
       },
-      "generated_at": "2026-06-13T12:34:26.269623",
+      "generated_at": "2026-06-13T12:55:16.608932",
+      "market_odds": {
+        "1x2": {
+          "home": 11.0,
+          "draw": 6.5,
+          "away": 1.29
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 11.0 (+26.9% edge)"
     },
@@ -7745,7 +8236,14 @@
           "best_odds": 5.8
         }
       },
-      "generated_at": "2026-06-13T12:34:26.271614",
+      "generated_at": "2026-06-13T12:55:16.609545",
+      "market_odds": {
+        "1x2": {
+          "home": 1.65,
+          "draw": 3.95,
+          "away": 5.8
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -7903,7 +8401,14 @@
           "best_odds": 2.2
         }
       },
-      "generated_at": "2026-06-13T12:34:26.307702",
+      "generated_at": "2026-06-13T12:55:16.644874",
+      "market_odds": {
+        "1x2": {
+          "home": 3.5,
+          "draw": 3.4,
+          "away": 2.2
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Draw @ 3.4 (+23.3% edge)"
     },
@@ -8029,7 +8534,8 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-06-13T12:34:26.343329",
+      "generated_at": "2026-06-13T12:55:16.680782",
+      "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
     },
@@ -8174,7 +8680,14 @@
           "best_odds": 1.1905
         }
       },
-      "generated_at": "2026-06-13T12:34:26.380757",
+      "generated_at": "2026-06-13T12:55:16.716389",
+      "market_odds": {
+        "1x2": {
+          "home": 15.0,
+          "draw": 7.5,
+          "away": 1.19
+        }
+      },
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
     },
@@ -8332,7 +8845,14 @@
           "best_odds": 2.2
         }
       },
-      "generated_at": "2026-06-13T12:34:26.416753",
+      "generated_at": "2026-06-13T12:55:16.752513",
+      "market_odds": {
+        "1x2": {
+          "home": 3.75,
+          "draw": 3.3,
+          "away": 2.2
+        }
+      },
       "confidence": "LOW",
       "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Home Win @ 3.75 (+24.3% edge)"
     }
