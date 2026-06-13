@@ -1,13 +1,198 @@
 {
-  "last_updated": null,
-  "matches_scored": [],
-  "results": [],
+  "last_updated": "2026-06-13T12:14:22.003655",
+  "matches_scored": [
+    537327,
+    537328,
+    537333,
+    537345
+  ],
+  "results": [
+    {
+      "fixture_id": 537327,
+      "date": "2026-06-11",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "score": "2-0",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.5899,
+        "model_probs": {
+          "home": 0.3789,
+          "draw": 0.3857,
+          "away": 0.2354
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2467,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3244
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:21.990374"
+    },
+    {
+      "fixture_id": 537328,
+      "date": "2026-06-12",
+      "home_team": "South Korea",
+      "away_team": "Czech Republic",
+      "score": "2-1",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.4611,
+        "model_probs": {
+          "home": 0.4472,
+          "draw": 0.2399,
+          "away": 0.313
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.5148
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:21.994478"
+    },
+    {
+      "fixture_id": 537333,
+      "date": "2026-06-12",
+      "home_team": "Canada",
+      "away_team": "Bosnia and Herzegovina",
+      "score": "1-1",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.8087,
+        "model_probs": {
+          "home": 0.6018,
+          "draw": 0.3348,
+          "away": 0.0634
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.1846,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.1593
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:21.998520"
+    },
+    {
+      "fixture_id": 537345,
+      "date": "2026-06-13",
+      "home_team": "USA",
+      "away_team": "Paraguay",
+      "score": "4-1",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.8274,
+        "model_probs": {
+          "home": 0.2574,
+          "draw": 0.3638,
+          "away": 0.3789
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3082,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3815
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:22.003366"
+    }
+  ],
   "summary": {
-    "total_matches": 0,
-    "1x2_accuracy": null,
-    "avg_brier_score": null,
-    "totals_accuracy": null,
-    "btts_accuracy": null,
-    "value_bets": {}
+    "total_matches": 4,
+    "1x2_correct": 1,
+    "1x2_accuracy": 0.25,
+    "avg_brier_score": 0.6718,
+    "totals_correct": 2,
+    "totals_accuracy": 0.5,
+    "btts_correct": 2,
+    "btts_accuracy": 0.5,
+    "value_bets": {},
+    "by_group": {
+      "GROUP_A": {
+        "n": 2,
+        "correct": 1
+      },
+      "GROUP_B": {
+        "n": 1,
+        "correct": 0
+      },
+      "GROUP_D": {
+        "n": 1,
+        "correct": 0
+      }
+    },
+    "last_5_results": [
+      {
+        "match": "Mexico 2-0 South Africa",
+        "predicted": "D",
+        "actual": "H",
+        "correct": false
+      },
+      {
+        "match": "South Korea 2-1 Czech Republic",
+        "predicted": "H",
+        "actual": "H",
+        "correct": true
+      },
+      {
+        "match": "Canada 1-1 Bosnia and Herzegovina",
+        "predicted": "H",
+        "actual": "D",
+        "correct": false
+      },
+      {
+        "match": "USA 4-1 Paraguay",
+        "predicted": "A",
+        "actual": "H",
+        "correct": false
+      }
+    ]
   }
 }
