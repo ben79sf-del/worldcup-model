@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚽ World Cup 2026 — Predictions Dashboard</title>
+<style>
+  :root {
+    --bg:        #0a0e1a;
+    --surface:   #111827;
+    --surface2:  #1a2235;
+    --border:    #1e2d45;
+    --accent:    #3b82f6;
+    --gold:      #f59e0b;
+    --green:     #10b981;
+    --red:       #ef4444;
+    --orange:    #f97316;
+    --text:      #e2e8f0;
+    --muted:     #64748b;
+    --wc-red:    #c0392b;
+    --wc-gold:   #f39c12;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a1040 50%, #0a1628 100%);
+    border-bottom: 2px solid var(--wc-gold);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .trophy { font-size: 36px; }
+  .header h1 { font-size: 22px; font-weight: 700; color: var(--wc-gold); letter-spacing: -0.5px; }
+  .header p  { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .header-right { display: flex; gap: 10px; flex-wrap: wrap; }
+
+  .badge {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .badge span { color: var(--text); font-weight: 600; margin-left: 4px; }
+
+  /* ── Nav ── */
+  .nav {
+    display: flex;
+    gap: 4px;
+    padding: 12px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+  }
+  .nav-btn {
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 7px 16px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+  .nav-btn:hover  { color: var(--text); background: var(--surface2); }
+  .nav-btn.active { color: var(--wc-gold); border-color: var(--wc-gold); background: rgba(243,156,18,0.08); }
+
+  /* ── Layout ── */
+  .main { padding: 20px 24px; max-width: 1400px; margin: 0 auto; }
+
+  /* ── Value Bets ── */
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .value-bet-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: start;
+    transition: border-color 0.2s;
+  }
+  .value-bet-card:hover { border-color: var(--accent); }
+  .value-bet-card.strong { border-left: 3px solid var(--green); }
+  .value-bet-card.good   { border-left: 3px solid var(--accent); }
+  .value-bet-card.watch  { border-left: 3px solid var(--orange); }
+  .value-bet-card.suspect { border-left: 3px solid var(--red); opacity: 0.65; }
+
+  .vb-match { font-size: 15px; font-weight: 600; color: var(--text); }
+  .vb-meta  { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .vb-market { font-size: 13px; color: var(--gold); font-weight: 600; margin-top: 6px; }
+
+  .vb-stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+  .vb-stat { text-align: center; }
+  .vb-stat .val { font-size: 16px; font-weight: 700; }
+  .vb-stat .lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .edge-val { color: var(--green); }
+  .odds-val { color: var(--text); }
+
+  /* ── Match Cards ── */
+  .match-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 14px;
+  }
+
+  .match-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .match-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+
+  .match-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .match-date { font-size: 11px; color: var(--muted); }
+  .match-group { 
+    font-size: 10px; 
+    background: rgba(59,130,246,0.15); 
+    color: var(--accent); 
+    padding: 2px 8px; 
+    border-radius: 10px; 
+    font-weight: 600;
+  }
+
+  .teams {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .team-name { font-weight: 600; font-size: 14px; flex: 1; }
+  .team-name.home { text-align: left; }
+  .team-name.away { text-align: right; }
+  .vs { color: var(--muted); font-size: 12px; flex-shrink: 0; }
+
+  .probs-bar {
+    display: flex;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    gap: 1px;
+  }
+  .prob-h { background: var(--accent); }
+  .prob-d { background: var(--muted); }
+  .prob-a { background: var(--orange); }
+
+  .probs-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+  }
+  .prob-label-h { color: var(--accent); }
+  .prob-label-d { color: var(--muted); text-align: center; }
+  .prob-label-a { color: var(--orange); }
+
+  .match-stats {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .stat-pill {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px 8px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .stat-pill span { color: var(--text); font-weight: 600; }
+
+  .vb-indicator {
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: rgba(16,185,129,0.1);
+    border: 1px solid rgba(16,185,129,0.3);
+    border-radius: 6px;
+    font-size: 11px;
+    color: var(--green);
+  }
+
+  /* ── Standings ── */
+  .group-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .group-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .group-header {
+    background: linear-gradient(90deg, var(--surface2), rgba(59,130,246,0.1));
+    padding: 10px 14px;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--wc-gold);
+    border-bottom: 1px solid var(--border);
+  }
+  .group-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border-bottom: 1px solid rgba(30,45,69,0.5);
+    font-size: 13px;
+  }
+  .group-team:last-child { border-bottom: none; }
+  .team-elo {
+    font-size: 11px;
+    color: var(--muted);
+    background: var(--surface2);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  /* ── Filter bar ── */
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 12px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(59,130,246,0.08);
+  }
+
+  /* ── Loading ── */
+  .loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  .spinner {
+    width: 32px; height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--wc-gold);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Refresh button ── */
+  .refresh-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  .refresh-btn:hover { border-color: var(--wc-gold); color: var(--wc-gold); }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .empty { 
+    text-align: center; 
+    padding: 40px; 
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  /* ── Scorelines table ── */
+  .scorelines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .scoreline-pill {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  .scoreline-pill .score { font-weight: 700; color: var(--text); }
+  .scoreline-pill .pct   { color: var(--muted); margin-left: 4px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="trophy">⚽</div>
+    <div>
+      <h1>World Cup 2026 — Predictions</h1>
+      <p id="lastUpdated">Loading predictions...</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="badge">Fixtures <span id="fixtureCount">—</span></div>
+    <div class="badge">Value Bets <span id="betCount">—</span></div>
+    <div class="badge">Model <span>Dixon-Coles</span></div>
+    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+  </div>
+</div>
+
+<div class="nav">
+  <button class="nav-btn active" onclick="showTab('value-bets', this)">🔥 Value Bets</button>
+  <button class="nav-btn" onclick="showTab('fixtures', this)">📅 Fixtures</button>
+  <button class="nav-btn" onclick="showTab('groups', this)">🏆 Groups</button>
+  <button class="nav-btn" onclick="showTab('model-info', this)">📊 Model</button>
+  <button class="nav-btn" onclick="showTab('results', this)">🎯 Results</button>
+</div>
+
+<div class="main">
+
+  <!-- VALUE BETS TAB -->
+  <div id="tab-value-bets" class="tab-content active">
+    <div class="section-title">🔥 Value Bets Today</div>
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterBets('all', this)">All</button>
+      <button class="filter-btn" onclick="filterBets('strong', this)">🔥 Strong</button>
+      <button class="filter-btn" onclick="filterBets('h2h', this)">1X2</button>
+      <button class="filter-btn" onclick="filterBets('totals', this)">Totals</button>
+      <button class="filter-btn" onclick="filterBets('btts', this)">BTTS</button>
+    </div>
+    <div id="valueBetsList">
+      <div class="loading">
+        <div class="spinner"></div>
+        Loading value bets...
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXTURES TAB -->
+  <div id="tab-fixtures" class="tab-content">
+    <div class="section-title">📅 Upcoming Fixtures</div>
+    <div class="filters" id="dateFilters"></div>
+    <div id="fixtureGrid" class="match-grid"></div>
+  </div>
+
+  <!-- GROUPS TAB -->
+  <div id="tab-groups" class="tab-content">
+    <div class="section-title">🏆 Group Stage</div>
+    <div id="groupsGrid" class="group-grid"></div>
+  </div>
+
+  <!-- MODEL INFO TAB -->
+  <div id="tab-model-info" class="tab-content">
+    <div class="section-title">📊 Model Information</div>
+    <div id="modelInfo"></div>
+  </div>
+
+  <!-- RESULTS TAB -->
+  <div id="tab-results" class="tab-content">
+    <div class="section-title">🎯 Model Performance Tracking</div>
+    <div id="resultsContent">
+      <div class="loading">
+        <div class="spinner"></div>
+        Loading results...
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── Config ─────────────────────────────────────────────────────────────────
+// Replace this URL with your GitHub raw URL for predictions/latest.json
+// OR your Netlify API endpoint
+const PREDICTIONS_URL = "https://raw.githubusercontent.com/ben79sf-del/worldcup-model/main/predictions/latest.json";
+const RESULTS_URL = "https://raw.githubusercontent.com/ben79sf-del/worldcup-model/main/predictions/results_log.json";
+
+const WC_GROUPS = {
+  A: ["Mexico","South Africa","South Korea","Czechia"],
+  B: ["Canada","Bosnia and Herzegovina","Qatar","Switzerland"],
+  C: ["Germany","Japan","Chile","Saudi Arabia"],
+  D: ["USA","Paraguay","Australia","Turkey"],
+  E: ["Spain","Morocco","Venezuela","Kenya"],
+  F: ["France","Mali","Egypt","Uruguay"],
+  G: ["Belgium","Egypt","Iran","New Zealand"],
+  H: ["Portugal","Senegal","Indonesia","Serbia"],
+  I: ["England","Slovakia","Nigeria","Trinidad and Tobago"],
+  J: ["Argentina","Algeria","Austria","Jordan"],
+  K: ["Portugal","DR Congo","Uzbekistan","Colombia"],
+  L: ["Brazil","Ecuador","Ivory Coast","Hungary"],
+};
+
+const ELO = {
+  "Argentina":2090,"France":2055,"Spain":2050,"England":2010,"Brazil":2005,
+  "Belgium":1970,"Portugal":1960,"Germany":1955,"Netherlands":1940,
+  "Morocco":1845,"Mexico":1870,"USA":1850,"Senegal":1840,"Colombia":1835,
+  "Japan":1810,"Switzerland":1810,"South Korea":1795,"Austria":1800,
+  "Turkey":1790,"Serbia":1785,"Chile":1780,"Australia":1760,"Iran":1765,
+  "Canada":1750,"Czech Republic":1740,"Hungary":1735,"Slovakia":1730,
+  "Paraguay":1730,"Algeria":1725,"Ivory Coast":1720,"Nigeria":1715,
+  "Egypt":1710,"Saudi Arabia":1680,"South Africa":1660,
+  "Bosnia and Herzegovina":1700,"Venezuela":1650,"Jordan":1620,
+  "Indonesia":1580,"New Zealand":1570,"Kenya":1520,"Qatar":1560,
+};
+
+let allPredictions = [];
+let currentBetFilter = "all";
+let currentDateFilter = "all";
+
+// ── Tab Navigation ──────────────────────────────────────────────────────────
+function showTab(tabId, btn) {
+  document.querySelectorAll(".tab-content").forEach(t => t.classList.remove("active"));
+  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById(`tab-${tabId}`).classList.add("active");
+  btn.classList.add("active");
+}
+
+// ── Data Loading ────────────────────────────────────────────────────────────
+async function loadData() {
+  document.getElementById("valueBetsList").innerHTML = `<div class="loading"><div class="spinner"></div>Loading...</div>`;
+
+  try {
+    const res  = await fetch(PREDICTIONS_URL + "?t=" + Date.now());
+    const data = await res.json();
+    allPredictions = data.predictions || [];
+    renderAll(data);
+  } catch(e) {
+    // Use demo data when no live feed
+    allPredictions = generateDemoData();
+    renderAll({ predictions: allPredictions, generated_at: new Date().toISOString() });
+  }
+
+  loadResults();
+}
+
+// ── Results Tracking ─────────────────────────────────────────────────────────
+async function loadResults() {
+  const container = document.getElementById("resultsContent");
+  try {
+    const res  = await fetch(RESULTS_URL + "?t=" + Date.now());
+    if (!res.ok) throw new Error("not found");
+    const data = await res.json();
+    renderResults(data);
+  } catch(e) {
+    container.innerHTML = `<div class="empty">
+      \u23f3 No results yet \u2014 check back once World Cup matches start finishing.<br>
+      Results are scored automatically each time the daily pipeline runs after matches conclude.
+    </div>`;
+  }
+}
+
+function renderResults(data) {
+  const container = document.getElementById("resultsContent");
+  const summary = data.summary || {};
+  const results = data.results || [];
+
+  if (!summary.total_matches) {
+    container.innerHTML = `<div class="empty">
+      \u23f3 No matches scored yet \u2014 check back once World Cup matches start finishing.
+    </div>`;
+    return;
+  }
+
+  const acc = (summary["1x2_accuracy"] * 100).toFixed(1);
+  const totAcc = (summary.totals_accuracy * 100).toFixed(1);
+  const bttsAcc = (summary.btts_accuracy * 100).toFixed(1);
+  const brier = summary.avg_brier_score.toFixed(4);
+  const vb = summary.value_bets || {};
+
+  // Headline stat cards
+  let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:24px">`;
+
+  html += statCard("Matches Scored", summary.total_matches, "var(--accent)");
+  html += statCard("1X2 Accuracy", acc + "%", acc >= 40 ? "var(--green)" : "var(--orange)",
+                    `${summary["1x2_correct"]}/${summary.total_matches} correct \u2014 baseline ~33%`);
+  html += statCard("Brier Score", brier, brier <= 0.6 ? "var(--green)" : "var(--orange)",
+                    "Lower = better (0.667 = baseline)");
+  html += statCard("Totals (O/U 2.5)", totAcc + "%", totAcc >= 50 ? "var(--green)" : "var(--orange)");
+  html += statCard("BTTS Accuracy", bttsAcc + "%", bttsAcc >= 50 ? "var(--green)" : "var(--orange)");
+
+  html += `</div>`;
+
+  // Value bet performance
+  if (vb.total_bets) {
+    const roiColor = vb.roi_pct >= 0 ? "var(--green)" : "var(--red)";
+    html += `<div class="section-title">\ud83d\udcb0 Value Bet Performance</div>`;
+    html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:24px">`;
+    html += statCard("Total Bets", vb.total_bets, "var(--accent)");
+    html += statCard("Win Rate", (vb.win_rate*100).toFixed(1) + "%", "var(--accent)");
+    html += statCard("Total P&L", (vb.total_pnl_units >= 0 ? "+" : "") + vb.total_pnl_units.toFixed(2) + " units", roiColor);
+    html += statCard("ROI", (vb.roi_pct >= 0 ? "+" : "") + vb.roi_pct.toFixed(1) + "%", roiColor,
+                      "Per unit staked, flat 1u bets");
+    html += `</div>`;
+
+    // By rating breakdown
+    if (vb.by_rating && Object.keys(vb.by_rating).length) {
+      html += `<div class="group-card" style="margin-bottom:24px">
+        <div class="group-header">Performance by Bet Rating</div>`;
+      for (const [rating, stats] of Object.entries(vb.by_rating)) {
+        const rColor = stats.roi_pct >= 0 ? "var(--green)" : "var(--red)";
+        html += `<div class="group-team">
+          <span>${rating} (${stats.n_bets} bets)</span>
+          <span style="color:${rColor}">
+            ${stats.win_rate.toFixed ? (stats.win_rate*100).toFixed(0) : (stats.win_rate*100)}% win
+            \u2022 ${stats.roi_pct >= 0 ? "+" : ""}${stats.roi_pct.toFixed(1)}% ROI
+          </span>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  // By group breakdown
+  if (summary.by_group && Object.keys(summary.by_group).length) {
+    html += `<div class="section-title">\ud83c\udfc6 Accuracy by Group</div>`;
+    html += `<div class="group-grid" style="margin-bottom:24px">`;
+    for (const [group, stats] of Object.entries(summary.by_group)) {
+      const groupAcc = stats.n ? (stats.correct / stats.n * 100).toFixed(0) : 0;
+      html += `<div class="group-card">
+        <div class="group-header">${group.replace("GROUP_","Group ")}</div>
+        <div class="group-team">
+          <span>${stats.correct}/${stats.n} correct</span>
+          <span class="team-elo">${groupAcc}%</span>
+        </div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Recent results
+  if (results.length) {
+    html += `<div class="section-title">\ud83d\udccb Recent Match Results</div>`;
+    const recent = [...results].reverse().slice(0, 15);
+    for (const r of recent) {
+      const icon = r.scored_1x2.correct ? "\u2705" : "\u274c";
+      const vbResults = r.value_bets_results || [];
+      let vbHtml = "";
+      if (vbResults.length) {
+        vbHtml = vbResults.map(b => {
+          const color = b.won ? "var(--green)" : "var(--red)";
+          return `<span class="stat-pill" style="color:${color}">
+            ${b.market} ${b.won ? "\u2713" : "\u2717"} (${b.pnl_units >= 0 ? "+" : ""}${b.pnl_units.toFixed(2)}u)
+          </span>`;
+        }).join("");
+      }
+
+      html += `<div class="value-bet-card ${r.scored_1x2.correct ? 'good' : 'watch'}">
+        <div>
+          <div class="vb-match">${icon} ${r.home_team} ${r.score} ${r.away_team}</div>
+          <div class="vb-meta">${r.date}${r.group ? " \u2022 Group "+r.group.replace("GROUP_","") : ""}
+            \u2014 Predicted: ${r.scored_1x2.predicted_outcome}, Actual: ${r.scored_1x2.actual_outcome}
+            (Brier: ${r.scored_1x2.brier_score.toFixed(3)})
+          </div>
+          ${vbHtml ? `<div class="match-stats" style="margin-top:8px">${vbHtml}</div>` : ""}
+        </div>
+      </div>`;
+    }
+  }
+
+  container.innerHTML = html;
+}
+
+function statCard(label, value, color, subtitle) {
+  return `<div class="group-card" style="padding:16px;text-align:center">
+    <div style="font-size:24px;font-weight:700;color:${color}">${value}</div>
+    <div style="font-size:11px;color:var(--muted);margin-top:4px">${label}</div>
+    ${subtitle ? `<div style="font-size:10px;color:var(--muted);margin-top:6px;opacity:0.7">${subtitle}</div>` : ""}
+  </div>`;
+}
+
+// ── Demo data generator ─────────────────────────────────────────────────────
+function generateDemoData() {
+  const fixtures = [
+    { home:"Mexico", away:"South Africa", group:"A", date:"2026-06-11", ph:0.55, pd:0.26, pa:0.19, xG:[1.7,0.9], o25:0.48, btts:0.38 },
+    { home:"South Korea", away:"Czechia", group:"A", date:"2026-06-11", ph:0.41, pd:0.28, pa:0.31, xG:[1.3,1.2], o25:0.52, btts:0.48 },
+    { home:"Canada", away:"Bosnia and Herzegovina", group:"B", date:"2026-06-12", ph:0.44, pd:0.27, pa:0.29, xG:[1.4,1.2], o25:0.55, btts:0.50 },
+    { home:"Argentina", away:"Algeria", group:"J", date:"2026-06-16", ph:0.71, pd:0.18, pa:0.11, xG:[2.3,0.8], o25:0.61, btts:0.38 },
+    { home:"France", away:"Mali", group:"F", date:"2026-06-15", ph:0.75, pd:0.15, pa:0.10, xG:[2.5,0.7], o25:0.65, btts:0.33 },
+    { home:"Spain", away:"Morocco", group:"E", date:"2026-06-14", ph:0.52, pd:0.26, pa:0.22, xG:[1.6,1.0], o25:0.50, btts:0.44 },
+    { home:"England", away:"Nigeria", group:"I", date:"2026-06-15", ph:0.61, pd:0.22, pa:0.17, xG:[1.9,0.9], o25:0.55, btts:0.41 },
+    { home:"Germany", away:"Japan", group:"C", date:"2026-06-14", ph:0.58, pd:0.23, pa:0.19, xG:[1.8,1.0], o25:0.57, btts:0.43 },
+    { home:"Brazil", away:"Ecuador", group:"L", date:"2026-06-16", ph:0.62, pd:0.22, pa:0.16, xG:[2.0,0.9], o25:0.58, btts:0.40 },
+    { home:"USA", away:"Paraguay", group:"D", date:"2026-06-16", ph:0.46, pd:0.28, pa:0.26, xG:[1.4,1.1], o25:0.51, btts:0.48 },
+  ];
+
+  return fixtures.map((f, i) => {
+    const vb = [];
+    if (f.ph > 0.6) vb.push({ market:"Home Win", model_prob: f.ph, market_prob: f.ph - 0.06, edge_pct: 9.5, best_odds: +(1/( f.ph-0.06)).toFixed(2), kelly_pct: 2.3, rating: "🔥 STRONG" });
+    if (f.btts > 0.50) vb.push({ market:"BTTS Yes", model_prob: f.btts, market_prob: f.btts - 0.04, edge_pct: 7.2, best_odds: 1.87, kelly_pct: 1.8, rating: "✅ GOOD" });
+    if (f.o25 > 0.55) vb.push({ market:"Over 2.5", model_prob: f.o25, market_prob: f.o25 - 0.035, edge_pct: 5.8, best_odds: 1.92, kelly_pct: 1.4, rating: "✅ GOOD" });
+
+    return {
+      home_team: f.home,
+      away_team: f.away,
+      match_meta: { date: f.date, group: f.group, venue: "Various" },
+      model: {
+        p_home_win: f.ph, p_draw: f.pd, p_away_win: f.pa,
+        lambda_home: f.xG[0], lambda_away: f.xG[1],
+        expected_total: f.xG[0]+f.xG[1],
+        p_over_2_5: f.o25, p_under_2_5: 1-f.o25,
+        p_btts: f.btts,
+        most_likely_score: f.ph > 0.5 ? "1-0" : "1-1",
+        top_scorelines: [
+          {score:"1-0",probability:0.15},{score:"2-0",probability:0.12},
+          {score:"2-1",probability:0.11},{score:"1-1",probability:0.10},
+          {score:"0-0",probability:0.08},{score:"3-0",probability:0.07},
+        ],
+      },
+      value_bets: vb,
+      confidence: f.ph > 0.6 ? "HIGH" : "MEDIUM",
+    };
+  });
+}
+
+// ── Render All ──────────────────────────────────────────────────────────────
+function renderAll(data) {
+  const preds = data.predictions || [];
+  const totalVB = preds.reduce((s,p) => s + (p.value_bets||[]).length, 0);
+
+  document.getElementById("lastUpdated").textContent =
+    "Updated " + new Date(data.generated_at || Date.now()).toLocaleString();
+  document.getElementById("fixtureCount").textContent = preds.length;
+  document.getElementById("betCount").textContent = totalVB;
+
+  renderValueBets(preds);
+  renderFixtures(preds);
+  renderGroups();
+  renderModelInfo(data);
+}
+
+// ── Value Bets ──────────────────────────────────────────────────────────────
+function renderValueBets(preds) {
+  const allBets = [];
+  preds.forEach(pred => {
+    (pred.value_bets || []).forEach(bet => {
+      allBets.push({ ...bet, home: pred.home_team, away: pred.away_team, meta: pred.match_meta || {} });
+    });
+  });
+  allBets.sort((a,b) => b.edge_pct - a.edge_pct);
+
+  const container = document.getElementById("valueBetsList");
+
+  if (!allBets.length) {
+    container.innerHTML = `<div class="empty">⏳ No value bets found above threshold today.<br>Check back after odds refresh.</div>`;
+    return;
+  }
+
+  const filtered = currentBetFilter === "all" ? allBets :
+    currentBetFilter === "strong" ? allBets.filter(b => b.rating.includes("STRONG")) :
+    currentBetFilter === "h2h" ? allBets.filter(b => ["Home Win","Draw","Away Win"].includes(b.market)) :
+    currentBetFilter === "totals" ? allBets.filter(b => b.market.includes("2.5") || b.market.includes("3.5")) :
+    currentBetFilter === "btts" ? allBets.filter(b => b.market.includes("BTTS")) :
+    allBets;
+
+  container.innerHTML = filtered.map(bet => {
+    const cls = bet.rating.includes("SUSPECT") ? "suspect" : bet.rating.includes("STRONG") ? "strong" : bet.rating.includes("GOOD") ? "good" : "watch";
+    const dateStr = bet.meta.date ? new Date(bet.meta.date).toLocaleDateString("en-AU",{weekday:"short",month:"short",day:"numeric"}) : "";
+    const group = bet.meta.group ? `Group ${bet.meta.group}` : "";
+
+    return `
+    <div class="value-bet-card ${cls}">
+      <div>
+        <div class="vb-match">${bet.home} vs ${bet.away}</div>
+        <div class="vb-meta">${dateStr}${group ? " • "+group : ""} ${bet.meta.venue ? "• "+bet.meta.venue : ""}</div>
+        <div class="vb-market">${bet.market}</div>
+        <div class="vb-stats">
+          <div class="vb-stat">
+            <div class="val edge-val">${bet.edge_pct > 0 ? "+" : ""}${bet.edge_pct.toFixed(1)}%</div>
+            <div class="lbl">EDGE</div>
+          </div>
+          <div class="vb-stat">
+            <div class="val odds-val">${typeof bet.best_odds === "number" ? bet.best_odds.toFixed(2) : bet.best_odds}</div>
+            <div class="lbl">BEST ODDS</div>
+          </div>
+          <div class="vb-stat">
+            <div class="val" style="color:var(--accent)">${(bet.model_prob*100).toFixed(1)}%</div>
+            <div class="lbl">MODEL</div>
+          </div>
+          <div class="vb-stat">
+            <div class="val" style="color:var(--muted)">${(bet.market_prob*100).toFixed(1)}%</div>
+            <div class="lbl">MARKET</div>
+          </div>
+          <div class="vb-stat">
+            <div class="val" style="color:var(--gold)">${bet.kelly_pct.toFixed(1)}%</div>
+            <div class="lbl">KELLY</div>
+          </div>
+        </div>
+      </div>
+      <div style="font-size:18px">${bet.rating.split(" ")[0]}</div>
+    </div>`;
+  }).join("");
+}
+
+function filterBets(type, btn) {
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  currentBetFilter = type;
+  renderValueBets(allPredictions);
+}
+
+// ── Fixtures ─────────────────────────────────────────────────────────────────
+function renderFixtures(preds) {
+  // Build date filters
+  const dates = [...new Set(preds.map(p => p.match_meta?.date).filter(Boolean))].sort();
+  const dateBar = document.getElementById("dateFilters");
+  dateBar.innerHTML = `<button class="filter-btn active" onclick="filterDate('all',this)">All Dates</button>` +
+    dates.map(d => {
+      const label = new Date(d).toLocaleDateString("en-AU",{month:"short",day:"numeric"});
+      return `<button class="filter-btn" onclick="filterDate('${d}',this)">${label}</button>`;
+    }).join("");
+
+  renderFixtureCards(preds, "all");
+}
+
+function filterDate(date, btn) {
+  document.querySelectorAll("#dateFilters .filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  currentDateFilter = date;
+  const toShow = date === "all" ? allPredictions : allPredictions.filter(p => p.match_meta?.date === date);
+  renderFixtureCards(toShow, date);
+}
+
+function renderFixtureCards(preds, dateFilter) {
+  const filtered = dateFilter === "all" ? preds : preds.filter(p => p.match_meta?.date === dateFilter);
+  const container = document.getElementById("fixtureGrid");
+
+  container.innerHTML = filtered.map(pred => {
+    const m = pred.model;
+    const meta = pred.match_meta || {};
+    const ph = m.p_home_win, pd = m.p_draw, pa = m.p_away_win;
+    const hasVB = (pred.value_bets||[]).length > 0;
+    const dateStr = meta.date ? new Date(meta.date).toLocaleDateString("en-AU",{weekday:"short",month:"short",day:"numeric"}) : "";
+
+    const scorelines = (m.top_scorelines||[]).slice(0,4).map(s =>
+      `<div class="scoreline-pill"><span class="score">${s.score}</span><span class="pct">${(s.probability*100).toFixed(0)}%</span></div>`
+    ).join("");
+
+    // Build "current market odds" row -- always shown when odds exist,
+    // regardless of whether the model flags a value bet
+    const mo = pred.market_odds || {};
+    const oddsItems = [];
+    if (mo["1x2"]) {
+      const o = mo["1x2"];
+      const parts = [];
+      if (o.home) parts.push(`H ${o.home}`);
+      if (o.draw) parts.push(`D ${o.draw}`);
+      if (o.away) parts.push(`A ${o.away}`);
+      if (parts.length) oddsItems.push(`<span class="stat-pill">1X2 <span>${parts.join(" / ")}</span></span>`);
+    }
+    if (mo["totals_2_5"]) {
+      const o = mo["totals_2_5"];
+      const parts = [];
+      if (o.over) parts.push(`O ${o.over}`);
+      if (o.under) parts.push(`U ${o.under}`);
+      if (parts.length) oddsItems.push(`<span class="stat-pill">2.5 <span>${parts.join(" / ")}</span></span>`);
+    }
+    if (mo["btts"]) {
+      const o = mo["btts"];
+      const parts = [];
+      if (o.yes) parts.push(`Y ${o.yes}`);
+      if (o.no) parts.push(`N ${o.no}`);
+      if (parts.length) oddsItems.push(`<span class="stat-pill">BTTS <span>${parts.join(" / ")}</span></span>`);
+    }
+    const marketOddsHtml = oddsItems.length
+      ? `<div class="match-stats" style="margin-top:6px">
+           <span style="font-size:10px;color:var(--muted);align-self:center">MARKET:</span>
+           ${oddsItems.join("")}
+         </div>`
+      : "";
+
+    return `
+    <div class="match-card">
+      <div class="match-header">
+        <span class="match-date">${dateStr}</span>
+        ${meta.group ? `<span class="match-group">Group ${meta.group}</span>` : ""}
+      </div>
+      <div class="teams">
+        <span class="team-name home">${pred.home_team}</span>
+        <span class="vs">vs</span>
+        <span class="team-name away">${pred.away_team}</span>
+      </div>
+      <div class="probs-bar">
+        <div class="prob-h" style="flex:${ph}"></div>
+        <div class="prob-d" style="flex:${pd}"></div>
+        <div class="prob-a" style="flex:${pa}"></div>
+      </div>
+      <div class="probs-labels">
+        <span class="prob-label-h">${(ph*100).toFixed(0)}%</span>
+        <span class="prob-label-d">${(pd*100).toFixed(0)}%</span>
+        <span class="prob-label-a">${(pa*100).toFixed(0)}%</span>
+      </div>
+      <div class="match-stats">
+        <span style="font-size:10px;color:var(--muted);align-self:center">MODEL:</span>
+        <span class="stat-pill">xG <span>${m.lambda_home?.toFixed(1)||"?"} – ${m.lambda_away?.toFixed(1)||"?"}</span></span>
+        <span class="stat-pill">O2.5 <span>${((m.p_over_2_5||0)*100).toFixed(0)}%</span></span>
+        <span class="stat-pill">BTTS <span>${((m.p_btts||0)*100).toFixed(0)}%</span></span>
+        ${m.most_likely_score ? `<span class="stat-pill">Best <span>${m.most_likely_score}</span></span>` : ""}
+      </div>
+      ${marketOddsHtml}
+      ${scorelines ? `<div class="scorelines">${scorelines}</div>` : ""}
+      ${hasVB ? `<div class="vb-indicator">✅ ${pred.value_bets.length} value bet${pred.value_bets.length>1?"s":""} — ${pred.value_bets[0].market} @ ${pred.value_bets[0].best_odds?.toFixed(2)||"?"}  (+${pred.value_bets[0].edge_pct?.toFixed(1)}% edge)</div>` : ""}
+    </div>`;
+  }).join("") || `<div class="empty">No fixtures for this date.</div>`;
+}
+
+// ── Groups ───────────────────────────────────────────────────────────────────
+function renderGroups() {
+  const container = document.getElementById("groupsGrid");
+  container.innerHTML = Object.entries(WC_GROUPS).map(([group, teams]) => {
+    const teamsHtml = teams.map(t => {
+      const elo = ELO[t] || 1600;
+      return `
+      <div class="group-team">
+        <span>${t}</span>
+        <span class="team-elo">Elo ${elo}</span>
+      </div>`;
+    }).join("");
+    return `
+    <div class="group-card">
+      <div class="group-header">Group ${group}</div>
+      ${teamsHtml}
+    </div>`;
+  }).join("");
+}
+
+// ── Model Info ───────────────────────────────────────────────────────────────
+function renderModelInfo(data) {
+  document.getElementById("modelInfo").innerHTML = `
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
+    <div class="group-card">
+      <div class="group-header">Model Architecture</div>
+      <div style="padding:14px;line-height:2;font-size:13px;color:var(--muted)">
+        <div>Algorithm: <span style="color:var(--text)">Dixon-Coles Poisson</span></div>
+        <div>Features: <span style="color:var(--text)">Attack/Defense/Elo/Form</span></div>
+        <div>Low-score fix: <span style="color:var(--text)">DC correction (ρ)</span></div>
+        <div>Time decay: <span style="color:var(--text)">Exponential (ξ=0.0018)</span></div>
+        <div>Training: <span style="color:var(--text)">2010–2026 internationals</span></div>
+        <div>Match weight: <span style="color:var(--text)">WC=1.0 / Friendly=0.3</span></div>
+      </div>
+    </div>
+    <div class="group-card">
+      <div class="group-header">Data Sources</div>
+      <div style="padding:14px;line-height:2;font-size:13px;color:var(--muted)">
+        <div>Results: <span style="color:var(--text)">football-data.org</span></div>
+        <div>Odds: <span style="color:var(--text)">The Odds API</span></div>
+        <div>Elo: <span style="color:var(--text)">martj42/international_results</span></div>
+        <div>FIFA rank: <span style="color:var(--text)">football-data.org</span></div>
+        <div>Squad data: <span style="color:var(--text)">transfermarkt (planned)</span></div>
+      </div>
+    </div>
+    <div class="group-card">
+      <div class="group-header">Edge Thresholds</div>
+      <div style="padding:14px;line-height:2;font-size:13px;color:var(--muted)">
+        <div>Min edge: <span style="color:var(--text)">3.5%</span></div>
+        <div>Strong: <span style="color:var(--green)">≥ 8% edge 🔥</span></div>
+        <div>Good: <span style="color:var(--accent)">≥ 5% edge ✅</span></div>
+        <div>Watch: <span style="color:var(--orange)">≥ 3.5% edge 👀</span></div>
+        <div>Kelly fraction: <span style="color:var(--text)">25% (quarter)</span></div>
+        <div>Max bet: <span style="color:var(--text)">5% of bankroll</span></div>
+      </div>
+    </div>
+    <div class="group-card">
+      <div class="group-header">Key Limitations</div>
+      <div style="padding:14px;line-height:2;font-size:13px;color:var(--muted)">
+        <div>Small sample: <span style="color:var(--text)">~10 matches/yr/team</span></div>
+        <div>Squad turnover: <span style="color:var(--text)">4yr player rotation</span></div>
+        <div>Best for: <span style="color:var(--text)">Totals, AH, favorites</span></div>
+        <div>Worst for: <span style="color:var(--text)">Corners, exact score</span></div>
+        <div>No lineup data: <span style="color:var(--text)">pre-match only</span></div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
