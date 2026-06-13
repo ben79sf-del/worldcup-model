@@ -1,29 +1,29 @@
 {
   "date": "2026-06-13",
-  "generated": "2026-06-13T12:34:26.417279",
+  "generated": "2026-06-13T12:55:16.753110",
   "count": 39,
   "value_bets": [
-    {
-      "match": "Australia vs Turkey",
-      "date": "2026-06-14",
-      "group": "GROUP_D",
-      "market": "Under 2.5",
-      "edge_pct": 29.89,
-      "model_prob": 0.7031,
-      "market_prob": 0.5413,
-      "best_odds": 1.8475,
-      "kelly_pct": 5.0,
-      "rating": "\ud83d\udd25 STRONG"
-    },
     {
       "match": "Jordan vs Algeria",
       "date": "2026-06-23",
       "group": "GROUP_J",
       "market": "Under 2.5",
-      "edge_pct": 28.5,
+      "edge_pct": 29.6,
       "model_prob": 0.6788,
-      "market_prob": 0.5283,
-      "best_odds": 1.8929,
+      "market_prob": 0.5238,
+      "best_odds": 1.9091,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Australia vs Turkey",
+      "date": "2026-06-14",
+      "group": "GROUP_D",
+      "market": "Under 2.5",
+      "edge_pct": 29.39,
+      "model_prob": 0.7031,
+      "market_prob": 0.5434,
+      "best_odds": 1.8403,
       "kelly_pct": 5.0,
       "rating": "\ud83d\udd25 STRONG"
     },
@@ -92,11 +92,11 @@
       "date": "2026-06-16",
       "group": "GROUP_I",
       "market": "Away Win",
-      "edge_pct": 24.55,
+      "edge_pct": 25.4,
       "model_prob": 0.1644,
-      "market_prob": 0.132,
-      "best_odds": 8.0,
-      "kelly_pct": 1.13,
+      "market_prob": 0.1311,
+      "best_odds": 8.2,
+      "kelly_pct": 1.21,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -128,9 +128,9 @@
       "date": "2026-06-16",
       "group": "GROUP_I",
       "market": "Draw",
-      "edge_pct": 21.75,
+      "edge_pct": 21.64,
       "model_prob": 0.2676,
-      "market_prob": 0.2198,
+      "market_prob": 0.22,
       "best_odds": 4.6,
       "kelly_pct": 1.6,
       "rating": "\ud83d\udd25 STRONG"
@@ -164,9 +164,9 @@
       "date": "2026-06-21",
       "group": "GROUP_F",
       "market": "Away Win",
-      "edge_pct": 20.99,
+      "edge_pct": 20.86,
       "model_prob": 0.6766,
-      "market_prob": 0.5592,
+      "market_prob": 0.5598,
       "best_odds": 1.7143,
       "kelly_pct": 5.0,
       "rating": "\ud83d\udd25 STRONG"
@@ -200,9 +200,9 @@
       "date": "2026-06-16",
       "group": "GROUP_G",
       "market": "Away Win",
-      "edge_pct": 19.25,
+      "edge_pct": 19.31,
       "model_prob": 0.2459,
-      "market_prob": 0.2062,
+      "market_prob": 0.2061,
       "best_odds": 5.0,
       "kelly_pct": 1.43,
       "rating": "\ud83d\udd25 STRONG"
@@ -220,13 +220,25 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
+      "match": "France vs Iraq",
+      "date": "2026-06-22",
+      "group": "GROUP_I",
+      "market": "Draw",
+      "edge_pct": 18.23,
+      "model_prob": 0.1284,
+      "market_prob": 0.1086,
+      "best_odds": 10.5,
+      "kelly_pct": 0.92,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
       "match": "Czech Republic vs Mexico",
       "date": "2026-06-25",
       "group": "GROUP_A",
       "market": "Home Win",
-      "edge_pct": 17.13,
+      "edge_pct": 16.96,
       "model_prob": 0.2434,
-      "market_prob": 0.2078,
+      "market_prob": 0.2081,
       "best_odds": 4.8,
       "kelly_pct": 1.11,
       "rating": "\ud83d\udd25 STRONG"
@@ -244,15 +256,15 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
-      "match": "France vs Iraq",
-      "date": "2026-06-22",
-      "group": "GROUP_I",
-      "market": "Draw",
-      "edge_pct": 15.36,
-      "model_prob": 0.1284,
-      "market_prob": 0.1113,
-      "best_odds": 10.5,
-      "kelly_pct": 0.92,
+      "match": "Jordan vs Algeria",
+      "date": "2026-06-23",
+      "group": "GROUP_J",
+      "market": "Home Win",
+      "edge_pct": 16.0,
+      "model_prob": 0.1675,
+      "market_prob": 0.1444,
+      "best_odds": 7.0,
+      "kelly_pct": 0.72,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -277,18 +289,6 @@
       "market_prob": 0.154,
       "best_odds": 7.0,
       "kelly_pct": 0.97,
-      "rating": "\ud83d\udd25 STRONG"
-    },
-    {
-      "match": "Jordan vs Algeria",
-      "date": "2026-06-23",
-      "group": "GROUP_J",
-      "market": "Home Win",
-      "edge_pct": 13.64,
-      "model_prob": 0.1675,
-      "market_prob": 0.1474,
-      "best_odds": 7.0,
-      "kelly_pct": 0.72,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -404,9 +404,9 @@
       "date": "2026-06-23",
       "group": "GROUP_I",
       "market": "Home Win",
-      "edge_pct": 8.09,
+      "edge_pct": 8.23,
       "model_prob": 0.4759,
-      "market_prob": 0.4403,
+      "market_prob": 0.4397,
       "best_odds": 2.24,
       "kelly_pct": 1.33,
       "rating": "\ud83d\udd25 STRONG"
@@ -464,9 +464,9 @@
       "date": "2026-06-25",
       "group": "GROUP_A",
       "market": "Away Win",
-      "edge_pct": 4.37,
+      "edge_pct": 4.23,
       "model_prob": 0.5418,
-      "market_prob": 0.5191,
+      "market_prob": 0.5198,
       "best_odds": 1.8333,
       "kelly_pct": 0,
       "rating": "\ud83d\udc40 WATCH"
