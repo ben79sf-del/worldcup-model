@@ -231,9 +231,14 @@
   }
   .stat-pill.market span { color: var(--gold); }
   .stat-pill.empty {
+    display: inline-block;
+    width: auto;
+    height: auto;
     color: var(--muted);
     opacity: 0.5;
     font-style: italic;
+    flex: 0 0 auto;
+    align-self: flex-start;
   }
 
   .vb-indicator {
@@ -823,16 +828,15 @@ function renderFixtureCards(preds, dateFilter) {
       if (o.draw) parts.push(`D ${o.draw.toFixed(2)}`);
       if (o.away) parts.push(`A ${o.away.toFixed(2)}`);
       oddsItems.push(`<span class="stat-pill market">1X2 <span>${parts.join(" / ")}</span></span>`);
-    } else {
-      oddsItems.push(`<span class="stat-pill empty">1X2 odds not yet available</span>`);
     }
 
-    if (mo["totals_2_5"] && (mo["totals_2_5"].over || mo["totals_2_5"].under)) {
-      const o = mo["totals_2_5"];
+    if (mo["totals"] && (mo["totals"].over || mo["totals"].under)) {
+      const o = mo["totals"];
       const parts = [];
       if (o.over) parts.push(`O ${o.over.toFixed(2)}`);
       if (o.under) parts.push(`U ${o.under.toFixed(2)}`);
-      oddsItems.push(`<span class="stat-pill market">O/U 2.5 <span>${parts.join(" / ")}</span></span>`);
+      const lineLabel = o.line.toFixed(2).replace(/\.?0+$/, "") || o.line;
+      oddsItems.push(`<span class="stat-pill market">O/U ${lineLabel} <span>${parts.join(" / ")}</span></span>`);
     }
 
     if (mo["btts"] && (mo["btts"].yes || mo["btts"].no)) {
@@ -843,10 +847,15 @@ function renderFixtureCards(preds, dateFilter) {
       oddsItems.push(`<span class="stat-pill market">BTTS <span>${parts.join(" / ")}</span></span>`);
     }
 
-    const marketOddsHtml = `<div class="match-stats market-row">
-        <span class="stat-row-label">MARKET</span>
-        ${oddsItems.join("")}
-      </div>`;
+    const marketOddsHtml = oddsItems.length
+      ? `<div class="match-stats market-row">
+          <span class="stat-row-label">MARKET</span>
+          ${oddsItems.join("")}
+        </div>`
+      : `<div class="match-stats market-row">
+          <span class="stat-row-label">MARKET</span>
+          <span class="stat-pill empty">Odds not yet posted</span>
+        </div>`;
 
     return `
     <div class="match-card">
