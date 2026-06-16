@@ -240,6 +240,31 @@
     flex: 0 0 auto;
     align-self: flex-start;
   }
+  .btts-signal {
+    margin-top: 6px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btts-yes {
+    background: rgba(16,185,129,0.12);
+    border: 1px solid rgba(16,185,129,0.35);
+    color: var(--green);
+  }
+  .btts-no {
+    background: rgba(239,68,68,0.10);
+    border: 1px solid rgba(239,68,68,0.3);
+    color: var(--red);
+  }
+  .btts-neutral {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
 
   .vb-indicator {
     margin-top: 10px;
@@ -714,13 +739,28 @@ function renderValueBets(preds) {
     (pred.value_bets || []).forEach(bet => {
       allBets.push({ ...bet, home: pred.home_team, away: pred.away_team, meta: pred.match_meta || {} });
     });
+    // Add model-only BTTS signals (no market price needed)
+    const btts = pred.model?.p_btts || 0;
+    const noBtts = pred.model?.p_no_btts || (1 - btts);
+    if (btts >= 0.60) {
+      allBets.push({ market: "BTTS Yes", model_prob: btts, market_prob: null,
+        edge_pct: null, best_odds: null, kelly_pct: null, rating: "👀 MODEL SIGNAL",
+        home: pred.home_team, away: pred.away_team, meta: pred.match_meta || {}, btts_signal: true });
+    } else if (noBtts >= 0.68) {
+      allBets.push({ market: "BTTS No", model_prob: noBtts, market_prob: null,
+        edge_pct: null, best_odds: null, kelly_pct: null, rating: "👀 MODEL SIGNAL",
+        home: pred.home_team, away: pred.away_team, meta: pred.match_meta || {}, btts_signal: true });
+    }
   });
-  // Sort by date first (soonest matches first), then by edge within same date
+
+  // Sort: date first, then BTTS signals after real value bets on same day
   allBets.sort((a,b) => {
-    const dateA = a.date || "9999-12-31";
-    const dateB = b.date || "9999-12-31";
+    const dateA = a.meta?.date || a.date || "9999-12-31";
+    const dateB = b.meta?.date || b.date || "9999-12-31";
     if (dateA !== dateB) return dateA.localeCompare(dateB);
-    return b.edge_pct - a.edge_pct;   // within same date, highest edge first
+    if (a.btts_signal && !b.btts_signal) return 1;
+    if (!a.btts_signal && b.btts_signal) return -1;
+    return (b.edge_pct||0) - (a.edge_pct||0);
   });
 
   const container = document.getElementById("valueBetsList");
@@ -738,23 +778,50 @@ function renderValueBets(preds) {
     allBets;
 
   container.innerHTML = filtered.map(bet => {
-    const cls = bet.rating.includes("SUSPECT") ? "suspect" : bet.rating.includes("STRONG") ? "strong" : bet.rating.includes("GOOD") ? "good" : "watch";
-    const dateStr = bet.meta.date ? new Date(bet.meta.date).toLocaleDateString("en-AU",{weekday:"short",month:"short",day:"numeric"}) : "";
-    const group = bet.meta.group ? `Group ${bet.meta.group}` : "";
+    const isBttsSignal = bet.btts_signal;
+    const cls = isBttsSignal ? "watch" : bet.rating.includes("STRONG") ? "strong" : bet.rating.includes("GOOD") ? "good" : "watch";
+    const dateStr = (bet.meta?.date||bet.date) ? new Date(bet.meta?.date||bet.date).toLocaleDateString("en-AU",{weekday:"short",month:"short",day:"numeric"}) : "";
+    const group = bet.meta?.group ? `Group ${bet.meta.group}` : "";
+
+    // BTTS signal card (no odds/edge available — model signal only)
+    if (isBttsSignal) {
+      return `
+      <div class="value-bet-card watch" style="border-left-color:var(--green)">
+        <div>
+          <div class="vb-match">${bet.home} vs ${bet.away}</div>
+          <div class="vb-meta">${dateStr}${group ? " • "+group : ""}</div>
+          <div class="vb-market">${bet.market}</div>
+          <div class="vb-stats">
+            <div class="vb-stat">
+              <div class="val" style="color:var(--green)">${(bet.model_prob*100).toFixed(0)}%</div>
+              <div class="lbl">MODEL</div>
+            </div>
+            <div class="vb-stat">
+              <div class="val" style="color:var(--muted);font-size:11px">Check<br>manually</div>
+              <div class="lbl">ODDS</div>
+            </div>
+          </div>
+          <div style="font-size:10px;color:var(--muted);margin-top:6px">
+            ℹ️ No market price available via API — check Bet365 or Pinnacle for BTTS ${bet.market.includes("Yes") ? "Yes" : "No"} odds
+          </div>
+        </div>
+        <div style="font-size:18px">⚽</div>
+      </div>`;
+    }
 
     return `
     <div class="value-bet-card ${cls}">
       <div>
         <div class="vb-match">${bet.home} vs ${bet.away}</div>
-        <div class="vb-meta">${dateStr}${group ? " • "+group : ""} ${bet.meta.venue ? "• "+bet.meta.venue : ""}</div>
+        <div class="vb-meta">${dateStr}${group ? " • "+group : ""} ${bet.meta?.venue ? "• "+bet.meta.venue : ""}</div>
         <div class="vb-market">${bet.market}</div>
         <div class="vb-stats">
           <div class="vb-stat">
-            <div class="val edge-val">${bet.edge_pct > 0 ? "+" : ""}${bet.edge_pct.toFixed(1)}%</div>
+            <div class="val edge-val">${bet.edge_pct > 0 ? "+" : ""}${bet.edge_pct?.toFixed(1)||"?"}%</div>
             <div class="lbl">EDGE</div>
           </div>
           <div class="vb-stat">
-            <div class="val odds-val">${typeof bet.best_odds === "number" ? bet.best_odds.toFixed(2) : bet.best_odds}</div>
+            <div class="val odds-val">${typeof bet.best_odds === "number" ? bet.best_odds.toFixed(2) : "—"}</div>
             <div class="lbl">BEST ODDS</div>
           </div>
           <div class="vb-stat">
@@ -762,11 +829,11 @@ function renderValueBets(preds) {
             <div class="lbl">MODEL</div>
           </div>
           <div class="vb-stat">
-            <div class="val" style="color:var(--muted)">${(bet.market_prob*100).toFixed(1)}%</div>
+            <div class="val" style="color:var(--muted)">${bet.market_prob ? (bet.market_prob*100).toFixed(1)+"%" : "—"}</div>
             <div class="lbl">MARKET</div>
           </div>
           <div class="vb-stat">
-            <div class="val" style="color:var(--gold)">${bet.kelly_pct.toFixed(1)}%</div>
+            <div class="val" style="color:var(--gold)">${bet.kelly_pct?.toFixed(1)||"—"}%</div>
             <div class="lbl">KELLY</div>
           </div>
         </div>
@@ -892,6 +959,17 @@ function renderFixtureCards(preds, dateFilter) {
         ${m.most_likely_score ? `<span class="stat-pill">Best <span>${m.most_likely_score}</span></span>` : ""}
       </div>
       ${marketOddsHtml}
+      ${(() => {
+        const btts = m.p_btts || 0;
+        const noBtts = m.p_no_btts || (1 - btts);
+        // Only show a signal when model has a strong lean either way
+        if (btts >= 0.60) {
+          return `<div class="btts-signal btts-yes">⚽ BTTS YES likely — model ${(btts*100).toFixed(0)}% · check Bet365/Pinnacle for price</div>`;
+        } else if (noBtts >= 0.68) {
+          return `<div class="btts-signal btts-no">🚫 BTTS NO likely — model ${(noBtts*100).toFixed(0)}% · check Bet365/Pinnacle for price</div>`;
+        }
+        return "";
+      })()}
       ${scorelines ? `<div class="scorelines">${scorelines}</div>` : ""}
       ${hasVB ? `<div class="vb-indicator">✅ ${pred.value_bets.length} value bet${pred.value_bets.length>1?"s":""} — ${pred.value_bets[0].market} @ ${pred.value_bets[0].best_odds?.toFixed(2)||"?"}  (+${pred.value_bets[0].edge_pct?.toFixed(1)}% edge)</div>` : ""}
     </div>`;
