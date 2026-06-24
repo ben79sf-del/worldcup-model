@@ -1,8 +1,20 @@
 {
   "date": "2026-06-24",
-  "generated": "2026-06-24T10:23:42.301379",
-  "count": 15,
+  "generated": "2026-06-24T10:28:40.512037",
+  "count": 25,
   "value_bets": [
+    {
+      "match": "Paraguay vs Australia",
+      "date": "2026-06-26",
+      "group": "GROUP_D",
+      "market": "BTTS No",
+      "edge_pct": 29.71,
+      "model_prob": 0.7829,
+      "market_prob": 0.6036,
+      "best_odds": 1.74,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
     {
       "match": "Algeria vs Austria",
       "date": "2026-06-28",
@@ -25,6 +37,18 @@
       "market_prob": 0.1336,
       "best_odds": 7.6,
       "kelly_pct": 1.15,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Croatia vs Ghana",
+      "date": "2026-06-27",
+      "group": "GROUP_L",
+      "market": "BTTS No",
+      "edge_pct": 27.98,
+      "model_prob": 0.7337,
+      "market_prob": 0.5733,
+      "best_odds": 1.82,
+      "kelly_pct": 5.0,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -64,6 +88,18 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
+      "match": "Uruguay vs Spain",
+      "date": "2026-06-27",
+      "group": "GROUP_H",
+      "market": "BTTS No",
+      "edge_pct": 24.53,
+      "model_prob": 0.6807,
+      "market_prob": 0.5466,
+      "best_odds": 1.96,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
       "match": "Morocco vs Haiti",
       "date": "2026-06-24",
       "group": "GROUP_C",
@@ -100,6 +136,30 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
+      "match": "Egypt vs Iran",
+      "date": "2026-06-27",
+      "group": "GROUP_G",
+      "market": "BTTS No",
+      "edge_pct": 19.25,
+      "model_prob": 0.7019,
+      "market_prob": 0.5886,
+      "best_odds": 1.83,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Norway vs France",
+      "date": "2026-06-26",
+      "group": "GROUP_I",
+      "market": "BTTS No",
+      "edge_pct": 16.15,
+      "model_prob": 0.546,
+      "market_prob": 0.4701,
+      "best_odds": 2.24,
+      "kelly_pct": 4.5,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
       "match": "Norway vs France",
       "date": "2026-06-26",
       "group": "GROUP_I",
@@ -109,6 +169,18 @@
       "market_prob": 0.2055,
       "best_odds": 4.72,
       "kelly_pct": 0.78,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Panama vs England",
+      "date": "2026-06-27",
+      "group": "GROUP_L",
+      "market": "BTTS No",
+      "edge_pct": 14.0,
+      "model_prob": 0.688,
+      "market_prob": 0.6035,
+      "best_odds": 1.73,
+      "kelly_pct": 5.0,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -124,6 +196,30 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
+      "match": "Jordan vs Argentina",
+      "date": "2026-06-28",
+      "group": "GROUP_J",
+      "market": "BTTS No",
+      "edge_pct": 13.31,
+      "model_prob": 0.733,
+      "market_prob": 0.6469,
+      "best_odds": 1.61,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Morocco vs Haiti",
+      "date": "2026-06-24",
+      "group": "GROUP_C",
+      "market": "BTTS No",
+      "edge_pct": 13.1,
+      "model_prob": 0.7164,
+      "market_prob": 0.6334,
+      "best_odds": 1.65,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
       "match": "Algeria vs Austria",
       "date": "2026-06-28",
       "group": "GROUP_J",
@@ -133,6 +229,30 @@
       "market_prob": 0.4155,
       "best_odds": 2.36,
       "kelly_pct": 1.91,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "South Africa vs South Korea",
+      "date": "2026-06-25",
+      "group": "GROUP_A",
+      "market": "BTTS No",
+      "edge_pct": 12.08,
+      "model_prob": 0.629,
+      "market_prob": 0.5612,
+      "best_odds": 1.88,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Colombia vs Portugal",
+      "date": "2026-06-27",
+      "group": "GROUP_K",
+      "market": "BTTS No",
+      "edge_pct": 10.86,
+      "model_prob": 0.592,
+      "market_prob": 0.534,
+      "best_odds": 2.0,
+      "kelly_pct": 4.6,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
