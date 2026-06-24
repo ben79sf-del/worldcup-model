@@ -1,28 +1,16 @@
 {
   "date": "2026-06-24",
-  "generated": "2026-06-24T09:13:57.139725",
-  "count": 16,
+  "generated": "2026-06-24T10:23:42.301379",
+  "count": 15,
   "value_bets": [
-    {
-      "match": "Japan vs Sweden",
-      "date": "2026-06-25",
-      "group": "GROUP_F",
-      "market": "Home Win",
-      "edge_pct": 29.32,
-      "model_prob": 0.6528,
-      "market_prob": 0.5048,
-      "best_odds": 1.9524,
-      "kelly_pct": 5.0,
-      "rating": "\ud83d\udd25 STRONG"
-    },
     {
       "match": "Algeria vs Austria",
       "date": "2026-06-28",
       "group": "GROUP_J",
       "market": "Home Win",
-      "edge_pct": 28.44,
+      "edge_pct": 28.6,
       "model_prob": 0.3179,
-      "market_prob": 0.2475,
+      "market_prob": 0.2472,
       "best_odds": 4.0,
       "kelly_pct": 2.26,
       "rating": "\ud83d\udd25 STRONG"
@@ -40,13 +28,25 @@
       "rating": "\ud83d\udd25 STRONG"
     },
     {
+      "match": "Japan vs Sweden",
+      "date": "2026-06-25",
+      "group": "GROUP_F",
+      "market": "Home Win",
+      "edge_pct": 27.57,
+      "model_prob": 0.6528,
+      "market_prob": 0.5117,
+      "best_odds": 1.9174,
+      "kelly_pct": 5.0,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
       "match": "Switzerland vs Canada",
       "date": "2026-06-24",
       "group": "GROUP_B",
       "market": "Draw",
-      "edge_pct": 25.55,
+      "edge_pct": 25.43,
       "model_prob": 0.3818,
-      "market_prob": 0.3041,
+      "market_prob": 0.3044,
       "best_odds": 3.2,
       "kelly_pct": 2.52,
       "rating": "\ud83d\udd25 STRONG"
@@ -56,11 +56,23 @@
       "date": "2026-06-26",
       "group": "GROUP_D",
       "market": "Draw",
-      "edge_pct": 24.67,
+      "edge_pct": 24.72,
       "model_prob": 0.2911,
-      "market_prob": 0.2335,
+      "market_prob": 0.2334,
       "best_odds": 4.3,
       "kelly_pct": 1.91,
+      "rating": "\ud83d\udd25 STRONG"
+    },
+    {
+      "match": "Morocco vs Haiti",
+      "date": "2026-06-24",
+      "group": "GROUP_C",
+      "market": "Draw",
+      "edge_pct": 21.16,
+      "model_prob": 0.1609,
+      "market_prob": 0.1328,
+      "best_odds": 8.0,
+      "kelly_pct": 1.03,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -80,23 +92,11 @@
       "date": "2026-06-25",
       "group": "GROUP_E",
       "market": "Home Win",
-      "edge_pct": 20.22,
+      "edge_pct": 20.03,
       "model_prob": 0.3044,
-      "market_prob": 0.2532,
-      "best_odds": 4.0,
-      "kelly_pct": 1.81,
-      "rating": "\ud83d\udd25 STRONG"
-    },
-    {
-      "match": "Morocco vs Haiti",
-      "date": "2026-06-24",
-      "group": "GROUP_C",
-      "market": "Draw",
-      "edge_pct": 20.16,
-      "model_prob": 0.1609,
-      "market_prob": 0.1339,
-      "best_odds": 7.8,
-      "kelly_pct": 0.94,
+      "market_prob": 0.2536,
+      "best_odds": 3.95,
+      "kelly_pct": 1.72,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -104,11 +104,11 @@
       "date": "2026-06-26",
       "group": "GROUP_I",
       "market": "Home Win",
-      "edge_pct": 15.76,
+      "edge_pct": 15.09,
       "model_prob": 0.2365,
-      "market_prob": 0.2043,
-      "best_odds": 4.8,
-      "kelly_pct": 0.89,
+      "market_prob": 0.2055,
+      "best_odds": 4.72,
+      "kelly_pct": 0.78,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -128,11 +128,11 @@
       "date": "2026-06-28",
       "group": "GROUP_J",
       "market": "Draw",
-      "edge_pct": 12.73,
+      "edge_pct": 12.56,
       "model_prob": 0.4677,
-      "market_prob": 0.4149,
-      "best_odds": 2.38,
-      "kelly_pct": 2.05,
+      "market_prob": 0.4155,
+      "best_odds": 2.36,
+      "kelly_pct": 1.91,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -140,11 +140,11 @@
       "date": "2026-06-25",
       "group": "GROUP_A",
       "market": "Away Win",
-      "edge_pct": 10.3,
+      "edge_pct": 9.63,
       "model_prob": 0.5418,
-      "market_prob": 0.4912,
-      "best_odds": 1.9901,
-      "kelly_pct": 1.98,
+      "market_prob": 0.4942,
+      "best_odds": 1.9709,
+      "kelly_pct": 1.75,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -152,21 +152,21 @@
       "date": "2026-06-24",
       "group": "GROUP_C",
       "market": "Draw",
-      "edge_pct": 6.9,
+      "edge_pct": 8.57,
       "model_prob": 0.1875,
-      "market_prob": 0.1754,
-      "best_odds": 5.8,
-      "kelly_pct": 0.46,
-      "rating": "\u2705 GOOD"
+      "market_prob": 0.1727,
+      "best_odds": 6.0,
+      "kelly_pct": 0.63,
+      "rating": "\ud83d\udd25 STRONG"
     },
     {
       "match": "Paraguay vs Australia",
       "date": "2026-06-26",
       "group": "GROUP_D",
       "market": "Draw",
-      "edge_pct": 6.69,
+      "edge_pct": 7.43,
       "model_prob": 0.4526,
-      "market_prob": 0.4242,
+      "market_prob": 0.4213,
       "best_odds": 2.32,
       "kelly_pct": 0.95,
       "rating": "\u2705 GOOD"
@@ -176,24 +176,12 @@
       "date": "2026-06-24",
       "group": "GROUP_C",
       "market": "Under 2.5",
-      "edge_pct": 6.27,
+      "edge_pct": 6.8,
       "model_prob": 0.5184,
-      "market_prob": 0.4878,
-      "best_odds": 2.05,
-      "kelly_pct": 1.49,
+      "market_prob": 0.4854,
+      "best_odds": 2.06,
+      "kelly_pct": 1.6,
       "rating": "\u2705 GOOD"
-    },
-    {
-      "match": "Paraguay vs Australia",
-      "date": "2026-06-26",
-      "group": "GROUP_D",
-      "market": "Away Win",
-      "edge_pct": 3.9,
-      "model_prob": 0.2532,
-      "market_prob": 0.2437,
-      "best_odds": 4.1,
-      "kelly_pct": 0.31,
-      "rating": "\ud83d\udc40 WATCH"
     }
   ]
 }
