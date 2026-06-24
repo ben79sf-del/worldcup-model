@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T08:10:07.457913",
+  "last_updated": "2026-06-24T09:14:06.967226",
   "matches_scored": [
     537327,
     537328,
@@ -43,8 +43,12 @@
     537400,
     537403,
     537404,
+    537405,
+    537406,
     537409,
-    537410
+    537410,
+    537411,
+    537412
   ],
   "results": [
     {
@@ -1542,17 +1546,153 @@
       },
       "value_bets_results": [],
       "scored_at": "2026-06-23T08:10:07.457688"
+    },
+    {
+      "fixture_id": 537405,
+      "date": "2026-06-23",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "score": "5-0",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.3133,
+        "model_probs": {
+          "home": 0.5631,
+          "draw": 0.3345,
+          "away": 0.1024
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.2423,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2478
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.840795"
+    },
+    {
+      "fixture_id": 537411,
+      "date": "2026-06-23",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "score": "0-0",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.4973,
+        "model_probs": {
+          "home": 0.8356,
+          "draw": 0.1079,
+          "away": 0.0565
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Under",
+        "correct": false,
+        "p_over_2_5": 0.527,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2695
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.882865"
+    },
+    {
+      "fixture_id": 537412,
+      "date": "2026-06-23",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "score": "0-1",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2543,
+        "model_probs": {
+          "home": 0.2099,
+          "draw": 0.2018,
+          "away": 0.5883
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4224
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.924359"
+    },
+    {
+      "fixture_id": 537406,
+      "date": "2026-06-24",
+      "home_team": "Colombia",
+      "away_team": "Congo DR",
+      "score": "1-0",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.1804,
+        "model_probs": {
+          "home": 0.667,
+          "draw": 0.2504,
+          "away": 0.0826
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4113,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3407
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.967013"
     }
   ],
   "summary": {
-    "total_matches": 44,
-    "1x2_correct": 25,
-    "1x2_accuracy": 0.5682,
-    "avg_brier_score": 0.5771,
-    "totals_correct": 22,
+    "total_matches": 48,
+    "1x2_correct": 28,
+    "1x2_accuracy": 0.5833,
+    "avg_brier_score": 0.5758,
+    "totals_correct": 24,
     "totals_accuracy": 0.5,
-    "btts_correct": 25,
-    "btts_accuracy": 0.5682,
+    "btts_correct": 29,
+    "btts_accuracy": 0.6042,
     "value_bets": {},
     "by_group": {
       "GROUP_A": {
@@ -1596,43 +1736,43 @@
         "correct": 4
       },
       "GROUP_K": {
-        "n": 2,
-        "correct": 1
+        "n": 4,
+        "correct": 3
       },
       "GROUP_L": {
-        "n": 2,
-        "correct": 1
+        "n": 4,
+        "correct": 2
       }
     },
     "last_5_results": [
       {
-        "match": "New Zealand 1-3 Egypt",
-        "predicted": "A",
-        "actual": "A",
-        "correct": true
-      },
-      {
-        "match": "Argentina 2-0 Austria",
-        "predicted": "H",
-        "actual": "H",
-        "correct": true
-      },
-      {
-        "match": "France 3-0 Iraq",
-        "predicted": "H",
-        "actual": "H",
-        "correct": true
-      },
-      {
-        "match": "Norway 3-2 Senegal",
-        "predicted": "H",
-        "actual": "H",
-        "correct": true
-      },
-      {
         "match": "Jordan 1-2 Algeria",
         "predicted": "A",
         "actual": "A",
+        "correct": true
+      },
+      {
+        "match": "Portugal 5-0 Uzbekistan",
+        "predicted": "H",
+        "actual": "H",
+        "correct": true
+      },
+      {
+        "match": "England 0-0 Ghana",
+        "predicted": "H",
+        "actual": "D",
+        "correct": false
+      },
+      {
+        "match": "Panama 0-1 Croatia",
+        "predicted": "A",
+        "actual": "A",
+        "correct": true
+      },
+      {
+        "match": "Colombia 1-0 Congo DR",
+        "predicted": "H",
+        "actual": "H",
         "correct": true
       }
     ]
