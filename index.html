@@ -606,6 +606,9 @@ let allPredictions = [];
 let currentBetFilter = "all";
 let currentDateFilter = "all";
 
+// Round a dollar amount to the nearest $5
+function roundToFive(n) { return Math.round(n / 5) * 5; }
+
 // ── Tab Navigation ──────────────────────────────────────────────────────────
 function showTab(tabId, btn) {
   document.querySelectorAll(".tab-content").forEach(t => t.classList.remove("active"));
@@ -666,6 +669,7 @@ function syncValueBetsToTracker(preds) {
           kelly: bet.kelly_pct || null,
           result: "pending",   // pending | win | loss | void
           units: bet.kelly_pct ? +(bet.kelly_pct).toFixed(2) : 1,
+          stake_dollars: bet.kelly_pct ? roundToFive(bet.kelly_pct * 20) : 20,
           pnl: null,
           added: new Date().toISOString(),
         };
@@ -683,11 +687,11 @@ function setResult(id, result) {
   if (!state[id]) return;
   state[id].result = result;
   if (result === "win") {
-    const stake = state[id].units || 1;
+    const stake = state[id].stake_dollars || roundToFive((state[id].units || 1) * 20);
     const odds = state[id].odds || 2.0;
-    state[id].pnl = +(stake * (odds - 1)).toFixed(3);
+    state[id].pnl = +(stake * (odds - 1)).toFixed(2);
   } else if (result === "loss") {
-    state[id].pnl = -(state[id].units || 1);
+    state[id].pnl = -(state[id].stake_dollars || roundToFive((state[id].units || 1) * 20));
   } else {
     state[id].pnl = null;
   }
@@ -714,7 +718,7 @@ function renderTracker() {
   const wins     = settled.filter(b => b.result === "win");
   const losses   = settled.filter(b => b.result === "loss");
   const totalPnl = settled.reduce((s, b) => s + (b.pnl || 0), 0);
-  const staked   = settled.filter(b => b.result !== "void").reduce((s, b) => s + (b.units || 1), 0);
+  const staked   = settled.filter(b => b.result !== "void").reduce((s, b) => s + (b.stake_dollars || roundToFive((b.units||1)*20)), 0);
   const roi      = staked > 0 ? (totalPnl / staked * 100) : 0;
   const winRate  = settled.filter(b => b.result !== "void").length > 0
     ? wins.length / settled.filter(b => b.result !== "void").length * 100 : 0;
@@ -725,7 +729,7 @@ function renderTracker() {
     const mk = b.market.includes("Win") ? "1X2" : b.market.includes("Draw") ? "1X2" : b.market.includes("2.5") ? "Totals" : b.market.includes("BTTS") ? "BTTS" : "Other";
     if (!byMarket[mk]) byMarket[mk] = { n: 0, wins: 0, pnl: 0, staked: 0 };
     byMarket[mk].n++;
-    byMarket[mk].staked += b.units || 1;
+    byMarket[mk].staked += b.stake_dollars || roundToFive((b.units||1)*20);
     byMarket[mk].pnl += b.pnl || 0;
     if (b.result === "win") byMarket[mk].wins++;
   });
@@ -737,7 +741,7 @@ function renderTracker() {
   html += trackerStat(bets.length, "Total Plays", "var(--accent)");
   html += trackerStat(pending.length, "Pending", "var(--gold)");
   html += trackerStat(settled.length > 0 ? winRate.toFixed(0)+"%" : "—", "Win Rate", winRate >= 50 ? "var(--green)" : "var(--orange)");
-  html += trackerStat(staked > 0 ? (totalPnl >= 0 ? "+" : "") + totalPnl.toFixed(2) + "u" : "—", "P&L", totalPnl >= 0 ? "var(--green)" : "var(--red)");
+  html += trackerStat(staked > 0 ? (totalPnl >= 0 ? "+" : "") + "$" + totalPnl.toFixed(0) : "—", "P&L", totalPnl >= 0 ? "var(--green)" : "var(--red)");
   html += trackerStat(staked > 0 ? (roi >= 0 ? "+" : "") + roi.toFixed(1) + "%" : "—", "ROI", roi >= 0 ? "var(--green)" : "var(--red)");
   html += `</div>`;
 
@@ -755,7 +759,7 @@ function renderTracker() {
         <div class="roi-bar-track">
           <div class="roi-bar-fill" style="width:${barPct}%;background:${barColor}"></div>
         </div>
-        <span class="roi-bar-val" style="color:${barColor}">${stats.pnl >= 0 ? "+" : ""}${stats.pnl.toFixed(2)}u</span>
+        <span class="roi-bar-val" style="color:${barColor}">${stats.pnl >= 0 ? "+" : ""}$${Math.abs(stats.pnl).toFixed(0)}</span>
       </div>`;
     }
     html += `</div>`;
@@ -780,8 +784,9 @@ function renderBetTable(bets, showResultPicker) {
   const rows = bets.map(b => {
     const dateStr = b.date ? new Date(b.date).toLocaleDateString("en-AU", {weekday:"short", month:"short", day:"numeric"}) : "—";
     const ratingEmoji = b.rating?.includes("STRONG") ? "🔥" : b.rating?.includes("GOOD") ? "✅" : "👀";
+    const stakeDisplay = b.stake_dollars ? `$${b.stake_dollars}` : (b.units ? `$${roundToFive(b.units*20)}` : "—");
     const pnlHtml = b.pnl !== null
-      ? `<span class="${b.pnl >= 0 ? "pnl-pos" : "pnl-neg"}">${b.pnl >= 0 ? "+" : ""}${b.pnl.toFixed(2)}u</span>`
+      ? `<span class="${b.pnl >= 0 ? "pnl-pos" : "pnl-neg"}">${b.pnl >= 0 ? "+" : ""}$${Math.abs(b.pnl).toFixed(0)}</span>`
       : `<span class="pnl-neu">—</span>`;
 
     const resultHtml = showResultPicker
@@ -801,7 +806,7 @@ function renderBetTable(bets, showResultPicker) {
       <td style="color:var(--gold)">${b.market}</td>
       <td>${ratingEmoji} <span style="font-size:11px;color:var(--muted)">${b.edge ? "+"+b.edge.toFixed(1)+"%" : "—"}</span></td>
       <td>${b.odds ? b.odds.toFixed(2) : "—"}</td>
-      <td>${b.units ? b.units.toFixed(2)+"u" : "—"}</td>
+      <td>${stakeDisplay}</td>
       <td>${pnlHtml}</td>
       <td>${resultHtml}</td>
     </tr>`;
@@ -1001,8 +1006,8 @@ function renderValueBets(preds) {
             <div class="lbl">MARKET</div>
           </div>
           <div class="vb-stat">
-            <div class="val" style="color:var(--gold)">${bet.kelly_pct?.toFixed(1)||"—"}%</div>
-            <div class="lbl">KELLY</div>
+            <div class="val" style="color:var(--gold)">$${bet.kelly_pct ? roundToFive(bet.kelly_pct * 20) : "—"}</div>
+            <div class="lbl">STAKE</div>
           </div>
         </div>
       </div>
