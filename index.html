@@ -392,6 +392,107 @@
   }
   .scoreline-pill .score { font-weight: 700; color: var(--text); }
   .scoreline-pill .pct   { color: var(--muted); margin-left: 4px; }
+
+  /* ── Value Bet Tracker ── */
+  .tracker-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .tracker-stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .tracker-stat .ts-val { font-size: 22px; font-weight: 700; }
+  .tracker-stat .ts-lbl { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  .tracker-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+  .tracker-table th {
+    text-align: left;
+    padding: 8px 12px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .tracker-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(30,45,69,0.5);
+    vertical-align: middle;
+  }
+  .tracker-table tr:last-child td { border-bottom: none; }
+  .tracker-table tr:hover td { background: rgba(59,130,246,0.04); }
+
+  .result-badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.15s;
+  }
+  .result-badge:hover { opacity: 0.8; }
+  .rb-win     { background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .rb-loss    { background: rgba(239,68,68,0.12);  color: var(--red);   border: 1px solid rgba(239,68,68,0.25); }
+  .rb-pending { background: var(--surface2); color: var(--muted); border: 1px solid var(--border); }
+  .rb-void    { background: rgba(100,116,139,0.15); color: var(--muted); border: 1px solid var(--border); }
+
+  .pnl-pos { color: var(--green); font-weight: 700; }
+  .pnl-neg { color: var(--red);   font-weight: 700; }
+  .pnl-neu { color: var(--muted); }
+
+  .tracker-section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+  }
+
+  .result-select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .result-select:focus { outline: 1px solid var(--accent); }
+
+  .tracker-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+  }
+
+  .roi-chart {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .roi-chart-title { font-size: 12px; color: var(--muted); margin-bottom: 10px; font-weight: 600; }
+  .roi-bar-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .roi-bar-label { font-size: 11px; color: var(--muted); width: 80px; flex-shrink: 0; text-align: right; }
+  .roi-bar-track { flex: 1; height: 10px; background: var(--surface2); border-radius: 5px; overflow: hidden; }
+  .roi-bar-fill { height: 100%; border-radius: 5px; transition: width 0.4s ease; }
+  .roi-bar-val { font-size: 11px; font-weight: 700; width: 50px; flex-shrink: 0; }
 </style>
 </head>
 <body>
@@ -461,13 +562,8 @@
 
   <!-- RESULTS TAB -->
   <div id="tab-results" class="tab-content">
-    <div class="section-title">🎯 Model Performance Tracking</div>
-    <div id="resultsContent">
-      <div class="loading">
-        <div class="spinner"></div>
-        Loading results...
-      </div>
-    </div>
+    <div class="section-title">🎯 Value Bet Tracker</div>
+    <div id="resultsContent"></div>
   </div>
 
 </div>
@@ -477,7 +573,6 @@
 // Replace this URL with your GitHub raw URL for predictions/latest.json
 // OR your Netlify API endpoint
 const PREDICTIONS_URL = "https://raw.githubusercontent.com/ben79sf-del/worldcup-model/main/predictions/latest.json";
-const RESULTS_URL = "https://raw.githubusercontent.com/ben79sf-del/worldcup-model/main/predictions/results_log.json";
 
 const WC_GROUPS = {
   A: ["Mexico","South Africa","South Korea","Czechia"],
@@ -517,6 +612,7 @@ function showTab(tabId, btn) {
   document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
   document.getElementById(`tab-${tabId}`).classList.add("active");
   btn.classList.add("active");
+  if (tabId === "results") renderTracker();
 }
 
 // ── Data Loading ────────────────────────────────────────────────────────────
@@ -528,140 +624,212 @@ async function loadData() {
     const data = await res.json();
     allPredictions = data.predictions || [];
     renderAll(data);
+    syncValueBetsToTracker(allPredictions);
   } catch(e) {
     // Use demo data when no live feed
     allPredictions = generateDemoData();
     renderAll({ predictions: allPredictions, generated_at: new Date().toISOString() });
-  }
-
-  loadResults();
-}
-
-// ── Results Tracking ─────────────────────────────────────────────────────────
-async function loadResults() {
-  const container = document.getElementById("resultsContent");
-  try {
-    const res  = await fetch(RESULTS_URL + "?t=" + Date.now());
-    if (!res.ok) throw new Error("not found");
-    const data = await res.json();
-    renderResults(data);
-  } catch(e) {
-    container.innerHTML = `<div class="empty">
-      \u23f3 No results yet \u2014 check back once World Cup matches start finishing.<br>
-      Results are scored automatically each time the daily pipeline runs after matches conclude.
-    </div>`;
+    syncValueBetsToTracker(allPredictions);
   }
 }
 
-function renderResults(data) {
-  const container = document.getElementById("resultsContent");
-  const summary = data.summary || {};
-  const results = data.results || [];
+// ── Value Bet Tracker ────────────────────────────────────────────────────────
+// Tracker state — persisted in localStorage so results survive page refresh
+const TRACKER_KEY = "wc2026_vb_tracker_v1";
 
-  if (!summary.total_matches) {
-    container.innerHTML = `<div class="empty">
-      \u23f3 No matches scored yet \u2014 check back once World Cup matches start finishing.
+function loadTrackerState() {
+  try { return JSON.parse(localStorage.getItem(TRACKER_KEY) || "{}"); } catch { return {}; }
+}
+function saveTrackerState(state) {
+  localStorage.setItem(TRACKER_KEY, JSON.stringify(state));
+}
+
+// Called after predictions load — syncs any new value bets into tracker
+function syncValueBetsToTracker(preds) {
+  const state = loadTrackerState();
+  let changed = false;
+
+  preds.forEach(pred => {
+    (pred.value_bets || []).forEach(bet => {
+      const id = `${pred.match_meta?.date||""}|${pred.home_team}|${pred.away_team}|${bet.market}`;
+      if (!state[id]) {
+        state[id] = {
+          id,
+          date: pred.match_meta?.date || "",
+          home: pred.home_team,
+          away: pred.away_team,
+          group: pred.match_meta?.group || "",
+          market: bet.market,
+          rating: bet.rating || "",
+          odds: bet.best_odds || null,
+          edge: bet.edge_pct || null,
+          kelly: bet.kelly_pct || null,
+          result: "pending",   // pending | win | loss | void
+          units: bet.kelly_pct ? +(bet.kelly_pct).toFixed(2) : 1,
+          pnl: null,
+          added: new Date().toISOString(),
+        };
+        changed = true;
+      }
+    });
+  });
+
+  if (changed) saveTrackerState(state);
+  renderTracker();
+}
+
+function setResult(id, result) {
+  const state = loadTrackerState();
+  if (!state[id]) return;
+  state[id].result = result;
+  if (result === "win") {
+    const stake = state[id].units || 1;
+    const odds = state[id].odds || 2.0;
+    state[id].pnl = +(stake * (odds - 1)).toFixed(3);
+  } else if (result === "loss") {
+    state[id].pnl = -(state[id].units || 1);
+  } else {
+    state[id].pnl = null;
+  }
+  saveTrackerState(state);
+  renderTracker();
+}
+
+function renderTracker() {
+  const container = document.getElementById("resultsContent");
+  const state = loadTrackerState();
+  const bets = Object.values(state).sort((a, b) => (a.date||"").localeCompare(b.date||"") || a.home.localeCompare(b.home));
+
+  if (!bets.length) {
+    container.innerHTML = `<div class="tracker-empty">
+      ⏳ No value bets tracked yet.<br>
+      <span style="font-size:12px;margin-top:8px;display:block">Value bets will appear here automatically once the model finds recommended plays.</span>
     </div>`;
     return;
   }
 
-  const acc = (summary["1x2_accuracy"] * 100).toFixed(1);
-  const totAcc = (summary.totals_accuracy * 100).toFixed(1);
-  const bttsAcc = (summary.btts_accuracy * 100).toFixed(1);
-  const brier = summary.avg_brier_score.toFixed(4);
-  const vb = summary.value_bets || {};
+  // Split into pending vs settled
+  const pending  = bets.filter(b => b.result === "pending");
+  const settled  = bets.filter(b => b.result !== "pending");
+  const wins     = settled.filter(b => b.result === "win");
+  const losses   = settled.filter(b => b.result === "loss");
+  const totalPnl = settled.reduce((s, b) => s + (b.pnl || 0), 0);
+  const staked   = settled.filter(b => b.result !== "void").reduce((s, b) => s + (b.units || 1), 0);
+  const roi      = staked > 0 ? (totalPnl / staked * 100) : 0;
+  const winRate  = settled.filter(b => b.result !== "void").length > 0
+    ? wins.length / settled.filter(b => b.result !== "void").length * 100 : 0;
 
-  // Headline stat cards
-  let html = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:24px">`;
+  // By-market breakdown
+  const byMarket = {};
+  settled.filter(b => b.result !== "void").forEach(b => {
+    const mk = b.market.includes("Win") ? "1X2" : b.market.includes("Draw") ? "1X2" : b.market.includes("2.5") ? "Totals" : b.market.includes("BTTS") ? "BTTS" : "Other";
+    if (!byMarket[mk]) byMarket[mk] = { n: 0, wins: 0, pnl: 0, staked: 0 };
+    byMarket[mk].n++;
+    byMarket[mk].staked += b.units || 1;
+    byMarket[mk].pnl += b.pnl || 0;
+    if (b.result === "win") byMarket[mk].wins++;
+  });
 
-  html += statCard("Matches Scored", summary.total_matches, "var(--accent)");
-  html += statCard("1X2 Accuracy", acc + "%", acc >= 40 ? "var(--green)" : "var(--orange)",
-                    `${summary["1x2_correct"]}/${summary.total_matches} correct \u2014 baseline ~33%`);
-  html += statCard("Brier Score", brier, brier <= 0.6 ? "var(--green)" : "var(--orange)",
-                    "Lower = better (0.667 = baseline)");
-  html += statCard("Totals (O/U 2.5)", totAcc + "%", totAcc >= 50 ? "var(--green)" : "var(--orange)");
-  html += statCard("BTTS Accuracy", bttsAcc + "%", bttsAcc >= 50 ? "var(--green)" : "var(--orange)");
+  let html = ``;
 
+  // ── Summary stats ──
+  html += `<div class="tracker-summary">`;
+  html += trackerStat(bets.length, "Total Plays", "var(--accent)");
+  html += trackerStat(pending.length, "Pending", "var(--gold)");
+  html += trackerStat(settled.length > 0 ? winRate.toFixed(0)+"%" : "—", "Win Rate", winRate >= 50 ? "var(--green)" : "var(--orange)");
+  html += trackerStat(staked > 0 ? (totalPnl >= 0 ? "+" : "") + totalPnl.toFixed(2) + "u" : "—", "P&L", totalPnl >= 0 ? "var(--green)" : "var(--red)");
+  html += trackerStat(staked > 0 ? (roi >= 0 ? "+" : "") + roi.toFixed(1) + "%" : "—", "ROI", roi >= 0 ? "var(--green)" : "var(--red)");
   html += `</div>`;
 
-  // Value bet performance
-  if (vb.total_bets) {
-    const roiColor = vb.roi_pct >= 0 ? "var(--green)" : "var(--red)";
-    html += `<div class="section-title">\ud83d\udcb0 Value Bet Performance</div>`;
-    html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:24px">`;
-    html += statCard("Total Bets", vb.total_bets, "var(--accent)");
-    html += statCard("Win Rate", (vb.win_rate*100).toFixed(1) + "%", "var(--accent)");
-    html += statCard("Total P&L", (vb.total_pnl_units >= 0 ? "+" : "") + vb.total_pnl_units.toFixed(2) + " units", roiColor);
-    html += statCard("ROI", (vb.roi_pct >= 0 ? "+" : "") + vb.roi_pct.toFixed(1) + "%", roiColor,
-                      "Per unit staked, flat 1u bets");
-    html += `</div>`;
-
-    // By rating breakdown
-    if (vb.by_rating && Object.keys(vb.by_rating).length) {
-      html += `<div class="group-card" style="margin-bottom:24px">
-        <div class="group-header">Performance by Bet Rating</div>`;
-      for (const [rating, stats] of Object.entries(vb.by_rating)) {
-        const rColor = stats.roi_pct >= 0 ? "var(--green)" : "var(--red)";
-        html += `<div class="group-team">
-          <span>${rating} (${stats.n_bets} bets)</span>
-          <span style="color:${rColor}">
-            ${stats.win_rate.toFixed ? (stats.win_rate*100).toFixed(0) : (stats.win_rate*100)}% win
-            \u2022 ${stats.roi_pct >= 0 ? "+" : ""}${stats.roi_pct.toFixed(1)}% ROI
-          </span>
-        </div>`;
-      }
-      html += `</div>`;
-    }
-  }
-
-  // By group breakdown
-  if (summary.by_group && Object.keys(summary.by_group).length) {
-    html += `<div class="section-title">\ud83c\udfc6 Accuracy by Group</div>`;
-    html += `<div class="group-grid" style="margin-bottom:24px">`;
-    for (const [group, stats] of Object.entries(summary.by_group)) {
-      const groupAcc = stats.n ? (stats.correct / stats.n * 100).toFixed(0) : 0;
-      html += `<div class="group-card">
-        <div class="group-header">${group.replace("GROUP_","Group ")}</div>
-        <div class="group-team">
-          <span>${stats.correct}/${stats.n} correct</span>
-          <span class="team-elo">${groupAcc}%</span>
+  // ── By-market bars ──
+  if (Object.keys(byMarket).length > 1) {
+    html += `<div class="roi-chart">
+      <div class="roi-chart-title">P&L BY MARKET TYPE</div>`;
+    const maxAbs = Math.max(...Object.values(byMarket).map(m => Math.abs(m.pnl)), 0.01);
+    for (const [mk, stats] of Object.entries(byMarket)) {
+      const mkRoi = stats.staked > 0 ? (stats.pnl / stats.staked * 100) : 0;
+      const barPct = Math.min(100, Math.abs(stats.pnl) / maxAbs * 100);
+      const barColor = stats.pnl >= 0 ? "var(--green)" : "var(--red)";
+      html += `<div class="roi-bar-wrap">
+        <span class="roi-bar-label">${mk}</span>
+        <div class="roi-bar-track">
+          <div class="roi-bar-fill" style="width:${barPct}%;background:${barColor}"></div>
         </div>
+        <span class="roi-bar-val" style="color:${barColor}">${stats.pnl >= 0 ? "+" : ""}${stats.pnl.toFixed(2)}u</span>
       </div>`;
     }
     html += `</div>`;
   }
 
-  // Recent results
-  if (results.length) {
-    html += `<div class="section-title">\ud83d\udccb Recent Match Results</div>`;
-    const recent = [...results].reverse().slice(0, 15);
-    for (const r of recent) {
-      const icon = r.scored_1x2.correct ? "\u2705" : "\u274c";
-      const vbResults = r.value_bets_results || [];
-      let vbHtml = "";
-      if (vbResults.length) {
-        vbHtml = vbResults.map(b => {
-          const color = b.won ? "var(--green)" : "var(--red)";
-          return `<span class="stat-pill" style="color:${color}">
-            ${b.market} ${b.won ? "\u2713" : "\u2717"} (${b.pnl_units >= 0 ? "+" : ""}${b.pnl_units.toFixed(2)}u)
-          </span>`;
-        }).join("");
-      }
+  // ── Pending bets ──
+  if (pending.length) {
+    html += `<div class="tracker-section-title">⏳ Awaiting Result (${pending.length})</div>`;
+    html += renderBetTable(pending, true);
+  }
 
-      html += `<div class="value-bet-card ${r.scored_1x2.correct ? 'good' : 'watch'}">
-        <div>
-          <div class="vb-match">${icon} ${r.home_team} ${r.score} ${r.away_team}</div>
-          <div class="vb-meta">${r.date}${r.group ? " \u2022 Group "+r.group.replace("GROUP_","") : ""}
-            \u2014 Predicted: ${r.scored_1x2.predicted_outcome}, Actual: ${r.scored_1x2.actual_outcome}
-            (Brier: ${r.scored_1x2.brier_score.toFixed(3)})
-          </div>
-          ${vbHtml ? `<div class="match-stats" style="margin-top:8px">${vbHtml}</div>` : ""}
-        </div>
-      </div>`;
-    }
+  // ── Settled bets ──
+  if (settled.length) {
+    html += `<div class="tracker-section-title">✅ Settled (${settled.length})</div>`;
+    html += renderBetTable(settled, false);
   }
 
   container.innerHTML = html;
+}
+
+function renderBetTable(bets, showResultPicker) {
+  const rows = bets.map(b => {
+    const dateStr = b.date ? new Date(b.date).toLocaleDateString("en-AU", {weekday:"short", month:"short", day:"numeric"}) : "—";
+    const ratingEmoji = b.rating?.includes("STRONG") ? "🔥" : b.rating?.includes("GOOD") ? "✅" : "👀";
+    const pnlHtml = b.pnl !== null
+      ? `<span class="${b.pnl >= 0 ? "pnl-pos" : "pnl-neg"}">${b.pnl >= 0 ? "+" : ""}${b.pnl.toFixed(2)}u</span>`
+      : `<span class="pnl-neu">—</span>`;
+
+    const resultHtml = showResultPicker
+      ? `<select class="result-select" onchange="setResult('${b.id.replace(/'/g,"\\'")}', this.value)">
+          <option value="pending" ${b.result==="pending"?"selected":""}>Pending</option>
+          <option value="win"  ${b.result==="win"?"selected":""}>Win ✓</option>
+          <option value="loss" ${b.result==="loss"?"selected":""}>Loss ✗</option>
+          <option value="void" ${b.result==="void"?"selected":""}>Void</option>
+        </select>`
+      : `<button class="result-badge rb-${b.result}" onclick="toggleResult('${b.id.replace(/'/g,"\\'")}')">
+          ${b.result === "win" ? "✓ Win" : b.result === "loss" ? "✗ Loss" : "Void"}
+        </button>`;
+
+    return `<tr>
+      <td style="color:var(--muted);font-size:11px">${dateStr}</td>
+      <td><strong>${b.home}</strong> vs <strong>${b.away}</strong>${b.group ? `<span style="font-size:10px;color:var(--muted);margin-left:6px">Grp ${b.group.replace("GROUP_","")}</span>` : ""}</td>
+      <td style="color:var(--gold)">${b.market}</td>
+      <td>${ratingEmoji} <span style="font-size:11px;color:var(--muted)">${b.edge ? "+"+b.edge.toFixed(1)+"%" : "—"}</span></td>
+      <td>${b.odds ? b.odds.toFixed(2) : "—"}</td>
+      <td>${b.units ? b.units.toFixed(2)+"u" : "—"}</td>
+      <td>${pnlHtml}</td>
+      <td>${resultHtml}</td>
+    </tr>`;
+  }).join("");
+
+  return `<div style="overflow-x:auto">
+    <table class="tracker-table">
+      <thead><tr>
+        <th>Date</th><th>Match</th><th>Bet</th><th>Edge</th><th>Odds</th><th>Stake</th><th>P&L</th><th>Result</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>`;
+}
+
+function toggleResult(id) {
+  const state = loadTrackerState();
+  if (!state[id]) return;
+  // Cycle: win → loss → void → win
+  const cycle = { win: "loss", loss: "void", void: "win" };
+  setResult(id, cycle[state[id].result] || "win");
+}
+
+function trackerStat(value, label, color) {
+  return `<div class="tracker-stat">
+    <div class="ts-val" style="color:${color}">${value}</div>
+    <div class="ts-lbl">${label}</div>
+  </div>`;
 }
 
 function statCard(label, value, color, subtitle) {
