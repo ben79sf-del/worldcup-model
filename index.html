@@ -926,6 +926,15 @@ function renderValueBets(preds) {
     }
   });
 
+  // Drop matches that have already passed (date before today)
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const upcomingBets = allBets.filter(b => {
+    const d = b.meta?.date || b.date || "";
+    return !d || d >= todayStr;
+  });
+  allBets.length = 0;
+  upcomingBets.forEach(b => allBets.push(b));
+
   // Sort: date first, then BTTS signals after real value bets on same day
   allBets.sort((a,b) => {
     const dateA = a.meta?.date || a.date || "9999-12-31";
