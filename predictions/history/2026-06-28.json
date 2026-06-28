@@ -1,0 +1,426 @@
+{
+  "generated_at": "2026-06-28T07:31:04.107514",
+  "tournament": "FIFA World Cup 2026",
+  "total_fixtures": 3,
+  "total_value_bets": 3,
+  "predictions": [
+    {
+      "home_team": "Brazil",
+      "away_team": "Japan",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-06-29",
+        "time": "17:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537423
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 1.2049,
+        "lambda_away": 0.8748,
+        "expected_total": 2.0797,
+        "p_home_win": 0.4071,
+        "p_draw": 0.3549,
+        "p_away_win": 0.2379,
+        "p_over_2_5": 0.34488860035333635,
+        "p_under_2_5": 0.6551113996466637,
+        "p_over_3_5": 0.15753755331374802,
+        "p_btts": 0.4083,
+        "p_no_btts": 0.5917,
+        "most_likely_score": "1-1",
+        "top_scorelines": [
+          {
+            "score": "1-1",
+            "probability": 0.1613
+          },
+          {
+            "score": "0-0",
+            "probability": 0.1546
+          },
+          {
+            "score": "1-0",
+            "probability": 0.121
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0907
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0797
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0794
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.0645,
+            "push": 0.0,
+            "away_cover": 0.9355
+          },
+          "home_-2.0": {
+            "home_cover": 0.0645,
+            "push": 0.1271,
+            "away_cover": 0.8084
+          },
+          "home_-1.5": {
+            "home_cover": 0.1916,
+            "push": 0.0,
+            "away_cover": 0.8084
+          },
+          "home_-1.0": {
+            "home_cover": 0.1916,
+            "push": 0.2156,
+            "away_cover": 0.5929
+          },
+          "home_-0.5": {
+            "home_cover": 0.4071,
+            "push": 0.0,
+            "away_cover": 0.5929
+          },
+          "home_+0.0": {
+            "home_cover": 0.4071,
+            "push": 0.3549,
+            "away_cover": 0.2379
+          },
+          "home_+0.5": {
+            "home_cover": 0.7621,
+            "push": 0.0,
+            "away_cover": 0.2379
+          },
+          "home_+1.0": {
+            "home_cover": 0.7621,
+            "push": 0.1484,
+            "away_cover": 0.0895
+          },
+          "home_+1.5": {
+            "home_cover": 0.9105,
+            "push": 0.0,
+            "away_cover": 0.0895
+          },
+          "home_+2.0": {
+            "home_cover": 0.9105,
+            "push": 0.067,
+            "away_cover": 0.0225
+          },
+          "home_+2.5": {
+            "home_cover": 0.9775,
+            "push": 0.0,
+            "away_cover": 0.0225
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": 146,
+        "draw_american": 182,
+        "away_win_american": 320,
+        "home_win_decimal": 2.456,
+        "draw_decimal": 2.818,
+        "away_win_decimal": 4.203,
+        "over_2_5_decimal": 2.899,
+        "under_2_5_decimal": 1.526
+      },
+      "value_bets": [
+        {
+          "market": "Under 2.5",
+          "model_prob": 0.6551,
+          "market_prob": 0.5455,
+          "edge_pct": 20.1,
+          "best_odds": 1.8333,
+          "kelly_pct": 5.0,
+          "ev_per_unit": 0.201,
+          "rating": "\ud83d\udd25 STRONG",
+          "kelly_pct_raw": 5.0,
+          "daily_cap_applied": false,
+          "match": "Brazil vs Japan",
+          "date": "2026-06-29"
+        },
+        {
+          "market": "BTTS No",
+          "model_prob": 0.5917,
+          "market_prob": 0.5428,
+          "edge_pct": 15.38,
+          "best_odds": 1.95,
+          "kelly_pct": 4.05,
+          "ev_per_unit": 0.1538,
+          "rating": "\ud83d\udd25 STRONG",
+          "kelly_pct_raw": 4.05,
+          "daily_cap_applied": false,
+          "match": "Brazil vs Japan",
+          "date": "2026-06-29"
+        }
+      ],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.4071,
+          "market_prob": 0.563,
+          "edge_pct": -27.69,
+          "best_odds": 1.7299
+        },
+        "draw": {
+          "model_prob": 0.3549,
+          "market_prob": 0.2527,
+          "edge_pct": 40.44,
+          "best_odds": 4.0
+        },
+        "away_win": {
+          "model_prob": 0.2379,
+          "market_prob": 0.1842,
+          "edge_pct": 29.15,
+          "best_odds": 5.6
+        },
+        "over_2.5": {
+          "model_prob": 0.34488860035333635,
+          "market_prob": 0.4831,
+          "edge_pct": -28.61,
+          "best_odds": 2.07
+        }
+      },
+      "generated_at": "2026-06-28T07:31:04.060465",
+      "market_odds": {
+        "1x2": {
+          "home": 1.73,
+          "draw": 4.0,
+          "away": 5.6
+        },
+        "totals": {
+          "line": 2.5,
+          "over": 2.07,
+          "under": 1.83
+        },
+        "btts": {
+          "yes": 2.01,
+          "no": 1.95
+        }
+      },
+      "confidence": "LOW",
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Under 2.5 @ 1.8333 (+20.1% edge)"
+    },
+    {
+      "home_team": "Netherlands",
+      "away_team": "Morocco",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-06-30",
+        "time": "01:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537418
+      },
+      "model": {
+        "source": "elo_fallback",
+        "lambda_home": 1.5542,
+        "lambda_away": 1.3458,
+        "expected_total": 2.9,
+        "p_home_win": 0.4009,
+        "p_draw": 0.2519,
+        "p_away_win": 0.3472,
+        "p_over_2_5": 0.554,
+        "p_under_2_5": 0.446,
+        "p_over_3_5": 0,
+        "p_btts": 0.5833,
+        "p_no_btts": 0.4167,
+        "most_likely_score": "",
+        "top_scorelines": [],
+        "asian_handicap": {}
+      },
+      "fair_odds": {
+        "home_win_american": 149,
+        "draw_american": 297,
+        "away_win_american": 188,
+        "home_win_decimal": 2.494,
+        "draw_decimal": 3.97,
+        "away_win_decimal": 2.88,
+        "over_2_5_decimal": 1.805,
+        "under_2_5_decimal": 2.242
+      },
+      "value_bets": [
+        {
+          "market": "BTTS Yes",
+          "model_prob": 0.5833,
+          "market_prob": 0.5327,
+          "edge_pct": 14.33,
+          "best_odds": 1.96,
+          "kelly_pct": 3.73,
+          "ev_per_unit": 0.1433,
+          "rating": "\ud83d\udd25 STRONG",
+          "kelly_pct_raw": 3.73,
+          "daily_cap_applied": false,
+          "match": "Netherlands vs Morocco",
+          "date": "2026-06-30"
+        }
+      ],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.4009,
+          "market_prob": 0.4428,
+          "edge_pct": -9.46,
+          "best_odds": 2.22
+        },
+        "draw": {
+          "model_prob": 0.2519,
+          "market_prob": 0.3058,
+          "edge_pct": -17.63,
+          "best_odds": 3.25
+        },
+        "away_win": {
+          "model_prob": 0.3472,
+          "market_prob": 0.2514,
+          "edge_pct": 38.11,
+          "best_odds": 4.1
+        }
+      },
+      "generated_at": "2026-06-28T07:31:04.066115",
+      "market_odds": {
+        "1x2": {
+          "home": 2.22,
+          "draw": 3.25,
+          "away": 4.1
+        },
+        "totals": {
+          "line": 2.25,
+          "over": 1.99,
+          "under": 1.9
+        },
+        "btts": {
+          "yes": 1.96,
+          "no": 2.0
+        }
+      },
+      "confidence": "LOW",
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 BTTS Yes @ 1.96 (+14.3% edge)"
+    },
+    {
+      "home_team": "USA",
+      "away_team": "Bosnia and Herzegovina",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-07-02",
+        "time": "00:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537421
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 1.9679,
+        "lambda_away": 1.0151,
+        "expected_total": 2.9831,
+        "p_home_win": 0.5724,
+        "p_draw": 0.2606,
+        "p_away_win": 0.167,
+        "p_over_2_5": 0.5729126651828932,
+        "p_under_2_5": 0.4270873348171068,
+        "p_over_3_5": 0.3488340089227954,
+        "p_btts": 0.5485,
+        "p_no_btts": 0.4515,
+        "most_likely_score": "1-1",
+        "top_scorelines": [
+          {
+            "score": "1-1",
+            "probability": 0.1239
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0996
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0981
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0769
+          },
+          {
+            "score": "0-0",
+            "probability": 0.0734
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0653
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.1746,
+            "push": 0.0,
+            "away_cover": 0.8254
+          },
+          "home_-2.0": {
+            "home_cover": 0.1746,
+            "push": 0.1821,
+            "away_cover": 0.6433
+          },
+          "home_-1.5": {
+            "home_cover": 0.3567,
+            "push": 0.0,
+            "away_cover": 0.6433
+          },
+          "home_-1.0": {
+            "home_cover": 0.3567,
+            "push": 0.2158,
+            "away_cover": 0.4276
+          },
+          "home_-0.5": {
+            "home_cover": 0.5724,
+            "push": 0.0,
+            "away_cover": 0.4276
+          },
+          "home_+0.0": {
+            "home_cover": 0.5724,
+            "push": 0.2606,
+            "away_cover": 0.167
+          },
+          "home_+0.5": {
+            "home_cover": 0.833,
+            "push": 0.0,
+            "away_cover": 0.167
+          },
+          "home_+1.0": {
+            "home_cover": 0.833,
+            "push": 0.1003,
+            "away_cover": 0.0667
+          },
+          "home_+1.5": {
+            "home_cover": 0.9333,
+            "push": 0.0,
+            "away_cover": 0.0667
+          },
+          "home_+2.0": {
+            "home_cover": 0.9333,
+            "push": 0.0484,
+            "away_cover": 0.0183
+          },
+          "home_+2.5": {
+            "home_cover": 0.9817,
+            "push": 0.0,
+            "away_cover": 0.0183
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": -134,
+        "draw_american": 284,
+        "away_win_american": 499,
+        "home_win_decimal": 1.747,
+        "draw_decimal": 3.837,
+        "away_win_decimal": 5.988,
+        "over_2_5_decimal": 1.745,
+        "under_2_5_decimal": 2.341
+      },
+      "value_bets": [],
+      "market_comparison": {},
+      "generated_at": "2026-06-28T07:31:04.106330",
+      "market_odds": {},
+      "confidence": "MEDIUM",
+      "bet_recommendation": "No value identified"
+    }
+  ]
+}
