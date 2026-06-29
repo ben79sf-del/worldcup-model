@@ -1,30 +1,18 @@
 {
-  "date": "2026-06-28",
-  "generated": "2026-06-28T07:31:04.107514",
-  "count": 3,
+  "date": "2026-06-29",
+  "generated": "2026-06-29T07:34:14.411161",
+  "count": 2,
   "value_bets": [
     {
       "match": "Brazil vs Japan",
       "date": "2026-06-29",
       "group": null,
-      "market": "Under 2.5",
-      "edge_pct": 20.1,
-      "model_prob": 0.6551,
-      "market_prob": 0.5455,
-      "best_odds": 1.8333,
-      "kelly_pct": 5.0,
-      "rating": "\ud83d\udd25 STRONG"
-    },
-    {
-      "match": "Brazil vs Japan",
-      "date": "2026-06-29",
-      "group": null,
       "market": "BTTS No",
-      "edge_pct": 15.38,
+      "edge_pct": 17.16,
       "model_prob": 0.5917,
-      "market_prob": 0.5428,
-      "best_odds": 1.95,
-      "kelly_pct": 4.05,
+      "market_prob": 0.5563,
+      "best_odds": 1.98,
+      "kelly_pct": 4.38,
       "rating": "\ud83d\udd25 STRONG"
     },
     {
@@ -32,11 +20,11 @@
       "date": "2026-06-30",
       "group": null,
       "market": "BTTS Yes",
-      "edge_pct": 14.33,
+      "edge_pct": 11.99,
       "model_prob": 0.5833,
-      "market_prob": 0.5327,
-      "best_odds": 1.96,
-      "kelly_pct": 3.73,
+      "market_prob": 0.5401,
+      "best_odds": 1.92,
+      "kelly_pct": 3.26,
       "rating": "\ud83d\udd25 STRONG"
     }
   ]
