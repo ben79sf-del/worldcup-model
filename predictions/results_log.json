@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T07:31:12.087851",
+  "last_updated": "2026-06-30T07:23:04.317983",
   "matches_scored": [
     537327,
     537328,
@@ -72,7 +72,9 @@
     537411,
     537412,
     537413,
-    537414
+    537414,
+    537418,
+    537423
   ],
   "results": [
     {
@@ -2575,17 +2577,85 @@
         }
       ],
       "scored_at": "2026-06-28T07:31:12.087691"
+    },
+    {
+      "fixture_id": 537423,
+      "date": "2026-06-29",
+      "home_team": "Brazil",
+      "away_team": "Japan",
+      "score": "2-1",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.5341,
+        "model_probs": {
+          "home": 0.4071,
+          "draw": 0.3549,
+          "away": 0.2379
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3449,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4083
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-30T07:23:04.207748"
+    },
+    {
+      "fixture_id": 537418,
+      "date": "2026-06-30",
+      "home_team": "Netherlands",
+      "away_team": "Morocco",
+      "score": "3-4",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "A",
+        "correct": false,
+        "brier_score": 0.6503,
+        "model_probs": {
+          "home": 0.4009,
+          "draw": 0.2519,
+          "away": 0.3472
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.554,
+        "actual_total_goals": 7
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.5833
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-30T07:23:04.317777"
     }
   ],
   "summary": {
-    "total_matches": 72,
-    "1x2_correct": 45,
-    "1x2_accuracy": 0.625,
-    "avg_brier_score": 0.5371,
-    "totals_correct": 34,
-    "totals_accuracy": 0.4722,
-    "btts_correct": 39,
-    "btts_accuracy": 0.5417,
+    "total_matches": 74,
+    "1x2_correct": 46,
+    "1x2_accuracy": 0.6216,
+    "avg_brier_score": 0.5386,
+    "totals_correct": 35,
+    "totals_accuracy": 0.473,
+    "btts_correct": 40,
+    "btts_accuracy": 0.5405,
     "value_bets": {
       "total_bets": 6,
       "wins": 3,
@@ -2657,21 +2727,13 @@
       "GROUP_L": {
         "n": 6,
         "correct": 4
+      },
+      "null": {
+        "n": 2,
+        "correct": 1
       }
     },
     "last_5_results": [
-      {
-        "match": "Croatia 2-1 Ghana",
-        "predicted": "H",
-        "actual": "H",
-        "correct": true
-      },
-      {
-        "match": "Colombia 0-0 Portugal",
-        "predicted": "D",
-        "actual": "D",
-        "correct": true
-      },
       {
         "match": "Congo DR 3-1 Uzbekistan",
         "predicted": "D",
@@ -2689,6 +2751,18 @@
         "predicted": "D",
         "actual": "D",
         "correct": true
+      },
+      {
+        "match": "Brazil 2-1 Japan",
+        "predicted": "H",
+        "actual": "H",
+        "correct": true
+      },
+      {
+        "match": "Netherlands 3-4 Morocco",
+        "predicted": "H",
+        "actual": "A",
+        "correct": false
       }
     ]
   }
