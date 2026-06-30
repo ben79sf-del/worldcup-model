@@ -1,31 +1,6 @@
 {
-  "date": "2026-06-29",
-  "generated": "2026-06-29T07:34:14.411161",
-  "count": 2,
-  "value_bets": [
-    {
-      "match": "Brazil vs Japan",
-      "date": "2026-06-29",
-      "group": null,
-      "market": "BTTS No",
-      "edge_pct": 17.16,
-      "model_prob": 0.5917,
-      "market_prob": 0.5563,
-      "best_odds": 1.98,
-      "kelly_pct": 4.38,
-      "rating": "\ud83d\udd25 STRONG"
-    },
-    {
-      "match": "Netherlands vs Morocco",
-      "date": "2026-06-30",
-      "group": null,
-      "market": "BTTS Yes",
-      "edge_pct": 11.99,
-      "model_prob": 0.5833,
-      "market_prob": 0.5401,
-      "best_odds": 1.92,
-      "kelly_pct": 3.26,
-      "rating": "\ud83d\udd25 STRONG"
-    }
-  ]
+  "date": "2026-06-30",
+  "generated": "2026-06-30T07:22:56.851492",
+  "count": 0,
+  "value_bets": []
 }
