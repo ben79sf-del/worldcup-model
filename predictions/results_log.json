@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T07:23:04.317983",
+  "last_updated": "2026-07-01T09:10:29.178714",
   "matches_scored": [
     537327,
     537328,
@@ -73,8 +73,11 @@
     537412,
     537413,
     537414,
+    537416,
     537418,
-    537423
+    537423,
+    537424,
+    537425
   ],
   "results": [
     {
@@ -2645,17 +2648,119 @@
       },
       "value_bets_results": [],
       "scored_at": "2026-06-30T07:23:04.317777"
+    },
+    {
+      "fixture_id": 537424,
+      "date": "2026-06-30",
+      "home_team": "Ivory Coast",
+      "away_team": "Norway",
+      "score": "1-2",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2791,
+        "model_probs": {
+          "home": 0.2239,
+          "draw": 0.2074,
+          "away": 0.5688
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.554,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4893
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-01T09:10:29.126920"
+    },
+    {
+      "fixture_id": 537416,
+      "date": "2026-06-30",
+      "home_team": "France",
+      "away_team": "Sweden",
+      "score": "3-0",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0923,
+        "model_probs": {
+          "home": 0.7533,
+          "draw": 0.1462,
+          "away": 0.1005
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5561,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2725
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-01T09:10:29.153021"
+    },
+    {
+      "fixture_id": 537425,
+      "date": "2026-07-01",
+      "home_team": "Mexico",
+      "away_team": "Ecuador",
+      "score": "2-0",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.9266,
+        "model_probs": {
+          "home": 0.2178,
+          "draw": 0.4577,
+          "away": 0.3245
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.1302,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2106
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-01T09:10:29.178617"
     }
   ],
   "summary": {
-    "total_matches": 74,
-    "1x2_correct": 46,
-    "1x2_accuracy": 0.6216,
-    "avg_brier_score": 0.5386,
-    "totals_correct": 35,
-    "totals_accuracy": 0.473,
-    "btts_correct": 40,
-    "btts_accuracy": 0.5405,
+    "total_matches": 77,
+    "1x2_correct": 48,
+    "1x2_accuracy": 0.6234,
+    "avg_brier_score": 0.5345,
+    "totals_correct": 38,
+    "totals_accuracy": 0.4935,
+    "btts_correct": 42,
+    "btts_accuracy": 0.5455,
     "value_bets": {
       "total_bets": 6,
       "wins": 3,
@@ -2729,29 +2834,11 @@
         "correct": 4
       },
       "null": {
-        "n": 2,
-        "correct": 1
+        "n": 5,
+        "correct": 3
       }
     },
     "last_5_results": [
-      {
-        "match": "Congo DR 3-1 Uzbekistan",
-        "predicted": "D",
-        "actual": "H",
-        "correct": false
-      },
-      {
-        "match": "Jordan 1-3 Argentina",
-        "predicted": "A",
-        "actual": "A",
-        "correct": true
-      },
-      {
-        "match": "Algeria 3-3 Austria",
-        "predicted": "D",
-        "actual": "D",
-        "correct": true
-      },
       {
         "match": "Brazil 2-1 Japan",
         "predicted": "H",
@@ -2762,6 +2849,24 @@
         "match": "Netherlands 3-4 Morocco",
         "predicted": "H",
         "actual": "A",
+        "correct": false
+      },
+      {
+        "match": "Ivory Coast 1-2 Norway",
+        "predicted": "A",
+        "actual": "A",
+        "correct": true
+      },
+      {
+        "match": "France 3-0 Sweden",
+        "predicted": "H",
+        "actual": "H",
+        "correct": true
+      },
+      {
+        "match": "Mexico 2-0 Ecuador",
+        "predicted": "D",
+        "actual": "H",
         "correct": false
       }
     ]
