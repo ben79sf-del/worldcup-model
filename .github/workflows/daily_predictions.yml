@@ -1,14 +1,18 @@
-name: World Cup Model — Daily Predictions
+name: World Cup Model - Daily Predictions
 
 on:
   schedule:
-    # 08:00 UTC = 6:00 PM AEST (UTC+10)
     - cron: '0 8 * * *'
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
 
 jobs:
   run-predictions:
     runs-on: ubuntu-latest
+
+    env:
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+      GITHUB_PAT: ${{ secrets.GH_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -20,55 +24,43 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install requests pandas numpy scipy scikit-learn
+        run: pip install requests pandas numpy scipy scikit-learn
 
-      - name: Write config.py from secrets
-        env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Write config.py
         run: |
           mkdir -p config
-          python3 -c "
-import os
-lines = [
-    'ODDS_API_KEY       = \"' + os.environ['ODDS_API_KEY'] + '\"',
-    'FOOTBALL_DATA_KEY  = \"' + os.environ['FOOTBALL_DATA_KEY'] + '\"',
-    'ODDS_BASE_URL      = \"https://api.the-odds-api.com/v4\"',
-    'ODDS_SPORT         = \"soccer_fifa_world_cup\"',
-    'ODDS_REGIONS       = \"us,uk,eu,au\"',
-    'ODDS_MARKETS       = \"h2h,spreads,totals\"',
-    'ODDS_BOOKMAKERS    = \"pinnacle,bet365,draftkings,fanduel,betmgm\"',
-    'FD_BASE_URL        = \"https://api.football-data.org/v4\"',
-    'FD_COMPETITION_WC  = \"WC\"',
-    'FD_COMPETITION_EC  = \"EC\"',
-    'FD_COMPETITION_CL  = \"CL\"',
-    'CLUBELO_BASE_URL   = \"http://api.clubelo.com\"',
-    'MIN_EDGE_PCT       = 6.0',
-    'MAX_EDGE_PCT       = 30.0',
-    'KELLY_FRACTION     = 0.25',
-    'MAX_KELLY          = 0.05',
-    'DAILY_STAKE_CAP    = 20.0',
-    'FORM_WINDOW        = 15',
-    'FORM_WEIGHTS       = {\"WC\":1.0,\"WCQ\":0.9,\"EURO\":0.85,\"COPA\":0.85,\"NL\":0.75,\"FRIENDLY\":0.1}',
-    'GITHUB_TOKEN       = \"' + os.environ['GH_TOKEN'] + '\"',
-    'GITHUB_REPO        = \"ben79sf-del/worldcup-model\"',
-    'GITHUB_BRANCH      = \"main\"',
-    'PREDICTIONS_PATH   = \"predictions/latest.json\"',
-    'HISTORY_PATH       = \"predictions/history.json\"',
-    'WC_GROUPS          = {\"A\":[\"Mexico\",\"South Africa\",\"South Korea\",\"Czechia\"],\"B\":[\"Canada\",\"Bosnia and Herzegovina\",\"Qatar\",\"Switzerland\"],\"C\":[\"Germany\",\"Japan\",\"Chile\",\"Saudi Arabia\"],\"D\":[\"USA\",\"Paraguay\",\"Australia\",\"Turkey\"],\"E\":[\"Spain\",\"Morocco\",\"Venezuela\",\"Kenya\"],\"F\":[\"France\",\"Mali\",\"Egypt\",\"Uruguay\"],\"G\":[\"Belgium\",\"Egypt\",\"Iran\",\"New Zealand\"],\"H\":[\"Portugal\",\"Senegal\",\"Indonesia\",\"Serbia\"],\"I\":[\"England\",\"Slovakia\",\"Nigeria\",\"Trinidad and Tobago\"],\"J\":[\"Argentina\",\"Algeria\",\"Austria\",\"Jordan\"],\"K\":[\"Portugal\",\"DR Congo\",\"Uzbekistan\",\"Colombia\"],\"L\":[\"Brazil\",\"Ecuador\",\"Ivory Coast\",\"Hungary\"]}',
-    'TEAM_ALIASES       = {\"United States\":\"USA\",\"Bosnia & Herzegovina\":\"Bosnia and Herzegovina\",\"Czechia\":\"Czech Republic\",\"DR Congo\":\"Congo DR\",\"Cape Verde Islands\":\"Cape Verde\"}',
-    'DATA_DIR           = \"data/raw\"',
-    'PROCESSED_DIR      = \"data/processed\"',
-    'PREDICTIONS_DIR    = \"predictions\"',
-    'DASHBOARD_DIR      = \"dashboard\"',
-]
-with open('config/config.py', 'w') as f:
-    f.write('\n'.join(lines))
-print('config/config.py written OK')
-"
+          cat > config/config.py << ENDOFCONFIG
+          ODDS_API_KEY = "$ODDS_API_KEY"
+          FOOTBALL_DATA_KEY = "$FOOTBALL_DATA_KEY"
+          ODDS_BASE_URL = "https://api.the-odds-api.com/v4"
+          ODDS_SPORT = "soccer_fifa_world_cup"
+          ODDS_REGIONS = "us,uk,eu,au"
+          ODDS_MARKETS = "h2h,spreads,totals"
+          ODDS_BOOKMAKERS = "pinnacle,bet365,draftkings,fanduel,betmgm"
+          FD_BASE_URL = "https://api.football-data.org/v4"
+          FD_COMPETITION_WC = "WC"
+          FD_COMPETITION_EC = "EC"
+          FD_COMPETITION_CL = "CL"
+          CLUBELO_BASE_URL = "http://api.clubelo.com"
+          MIN_EDGE_PCT = 6.0
+          MAX_EDGE_PCT = 30.0
+          KELLY_FRACTION = 0.25
+          MAX_KELLY = 0.05
+          DAILY_STAKE_CAP = 20.0
+          FORM_WINDOW = 15
+          FORM_WEIGHTS = {"WC":1.0,"WCQ":0.9,"EURO":0.85,"COPA":0.85,"NL":0.75,"FRIENDLY":0.1}
+          GITHUB_TOKEN = "$GITHUB_PAT"
+          GITHUB_REPO = "ben79sf-del/worldcup-model"
+          GITHUB_BRANCH = "main"
+          PREDICTIONS_PATH = "predictions/latest.json"
+          HISTORY_PATH = "predictions/history.json"
+          WC_GROUPS = {"A":["Mexico","South Africa","South Korea","Czechia"],"B":["Canada","Bosnia and Herzegovina","Qatar","Switzerland"],"C":["Germany","Japan","Chile","Saudi Arabia"],"D":["USA","Paraguay","Australia","Turkey"],"E":["Spain","Morocco","Venezuela","Kenya"],"F":["France","Mali","Egypt","Uruguay"],"G":["Belgium","Egypt","Iran","New Zealand"],"H":["Portugal","Senegal","Indonesia","Serbia"],"I":["England","Slovakia","Nigeria","Trinidad and Tobago"],"J":["Argentina","Algeria","Austria","Jordan"],"K":["Portugal","DR Congo","Uzbekistan","Colombia"],"L":["Brazil","Ecuador","Ivory Coast","Hungary"]}
+          TEAM_ALIASES = {"United States":"USA","Bosnia & Herzegovina":"Bosnia and Herzegovina","Czechia":"Czech Republic","DR Congo":"Congo DR","Cape Verde Islands":"Cape Verde"}
+          DATA_DIR = "data/raw"
+          PROCESSED_DIR = "data/processed"
+          PREDICTIONS_DIR = "predictions"
+          DASHBOARD_DIR = "dashboard"
+          ENDOFCONFIG
 
       - name: Run daily pipeline
-        run: |
-          python run_daily.py
+        run: python run_daily.py
