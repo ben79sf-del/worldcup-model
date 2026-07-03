@@ -36,9 +36,12 @@ jobs:
         run: python run_daily.py --no-push
 
       - name: Push predictions via git
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/ben79sf-del/worldcup-model.git
           git add predictions/ || true
           git diff --staged --quiet || git commit -m "WC predictions update $(date -u +%Y-%m-%d)"
           git push
