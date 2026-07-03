@@ -640,25 +640,27 @@ async function loadData() {
 }
 
 // ── Value Bet Tracker ────────────────────────────────────────────────────────
-// Tracker state — persisted in GitHub so all devices stay in sync
-const GITHUB_REPO   = "ben79sf-del/worldcup-model";
-const GITHUB_BRANCH = "main";
-const TRACKER_PATH  = "predictions/tracker_log.json";
-const GITHUB_TOKEN  = "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";
-const TRACKER_RAW_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/${TRACKER_PATH}`;
+// Tracker state — persisted in GitHub Gist so all devices stay in sync
+const GIST_ID    = "2f6154c1330ed93c234dd6dd51b7aad5";
+const GIST_FILE  = "wc2026_tracker.json";
+const GIST_TOKEN = "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";
+const GIST_URL   = `https://api.github.com/gists/${GIST_ID}`;
 
-let _trackerState = null;  // in-memory cache
-let _trackerSha   = null;  // GitHub file SHA (needed for updates)
-let _trackerLoading = null; // promise dedup
+let _trackerState   = null;
+let _trackerLoading = null;
 
 async function loadTrackerState() {
   if (_trackerState) return _trackerState;
   if (_trackerLoading) return _trackerLoading;
   _trackerLoading = (async () => {
     try {
-      const res = await fetch(TRACKER_RAW_URL + "?t=" + Date.now());
+      const res = await fetch(GIST_URL + "?t=" + Date.now(), {
+        headers: { Authorization: `token ${GIST_TOKEN}` }
+      });
       if (res.ok) {
-        _trackerState = await res.json();
+        const data = await res.json();
+        const raw = data.files?.[GIST_FILE]?.content || "{}";
+        _trackerState = JSON.parse(raw);
       } else {
         _trackerState = {};
       }
@@ -672,31 +674,11 @@ async function loadTrackerState() {
 async function saveTrackerState(state) {
   _trackerState = state;
   try {
-    // Get current SHA first (needed for update)
-    const shaRes = await fetch(
-      `https://api.github.com/repos/${GITHUB_REPO}/contents/${TRACKER_PATH}`,
-      { headers: { Authorization: `token ${GITHUB_TOKEN}`, Accept: "application/vnd.github+json" } }
-    );
-    if (shaRes.ok) {
-      const shaData = await shaRes.json();
-      _trackerSha = shaData.sha;
-    }
-
-    const body = {
-      message: "Update tracker results",
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2)))),
-      branch:  GITHUB_BRANCH,
-    };
-    if (_trackerSha) body.sha = _trackerSha;
-
-    const putRes = await fetch(
-      `https://api.github.com/repos/${GITHUB_REPO}/contents/${TRACKER_PATH}`,
-      { method: "PUT", headers: { Authorization: `token ${GITHUB_TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify(body) }
-    );
-    if (putRes.ok) {
-      const putData = await putRes.json();
-      _trackerSha = putData.content?.sha || _trackerSha;
-    }
+    await fetch(GIST_URL, {
+      method: "PATCH",
+      headers: { Authorization: `token ${GIST_TOKEN}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ files: { [GIST_FILE]: { content: JSON.stringify(state, null, 2) } } })
+    });
   } catch(e) { console.error("Tracker save failed:", e); }
 }
 
