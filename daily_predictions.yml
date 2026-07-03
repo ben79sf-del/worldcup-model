@@ -1,0 +1,113 @@
+name: World Cup Model — Daily Predictions
+
+on:
+  schedule:
+    # 08:00 UTC = 6:00 PM AEST (UTC+10)
+    - cron: '0 8 * * *'
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  run-predictions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas numpy scipy scikit-learn
+
+      - name: Write config.py from secrets
+        run: |
+          cat > config/config.py << 'EOF'
+          import os
+          # ── API Keys ──────────────────────────────────────────────────────────────────
+          ODDS_API_KEY        = "${{ secrets.ODDS_API_KEY }}"
+          FOOTBALL_DATA_KEY   = "${{ secrets.FOOTBALL_DATA_KEY }}"
+
+          # ── The Odds API ───────────────────────────────────────────────────────────────
+          ODDS_BASE_URL       = "https://api.the-odds-api.com/v4"
+          ODDS_SPORT          = "soccer_fifa_world_cup"
+          ODDS_REGIONS        = "us,uk,eu,au"
+          ODDS_MARKETS        = "h2h,spreads,totals"
+          ODDS_BOOKMAKERS     = "pinnacle,bet365,draftkings,fanduel,betmgm"
+
+          # ── Football-Data.org ──────────────────────────────────────────────────────────
+          FD_BASE_URL         = "https://api.football-data.org/v4"
+          FD_COMPETITION_WC   = "WC"
+          FD_COMPETITION_EC   = "EC"
+          FD_COMPETITION_CL   = "CL"
+
+          # ── ClubElo API ─────────────────────────────────────────────────────────────
+          CLUBELO_BASE_URL    = "http://api.clubelo.com"
+
+          # ── Model Settings ─────────────────────────────────────────────────────────────
+          MIN_EDGE_PCT        = 6.0
+          MAX_EDGE_PCT        = 30.0
+          KELLY_FRACTION      = 0.25
+          MAX_KELLY           = 0.05
+          DAILY_STAKE_CAP     = 20.0
+          FORM_WINDOW         = 15
+          FORM_WEIGHTS = {
+              "WC":               1.0,
+              "WCQ":              0.9,
+              "EURO":             0.85,
+              "COPA":             0.85,
+              "NL":               0.75,
+              "FRIENDLY":         0.1,
+          }
+
+          # ── GitHub Storage ─────────────────────────────────────────────────────────────
+          GITHUB_TOKEN        = "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_REPO         = "ben79sf-del/worldcup-model"
+          GITHUB_BRANCH       = "main"
+          PREDICTIONS_PATH    = "predictions/latest.json"
+          HISTORY_PATH        = "predictions/history.json"
+
+          # ── 2026 World Cup — All 48 Teams + Groups ─────────────────────────────────────
+          WC_GROUPS = {
+              "A": ["Mexico", "South Africa", "South Korea", "Czechia"],
+              "B": ["Canada", "Bosnia and Herzegovina", "Qatar", "Switzerland"],
+              "C": ["Germany", "Japan", "Chile", "Saudi Arabia"],
+              "D": ["USA", "Paraguay", "Australia", "Turkey"],
+              "E": ["Spain", "Morocco", "Venezuela", "Kenya"],
+              "F": ["France", "Mali", "Egypt", "Uruguay"],
+              "G": ["Belgium", "Egypt", "Iran", "New Zealand"],
+              "H": ["Portugal", "Senegal", "Indonesia", "Serbia"],
+              "I": ["England", "Slovakia", "Nigeria", "Trinidad and Tobago"],
+              "J": ["Argentina", "Algeria", "Austria", "Jordan"],
+              "K": ["Portugal", "DR Congo", "Uzbekistan", "Colombia"],
+              "L": ["Brazil", "Ecuador", "Ivory Coast", "Hungary"],
+          }
+
+          TEAM_ALIASES = {
+              "United States": "USA",
+              "United States of America": "USA",
+              "Bosnia-Herzegovina": "Bosnia and Herzegovina",
+              "Bosnia & Herzegovina": "Bosnia and Herzegovina",
+              "Czechia": "Czech Republic",
+              "Türkiye": "Turkey",
+              "Korea Republic": "South Korea",
+              "IR Iran": "Iran",
+              "DR Congo": "Congo DR",
+              "Congo DR": "DR Congo",
+              "Cape Verde Islands": "Cape Verde",
+              "Cote d'Ivoire": "Ivory Coast",
+          }
+
+          # ── Output Paths ───────────────────────────────────────────────────────────────
+          DATA_DIR            = "data/raw"
+          PROCESSED_DIR       = "data/processed"
+          PREDICTIONS_DIR     = "predictions"
+          DASHBOARD_DIR       = "dashboard"
+          EOF
+
+      - name: Run daily pipeline
+        run: |
+          python run_daily.py

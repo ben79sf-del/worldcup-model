@@ -1,0 +1,1088 @@
+{
+  "generated_at": "2026-06-30T07:31:54.477406",
+  "tournament": "FIFA World Cup 2026",
+  "total_fixtures": 9,
+  "total_value_bets": 4,
+  "predictions": [
+    {
+      "home_team": "Brazil",
+      "away_team": "Japan",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-06-29",
+        "time": "17:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537423
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 1.2049,
+        "lambda_away": 0.8748,
+        "expected_total": 2.0797,
+        "p_home_win": 0.4071,
+        "p_draw": 0.3549,
+        "p_away_win": 0.2379,
+        "p_over_2_5": 0.34488860035333635,
+        "p_under_2_5": 0.6551113996466637,
+        "p_over_3_5": 0.15753755331374802,
+        "p_btts": 0.4083,
+        "p_no_btts": 0.5917,
+        "most_likely_score": "1-1",
+        "top_scorelines": [
+          {
+            "score": "1-1",
+            "probability": 0.1613
+          },
+          {
+            "score": "0-0",
+            "probability": 0.1546
+          },
+          {
+            "score": "1-0",
+            "probability": 0.121
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0907
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0797
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0794
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.0645,
+            "push": 0.0,
+            "away_cover": 0.9355
+          },
+          "home_-2.0": {
+            "home_cover": 0.0645,
+            "push": 0.1271,
+            "away_cover": 0.8084
+          },
+          "home_-1.5": {
+            "home_cover": 0.1916,
+            "push": 0.0,
+            "away_cover": 0.8084
+          },
+          "home_-1.0": {
+            "home_cover": 0.1916,
+            "push": 0.2156,
+            "away_cover": 0.5929
+          },
+          "home_-0.5": {
+            "home_cover": 0.4071,
+            "push": 0.0,
+            "away_cover": 0.5929
+          },
+          "home_+0.0": {
+            "home_cover": 0.4071,
+            "push": 0.3549,
+            "away_cover": 0.2379
+          },
+          "home_+0.5": {
+            "home_cover": 0.7621,
+            "push": 0.0,
+            "away_cover": 0.2379
+          },
+          "home_+1.0": {
+            "home_cover": 0.7621,
+            "push": 0.1484,
+            "away_cover": 0.0895
+          },
+          "home_+1.5": {
+            "home_cover": 0.9105,
+            "push": 0.0,
+            "away_cover": 0.0895
+          },
+          "home_+2.0": {
+            "home_cover": 0.9105,
+            "push": 0.067,
+            "away_cover": 0.0225
+          },
+          "home_+2.5": {
+            "home_cover": 0.9775,
+            "push": 0.0,
+            "away_cover": 0.0225
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": 146,
+        "draw_american": 182,
+        "away_win_american": 320,
+        "home_win_decimal": 2.456,
+        "draw_decimal": 2.818,
+        "away_win_decimal": 4.203,
+        "over_2_5_decimal": 2.899,
+        "under_2_5_decimal": 1.526
+      },
+      "value_bets": [],
+      "market_comparison": {},
+      "generated_at": "2026-06-30T07:31:54.331617",
+      "market_odds": {},
+      "confidence": "LOW",
+      "bet_recommendation": "No value identified"
+    },
+    {
+      "home_team": "Netherlands",
+      "away_team": "Morocco",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-06-30",
+        "time": "01:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537418
+      },
+      "model": {
+        "source": "elo_fallback",
+        "lambda_home": 1.5542,
+        "lambda_away": 1.3458,
+        "expected_total": 2.9,
+        "p_home_win": 0.4009,
+        "p_draw": 0.2519,
+        "p_away_win": 0.3472,
+        "p_over_2_5": 0.554,
+        "p_under_2_5": 0.446,
+        "p_over_3_5": 0,
+        "p_btts": 0.5833,
+        "p_no_btts": 0.4167,
+        "most_likely_score": "",
+        "top_scorelines": [],
+        "asian_handicap": {}
+      },
+      "fair_odds": {
+        "home_win_american": 149,
+        "draw_american": 297,
+        "away_win_american": 188,
+        "home_win_decimal": 2.494,
+        "draw_decimal": 3.97,
+        "away_win_decimal": 2.88,
+        "over_2_5_decimal": 1.805,
+        "under_2_5_decimal": 2.242
+      },
+      "value_bets": [],
+      "market_comparison": {},
+      "generated_at": "2026-06-30T07:31:54.334248",
+      "market_odds": {},
+      "confidence": "LOW",
+      "bet_recommendation": "No value identified"
+    },
+    {
+      "home_team": "Ivory Coast",
+      "away_team": "Norway",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-06-30",
+        "time": "17:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537424
+      },
+      "model": {
+        "source": "elo_fallback",
+        "lambda_home": 0.819,
+        "lambda_away": 2.081,
+        "expected_total": 2.9,
+        "p_home_win": 0.2239,
+        "p_draw": 0.2074,
+        "p_away_win": 0.5688,
+        "p_over_2_5": 0.554,
+        "p_under_2_5": 0.446,
+        "p_over_3_5": 0,
+        "p_btts": 0.4893,
+        "p_no_btts": 0.5107,
+        "most_likely_score": "",
+        "top_scorelines": [],
+        "asian_handicap": {}
+      },
+      "fair_odds": {
+        "home_win_american": 347,
+        "draw_american": 382,
+        "away_win_american": -132,
+        "home_win_decimal": 4.466,
+        "draw_decimal": 4.822,
+        "away_win_decimal": 1.758,
+        "over_2_5_decimal": 1.805,
+        "under_2_5_decimal": 2.242
+      },
+      "value_bets": [
+        {
+          "market": "Away Win",
+          "model_prob": 0.5688,
+          "market_prob": 0.446,
+          "edge_pct": 25.7,
+          "best_odds": 2.21,
+          "kelly_pct": 5.0,
+          "ev_per_unit": 0.257,
+          "rating": "\ud83d\udd25 STRONG",
+          "kelly_pct_raw": 5.0,
+          "daily_cap_applied": false
+        },
+        {
+          "market": "BTTS No",
+          "model_prob": 0.5107,
+          "market_prob": 0.4657,
+          "edge_pct": 18.48,
+          "best_odds": 2.32,
+          "kelly_pct": 3.5,
+          "ev_per_unit": 0.1848,
+          "rating": "\ud83d\udd25 STRONG",
+          "kelly_pct_raw": 3.5,
+          "daily_cap_applied": false
+        }
+      ],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.2239,
+          "market_prob": 0.274,
+          "edge_pct": -18.28,
+          "best_odds": 3.75
+        },
+        "draw": {
+          "model_prob": 0.2074,
+          "market_prob": 0.2799,
+          "edge_pct": -25.9,
+          "best_odds": 3.5
+        },
+        "away_win": {
+          "model_prob": 0.5688,
+          "market_prob": 0.446,
+          "edge_pct": 27.53,
+          "best_odds": 2.21
+        },
+        "over_2.5": {
+          "model_prob": 0.554,
+          "market_prob": 0.5349,
+          "edge_pct": 3.57,
+          "best_odds": 1.8696
+        }
+      },
+      "generated_at": "2026-06-30T07:31:54.334928",
+      "market_odds": {
+        "1x2": {
+          "home": 3.75,
+          "draw": 3.5,
+          "away": 2.21
+        },
+        "totals": {
+          "line": 2.5,
+          "over": 1.87,
+          "under": 2.04
+        },
+        "btts": {
+          "yes": 1.74,
+          "no": 2.32
+        }
+      },
+      "confidence": "MEDIUM",
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 2.21 (+25.7% edge)"
+    },
+    {
+      "home_team": "France",
+      "away_team": "Sweden",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-06-30",
+        "time": "21:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537416
+      },
+      "model": {
+        "source": "elo_fallback",
+        "lambda_home": 2.5588,
+        "lambda_away": 0.35,
+        "expected_total": 2.9088,
+        "p_home_win": 0.7533,
+        "p_draw": 0.1462,
+        "p_away_win": 0.1005,
+        "p_over_2_5": 0.5561,
+        "p_under_2_5": 0.4439,
+        "p_over_3_5": 0,
+        "p_btts": 0.2725,
+        "p_no_btts": 0.7275,
+        "most_likely_score": "",
+        "top_scorelines": [],
+        "asian_handicap": {}
+      },
+      "fair_odds": {
+        "home_win_american": -305,
+        "draw_american": 584,
+        "away_win_american": 895,
+        "home_win_decimal": 1.327,
+        "draw_decimal": 6.84,
+        "away_win_decimal": 9.95,
+        "over_2_5_decimal": 1.798,
+        "under_2_5_decimal": 2.253
+      },
+      "value_bets": [
+        {
+          "market": "Away Win",
+          "model_prob": 0.1005,
+          "market_prob": 0.0912,
+          "edge_pct": 20.6,
+          "best_odds": 12.0,
+          "kelly_pct": 0.47,
+          "ev_per_unit": 0.206,
+          "rating": "\ud83d\udd25 STRONG",
+          "kelly_pct_raw": 0.47,
+          "daily_cap_applied": false
+        }
+      ],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.7533,
+          "market_prob": 0.7408,
+          "edge_pct": 1.69,
+          "best_odds": 1.3096
+        },
+        "draw": {
+          "model_prob": 0.1462,
+          "market_prob": 0.168,
+          "edge_pct": -12.98,
+          "best_odds": 6.2
+        },
+        "away_win": {
+          "model_prob": 0.1005,
+          "market_prob": 0.0912,
+          "edge_pct": 10.2,
+          "best_odds": 12.0
+        }
+      },
+      "generated_at": "2026-06-30T07:31:54.335717",
+      "market_odds": {
+        "1x2": {
+          "home": 1.31,
+          "draw": 6.2,
+          "away": 12.0
+        },
+        "totals": {
+          "line": 3.25,
+          "over": 1.93,
+          "under": 1.98
+        },
+        "btts": {
+          "yes": 1.86,
+          "no": 2.14
+        }
+      },
+      "confidence": "HIGH",
+      "bet_recommendation": "\ud83d\udd25 STRONG \u2014 Away Win @ 12.0 (+20.6% edge)"
+    },
+    {
+      "home_team": "Mexico",
+      "away_team": "Ecuador",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-07-01",
+        "time": "01:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537425
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 0.5368,
+        "lambda_away": 0.7071,
+        "expected_total": 1.2439,
+        "p_home_win": 0.2178,
+        "p_draw": 0.4577,
+        "p_away_win": 0.3245,
+        "p_over_2_5": 0.13016153716352552,
+        "p_under_2_5": 0.8698384628364745,
+        "p_over_3_5": 0.037699246990988644,
+        "p_btts": 0.2106,
+        "p_no_btts": 0.7894,
+        "most_likely_score": "0-0",
+        "top_scorelines": [
+          {
+            "score": "0-0",
+            "probability": 0.3129
+          },
+          {
+            "score": "0-1",
+            "probability": 0.1792
+          },
+          {
+            "score": "1-1",
+            "probability": 0.134
+          },
+          {
+            "score": "1-0",
+            "probability": 0.1302
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0721
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0415
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.0094,
+            "push": 0.0,
+            "away_cover": 0.9906
+          },
+          "home_-2.0": {
+            "home_cover": 0.0094,
+            "push": 0.047,
+            "away_cover": 0.9436
+          },
+          "home_-1.5": {
+            "home_cover": 0.0564,
+            "push": 0.0,
+            "away_cover": 0.9436
+          },
+          "home_-1.0": {
+            "home_cover": 0.0564,
+            "push": 0.1614,
+            "away_cover": 0.7822
+          },
+          "home_-0.5": {
+            "home_cover": 0.2178,
+            "push": 0.0,
+            "away_cover": 0.7822
+          },
+          "home_+0.0": {
+            "home_cover": 0.2178,
+            "push": 0.4577,
+            "away_cover": 0.3245
+          },
+          "home_+0.5": {
+            "home_cover": 0.6755,
+            "push": 0.0,
+            "away_cover": 0.3245
+          },
+          "home_+1.0": {
+            "home_cover": 0.6755,
+            "push": 0.2205,
+            "away_cover": 0.104
+          },
+          "home_+1.5": {
+            "home_cover": 0.896,
+            "push": 0.0,
+            "away_cover": 0.104
+          },
+          "home_+2.0": {
+            "home_cover": 0.896,
+            "push": 0.0816,
+            "away_cover": 0.0224
+          },
+          "home_+2.5": {
+            "home_cover": 0.9776,
+            "push": 0.0,
+            "away_cover": 0.0224
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": 359,
+        "draw_american": 118,
+        "away_win_american": 208,
+        "home_win_decimal": 4.591,
+        "draw_decimal": 2.185,
+        "away_win_decimal": 3.082,
+        "over_2_5_decimal": 7.683,
+        "under_2_5_decimal": 1.15
+      },
+      "value_bets": [],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.2178,
+          "market_prob": 0.425,
+          "edge_pct": -48.75,
+          "best_odds": 2.32
+        },
+        "draw": {
+          "model_prob": 0.4577,
+          "market_prob": 0.3307,
+          "edge_pct": 38.4,
+          "best_odds": 2.98
+        },
+        "away_win": {
+          "model_prob": 0.3245,
+          "market_prob": 0.2442,
+          "edge_pct": 32.88,
+          "best_odds": 4.2
+        }
+      },
+      "generated_at": "2026-06-30T07:31:54.370712",
+      "market_odds": {
+        "1x2": {
+          "home": 2.32,
+          "draw": 2.98,
+          "away": 4.2
+        },
+        "totals": {
+          "line": 1.75,
+          "over": 1.87,
+          "under": 2.05
+        },
+        "btts": {
+          "yes": 2.42,
+          "no": 1.67
+        }
+      },
+      "confidence": "LOW",
+      "bet_recommendation": "No value identified"
+    },
+    {
+      "home_team": "USA",
+      "away_team": "Bosnia and Herzegovina",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-07-02",
+        "time": "00:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537421
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 1.9679,
+        "lambda_away": 1.0151,
+        "expected_total": 2.9831,
+        "p_home_win": 0.5724,
+        "p_draw": 0.2606,
+        "p_away_win": 0.167,
+        "p_over_2_5": 0.5729126651828932,
+        "p_under_2_5": 0.4270873348171068,
+        "p_over_3_5": 0.3488340089227954,
+        "p_btts": 0.5485,
+        "p_no_btts": 0.4515,
+        "most_likely_score": "1-1",
+        "top_scorelines": [
+          {
+            "score": "1-1",
+            "probability": 0.1239
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0996
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0981
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0769
+          },
+          {
+            "score": "0-0",
+            "probability": 0.0734
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0653
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.1746,
+            "push": 0.0,
+            "away_cover": 0.8254
+          },
+          "home_-2.0": {
+            "home_cover": 0.1746,
+            "push": 0.1821,
+            "away_cover": 0.6433
+          },
+          "home_-1.5": {
+            "home_cover": 0.3567,
+            "push": 0.0,
+            "away_cover": 0.6433
+          },
+          "home_-1.0": {
+            "home_cover": 0.3567,
+            "push": 0.2158,
+            "away_cover": 0.4276
+          },
+          "home_-0.5": {
+            "home_cover": 0.5724,
+            "push": 0.0,
+            "away_cover": 0.4276
+          },
+          "home_+0.0": {
+            "home_cover": 0.5724,
+            "push": 0.2606,
+            "away_cover": 0.167
+          },
+          "home_+0.5": {
+            "home_cover": 0.833,
+            "push": 0.0,
+            "away_cover": 0.167
+          },
+          "home_+1.0": {
+            "home_cover": 0.833,
+            "push": 0.1003,
+            "away_cover": 0.0667
+          },
+          "home_+1.5": {
+            "home_cover": 0.9333,
+            "push": 0.0,
+            "away_cover": 0.0667
+          },
+          "home_+2.0": {
+            "home_cover": 0.9333,
+            "push": 0.0484,
+            "away_cover": 0.0183
+          },
+          "home_+2.5": {
+            "home_cover": 0.9817,
+            "push": 0.0,
+            "away_cover": 0.0183
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": -134,
+        "draw_american": 284,
+        "away_win_american": 499,
+        "home_win_decimal": 1.747,
+        "draw_decimal": 3.837,
+        "away_win_decimal": 5.988,
+        "over_2_5_decimal": 1.745,
+        "under_2_5_decimal": 2.341
+      },
+      "value_bets": [],
+      "market_comparison": {},
+      "generated_at": "2026-06-30T07:31:54.405702",
+      "market_odds": {},
+      "confidence": "MEDIUM",
+      "bet_recommendation": "No value identified"
+    },
+    {
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-07-03",
+        "time": "03:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537429
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 1.5552,
+        "lambda_away": 1.0152,
+        "expected_total": 2.5703,
+        "p_home_win": 0.4713,
+        "p_draw": 0.3085,
+        "p_away_win": 0.2202,
+        "p_over_2_5": 0.4740773249686249,
+        "p_under_2_5": 0.525922675031375,
+        "p_over_3_5": 0.2575304853791871,
+        "p_btts": 0.503,
+        "p_no_btts": 0.497,
+        "most_likely_score": "1-1",
+        "top_scorelines": [
+          {
+            "score": "1-1",
+            "probability": 0.1479
+          },
+          {
+            "score": "0-0",
+            "probability": 0.1037
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0939
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0925
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0918
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0613
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.1054,
+            "push": 0.0,
+            "away_cover": 0.8946
+          },
+          "home_-2.0": {
+            "home_cover": 0.1054,
+            "push": 0.1519,
+            "away_cover": 0.7427
+          },
+          "home_-1.5": {
+            "home_cover": 0.2573,
+            "push": 0.0,
+            "away_cover": 0.7427
+          },
+          "home_-1.0": {
+            "home_cover": 0.2573,
+            "push": 0.214,
+            "away_cover": 0.5287
+          },
+          "home_-0.5": {
+            "home_cover": 0.4713,
+            "push": 0.0,
+            "away_cover": 0.5287
+          },
+          "home_+0.0": {
+            "home_cover": 0.4713,
+            "push": 0.3085,
+            "away_cover": 0.2202
+          },
+          "home_+0.5": {
+            "home_cover": 0.7798,
+            "push": 0.0,
+            "away_cover": 0.2202
+          },
+          "home_+1.0": {
+            "home_cover": 0.7798,
+            "push": 0.1303,
+            "away_cover": 0.0899
+          },
+          "home_+1.5": {
+            "home_cover": 0.9101,
+            "push": 0.0,
+            "away_cover": 0.0899
+          },
+          "home_+2.0": {
+            "home_cover": 0.9101,
+            "push": 0.0647,
+            "away_cover": 0.0252
+          },
+          "home_+2.5": {
+            "home_cover": 0.9748,
+            "push": 0.0,
+            "away_cover": 0.0252
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": 112,
+        "draw_american": 224,
+        "away_win_american": 354,
+        "home_win_decimal": 2.122,
+        "draw_decimal": 3.241,
+        "away_win_decimal": 4.541,
+        "over_2_5_decimal": 2.109,
+        "under_2_5_decimal": 1.901
+      },
+      "value_bets": [],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.4713,
+          "market_prob": 0.4621,
+          "edge_pct": 1.99,
+          "best_odds": 2.12
+        },
+        "draw": {
+          "model_prob": 0.3085,
+          "market_prob": 0.296,
+          "edge_pct": 4.22,
+          "best_odds": 3.35
+        },
+        "away_win": {
+          "model_prob": 0.2202,
+          "market_prob": 0.2418,
+          "edge_pct": -8.93,
+          "best_odds": 4.2
+        }
+      },
+      "generated_at": "2026-06-30T07:31:54.440460",
+      "market_odds": {
+        "1x2": {
+          "home": 2.12,
+          "draw": 3.35,
+          "away": 4.2
+        },
+        "totals": {
+          "line": 2.25,
+          "over": 1.92,
+          "under": 1.97
+        },
+        "btts": {
+          "yes": 1.95,
+          "no": 1.98
+        }
+      },
+      "confidence": "MEDIUM",
+      "bet_recommendation": "No value identified"
+    },
+    {
+      "home_team": "Australia",
+      "away_team": "Egypt",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-07-03",
+        "time": "18:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537428
+      },
+      "model": {
+        "source": "dixon_coles",
+        "lambda_home": 0.5604,
+        "lambda_away": 0.7041,
+        "expected_total": 1.2645,
+        "p_home_win": 0.2276,
+        "p_draw": 0.4554,
+        "p_away_win": 0.3171,
+        "p_over_2_5": 0.1347846121276085,
+        "p_under_2_5": 0.8652153878723915,
+        "p_over_3_5": 0.03963198075991042,
+        "p_btts": 0.2168,
+        "p_no_btts": 0.7832,
+        "most_likely_score": "0-0",
+        "top_scorelines": [
+          {
+            "score": "0-0",
+            "probability": 0.3074
+          },
+          {
+            "score": "0-1",
+            "probability": 0.1738
+          },
+          {
+            "score": "1-1",
+            "probability": 0.1365
+          },
+          {
+            "score": "1-0",
+            "probability": 0.1332
+          },
+          {
+            "score": "0-2",
+            "probability": 0.07
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0443
+          }
+        ],
+        "asian_handicap": {
+          "home_-2.5": {
+            "home_cover": 0.0105,
+            "push": 0.0,
+            "away_cover": 0.9895
+          },
+          "home_-2.0": {
+            "home_cover": 0.0105,
+            "push": 0.0505,
+            "away_cover": 0.939
+          },
+          "home_-1.5": {
+            "home_cover": 0.061,
+            "push": 0.0,
+            "away_cover": 0.939
+          },
+          "home_-1.0": {
+            "home_cover": 0.061,
+            "push": 0.1666,
+            "away_cover": 0.7724
+          },
+          "home_-0.5": {
+            "home_cover": 0.2276,
+            "push": 0.0,
+            "away_cover": 0.7724
+          },
+          "home_+0.0": {
+            "home_cover": 0.2276,
+            "push": 0.4554,
+            "away_cover": 0.3171
+          },
+          "home_+0.5": {
+            "home_cover": 0.6829,
+            "push": 0.0,
+            "away_cover": 0.3171
+          },
+          "home_+1.0": {
+            "home_cover": 0.6829,
+            "push": 0.2157,
+            "away_cover": 0.1014
+          },
+          "home_+1.5": {
+            "home_cover": 0.8986,
+            "push": 0.0,
+            "away_cover": 0.1014
+          },
+          "home_+2.0": {
+            "home_cover": 0.8986,
+            "push": 0.0797,
+            "away_cover": 0.0217
+          },
+          "home_+2.5": {
+            "home_cover": 0.9783,
+            "push": 0.0,
+            "away_cover": 0.0217
+          }
+        }
+      },
+      "fair_odds": {
+        "home_win_american": 339,
+        "draw_american": 120,
+        "away_win_american": 215,
+        "home_win_decimal": 4.394,
+        "draw_decimal": 2.196,
+        "away_win_decimal": 3.154,
+        "over_2_5_decimal": 7.419,
+        "under_2_5_decimal": 1.156
+      },
+      "value_bets": [],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.2276,
+          "market_prob": 0.2866,
+          "edge_pct": -20.59,
+          "best_odds": 3.5
+        },
+        "draw": {
+          "model_prob": 0.4554,
+          "market_prob": 0.3307,
+          "edge_pct": 37.71,
+          "best_odds": 2.98
+        },
+        "away_win": {
+          "model_prob": 0.3171,
+          "market_prob": 0.3827,
+          "edge_pct": -17.14,
+          "best_odds": 2.6
+        }
+      },
+      "generated_at": "2026-06-30T07:31:54.475506",
+      "market_odds": {
+        "1x2": {
+          "home": 3.5,
+          "draw": 2.98,
+          "away": 2.6
+        },
+        "totals": {
+          "line": 2.0,
+          "over": 2.12,
+          "under": 1.79
+        },
+        "btts": {
+          "yes": 2.3,
+          "no": 1.74
+        }
+      },
+      "confidence": "LOW",
+      "bet_recommendation": "No value identified"
+    },
+    {
+      "home_team": "Argentina",
+      "away_team": "Cape Verde",
+      "neutral": true,
+      "match_meta": {
+        "date": "2026-07-03",
+        "time": "22:00",
+        "group": null,
+        "matchday": null,
+        "venue": "",
+        "fixture_id": 537427
+      },
+      "model": {
+        "source": "elo_fallback",
+        "lambda_home": 2.7675,
+        "lambda_away": 0.35,
+        "expected_total": 3.1175,
+        "p_home_win": 0.87,
+        "p_draw": 0.0884,
+        "p_away_win": 0.0416,
+        "p_over_2_5": 0.6026,
+        "p_under_2_5": 0.3974,
+        "p_over_3_5": 0,
+        "p_btts": 0.2768,
+        "p_no_btts": 0.7232,
+        "most_likely_score": "",
+        "top_scorelines": [],
+        "asian_handicap": {}
+      },
+      "fair_odds": {
+        "home_win_american": -669,
+        "draw_american": 1031,
+        "away_win_american": 2304,
+        "home_win_decimal": 1.149,
+        "draw_decimal": 11.312,
+        "away_win_decimal": 24.038,
+        "over_2_5_decimal": 1.659,
+        "under_2_5_decimal": 2.516
+      },
+      "value_bets": [
+        {
+          "market": "BTTS No",
+          "model_prob": 0.7232,
+          "market_prob": 0.7133,
+          "edge_pct": 6.31,
+          "best_odds": 1.47,
+          "kelly_pct": 3.36,
+          "ev_per_unit": 0.0631,
+          "rating": "\u2705 GOOD",
+          "kelly_pct_raw": 3.36,
+          "daily_cap_applied": false
+        }
+      ],
+      "market_comparison": {
+        "home_win": {
+          "model_prob": 0.87,
+          "market_prob": 0.8202,
+          "edge_pct": 6.07,
+          "best_odds": 1.1799
+        },
+        "draw": {
+          "model_prob": 0.0884,
+          "market_prob": 0.1276,
+          "edge_pct": -30.72,
+          "best_odds": 8.4
+        },
+        "away_win": {
+          "model_prob": 0.0416,
+          "market_prob": 0.0522,
+          "edge_pct": -20.31,
+          "best_odds": 24.0
+        }
+      },
+      "generated_at": "2026-06-30T07:31:54.476311",
+      "market_odds": {
+        "1x2": {
+          "home": 1.18,
+          "draw": 8.4,
+          "away": 24.0
+        },
+        "totals": {
+          "line": 2.75,
+          "over": 1.9,
+          "under": 1.99
+        },
+        "btts": {
+          "yes": 3.0,
+          "no": 1.47
+        }
+      },
+      "confidence": "HIGH",
+      "bet_recommendation": "\u2705 GOOD \u2014 BTTS No @ 1.47 (+6.3% edge)"
+    }
+  ]
+}

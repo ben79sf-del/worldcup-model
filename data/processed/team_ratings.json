@@ -1,0 +1,2498 @@
+{
+  "Abkhazia": {
+    "attack": 0.6821,
+    "defense": 3.1452,
+    "avg_scored": 0.8867,
+    "avg_conceded": 0.4133,
+    "form_pts": 0.96,
+    "n_matches": 15
+  },
+  "Afghanistan": {
+    "attack": 0.2205,
+    "defense": 1.5854,
+    "avg_scored": 0.2867,
+    "avg_conceded": 0.82,
+    "form_pts": 0.56,
+    "n_matches": 15
+  },
+  "Albania": {
+    "attack": 0.4744,
+    "defense": 2.1667,
+    "avg_scored": 0.6167,
+    "avg_conceded": 0.6,
+    "form_pts": 0.9733,
+    "n_matches": 15
+  },
+  "Alderney": {
+    "attack": 0.4,
+    "defense": 0.7065,
+    "avg_scored": 0.52,
+    "avg_conceded": 1.84,
+    "form_pts": 0.24,
+    "n_matches": 15
+  },
+  "Algeria": {
+    "attack": 0.6564,
+    "defense": 2.7857,
+    "avg_scored": 0.8533,
+    "avg_conceded": 0.4667,
+    "form_pts": 1.0667,
+    "n_matches": 15
+  },
+  "American Samoa": {
+    "attack": 0.4923,
+    "defense": 0.3693,
+    "avg_scored": 0.64,
+    "avg_conceded": 3.52,
+    "form_pts": 0.44,
+    "n_matches": 15
+  },
+  "Andalusia": {
+    "attack": 0.1538,
+    "defense": 13.0,
+    "avg_scored": 0.2,
+    "avg_conceded": 0.1,
+    "form_pts": 0.3,
+    "n_matches": 1
+  },
+  "Andorra": {
+    "attack": 0.1641,
+    "defense": 1.1471,
+    "avg_scored": 0.2133,
+    "avg_conceded": 1.1333,
+    "form_pts": 0.1,
+    "n_matches": 15
+  },
+  "Angola": {
+    "attack": 0.4872,
+    "defense": 1.9697,
+    "avg_scored": 0.6333,
+    "avg_conceded": 0.66,
+    "form_pts": 0.6067,
+    "n_matches": 15
+  },
+  "Anguilla": {
+    "attack": 0.3308,
+    "defense": 0.6171,
+    "avg_scored": 0.43,
+    "avg_conceded": 2.1067,
+    "form_pts": 0.4567,
+    "n_matches": 15
+  },
+  "Antigua and Barbuda": {
+    "attack": 0.3128,
+    "defense": 0.7249,
+    "avg_scored": 0.4067,
+    "avg_conceded": 1.7933,
+    "form_pts": 0.2067,
+    "n_matches": 15
+  },
+  "Arameans Suryoye": {
+    "attack": 0.8308,
+    "defense": 1.8056,
+    "avg_scored": 1.08,
+    "avg_conceded": 0.72,
+    "form_pts": 1.2,
+    "n_matches": 5
+  },
+  "Argentina": {
+    "attack": 0.8769,
+    "defense": 6.2903,
+    "avg_scored": 1.14,
+    "avg_conceded": 0.2067,
+    "form_pts": 1.4067,
+    "n_matches": 15
+  },
+  "Armenia": {
+    "attack": 0.3051,
+    "defense": 0.6878,
+    "avg_scored": 0.3967,
+    "avg_conceded": 1.89,
+    "form_pts": 0.37,
+    "n_matches": 15
+  },
+  "Artsakh": {
+    "attack": 1.2028,
+    "defense": 1.8101,
+    "avg_scored": 1.5636,
+    "avg_conceded": 0.7182,
+    "form_pts": 0.9091,
+    "n_matches": 11
+  },
+  "Aruba": {
+    "attack": 0.6949,
+    "defense": 0.8686,
+    "avg_scored": 0.9033,
+    "avg_conceded": 1.4967,
+    "form_pts": 0.5533,
+    "n_matches": 15
+  },
+  "Australia": {
+    "attack": 0.5795,
+    "defense": 3.9,
+    "avg_scored": 0.7533,
+    "avg_conceded": 0.3333,
+    "form_pts": 1.1733,
+    "n_matches": 15
+  },
+  "Austria": {
+    "attack": 1.3564,
+    "defense": 2.0856,
+    "avg_scored": 1.7633,
+    "avg_conceded": 0.6233,
+    "form_pts": 1.5767,
+    "n_matches": 15
+  },
+  "Aymara": {
+    "attack": 0.2308,
+    "defense": 1.0833,
+    "avg_scored": 0.3,
+    "avg_conceded": 1.2,
+    "form_pts": 0.0,
+    "n_matches": 2
+  },
+  "Azerbaijan": {
+    "attack": 0.3846,
+    "defense": 0.859,
+    "avg_scored": 0.5,
+    "avg_conceded": 1.5133,
+    "form_pts": 0.2533,
+    "n_matches": 15
+  },
+  "Bahamas": {
+    "attack": 0.6513,
+    "defense": 0.4067,
+    "avg_scored": 0.8467,
+    "avg_conceded": 3.1967,
+    "form_pts": 0.25,
+    "n_matches": 15
+  },
+  "Bahrain": {
+    "attack": 0.2923,
+    "defense": 1.5984,
+    "avg_scored": 0.38,
+    "avg_conceded": 0.8133,
+    "form_pts": 0.4867,
+    "n_matches": 15
+  },
+  "Bangladesh": {
+    "attack": 0.2923,
+    "defense": 1.8571,
+    "avg_scored": 0.38,
+    "avg_conceded": 0.7,
+    "form_pts": 0.36,
+    "n_matches": 15
+  },
+  "Barawa": {
+    "attack": 0.391,
+    "defense": 0.7959,
+    "avg_scored": 0.5083,
+    "avg_conceded": 1.6333,
+    "form_pts": 0.325,
+    "n_matches": 12
+  },
+  "Barbados": {
+    "attack": 1.1462,
+    "defense": 0.8725,
+    "avg_scored": 1.49,
+    "avg_conceded": 1.49,
+    "form_pts": 0.8,
+    "n_matches": 15
+  },
+  "Basque Country": {
+    "attack": 0.1813,
+    "defense": 13.0,
+    "avg_scored": 0.2357,
+    "avg_conceded": 0.0857,
+    "form_pts": 0.2214,
+    "n_matches": 14
+  },
+  "Belarus": {
+    "attack": 0.3513,
+    "defense": 1.0456,
+    "avg_scored": 0.4567,
+    "avg_conceded": 1.2433,
+    "form_pts": 0.31,
+    "n_matches": 15
+  },
+  "Belgium": {
+    "attack": 1.7205,
+    "defense": 2.3494,
+    "avg_scored": 2.2367,
+    "avg_conceded": 0.5533,
+    "form_pts": 1.55,
+    "n_matches": 15
+  },
+  "Belize": {
+    "attack": 0.8897,
+    "defense": 0.9353,
+    "avg_scored": 1.1567,
+    "avg_conceded": 1.39,
+    "form_pts": 1.04,
+    "n_matches": 15
+  },
+  "Benin": {
+    "attack": 0.441,
+    "defense": 1.7411,
+    "avg_scored": 0.5733,
+    "avg_conceded": 0.7467,
+    "form_pts": 0.9667,
+    "n_matches": 15
+  },
+  "Bermuda": {
+    "attack": 0.9026,
+    "defense": 0.5548,
+    "avg_scored": 1.1733,
+    "avg_conceded": 2.3433,
+    "form_pts": 0.7867,
+    "n_matches": 15
+  },
+  "Bhutan": {
+    "attack": 0.2256,
+    "defense": 0.8369,
+    "avg_scored": 0.2933,
+    "avg_conceded": 1.5533,
+    "form_pts": 0.2933,
+    "n_matches": 15
+  },
+  "Biafra": {
+    "attack": 0.3077,
+    "defense": 6.5,
+    "avg_scored": 0.4,
+    "avg_conceded": 0.2,
+    "form_pts": 1.2,
+    "n_matches": 3
+  },
+  "Bolivia": {
+    "attack": 0.3333,
+    "defense": 1.7257,
+    "avg_scored": 0.4333,
+    "avg_conceded": 0.7533,
+    "form_pts": 0.6467,
+    "n_matches": 15
+  },
+  "Bonaire": {
+    "attack": 0.459,
+    "defense": 1.2745,
+    "avg_scored": 0.5967,
+    "avg_conceded": 1.02,
+    "form_pts": 0.4767,
+    "n_matches": 15
+  },
+  "Bosnia and Herzegovina": {
+    "attack": 1.1077,
+    "defense": 1.3542,
+    "avg_scored": 1.44,
+    "avg_conceded": 0.96,
+    "form_pts": 1.1667,
+    "n_matches": 15
+  },
+  "Botswana": {
+    "attack": 0.4615,
+    "defense": 1.0714,
+    "avg_scored": 0.6,
+    "avg_conceded": 1.2133,
+    "form_pts": 0.7067,
+    "n_matches": 15
+  },
+  "Brazil": {
+    "attack": 0.7282,
+    "defense": 4.3333,
+    "avg_scored": 0.9467,
+    "avg_conceded": 0.3,
+    "form_pts": 1.04,
+    "n_matches": 15
+  },
+  "British Virgin Islands": {
+    "attack": 0.459,
+    "defense": 1.2704,
+    "avg_scored": 0.5967,
+    "avg_conceded": 1.0233,
+    "form_pts": 0.4267,
+    "n_matches": 15
+  },
+  "Brittany": {
+    "attack": 0.25,
+    "defense": 2.7368,
+    "avg_scored": 0.325,
+    "avg_conceded": 0.475,
+    "form_pts": 0.525,
+    "n_matches": 4
+  },
+  "Brunei": {
+    "attack": 0.3538,
+    "defense": 1.0104,
+    "avg_scored": 0.46,
+    "avg_conceded": 1.2867,
+    "form_pts": 0.68,
+    "n_matches": 15
+  },
+  "Bulgaria": {
+    "attack": 0.6282,
+    "defense": 0.7847,
+    "avg_scored": 0.8167,
+    "avg_conceded": 1.6567,
+    "form_pts": 0.5033,
+    "n_matches": 15
+  },
+  "Burkina Faso": {
+    "attack": 0.7179,
+    "defense": 4.0625,
+    "avg_scored": 0.9333,
+    "avg_conceded": 0.32,
+    "form_pts": 1.0,
+    "n_matches": 15
+  },
+  "Burundi": {
+    "attack": 0.3846,
+    "defense": 1.383,
+    "avg_scored": 0.5,
+    "avg_conceded": 0.94,
+    "form_pts": 0.3867,
+    "n_matches": 15
+  },
+  "Cambodia": {
+    "attack": 0.3692,
+    "defense": 2.5,
+    "avg_scored": 0.48,
+    "avg_conceded": 0.52,
+    "form_pts": 0.3333,
+    "n_matches": 15
+  },
+  "Cameroon": {
+    "attack": 0.6769,
+    "defense": 2.9104,
+    "avg_scored": 0.88,
+    "avg_conceded": 0.4467,
+    "form_pts": 1.2133,
+    "n_matches": 15
+  },
+  "Canada": {
+    "attack": 0.559,
+    "defense": 4.875,
+    "avg_scored": 0.7267,
+    "avg_conceded": 0.2667,
+    "form_pts": 0.54,
+    "n_matches": 15
+  },
+  "Cape Verde": {
+    "attack": 0.7282,
+    "defense": 2.1429,
+    "avg_scored": 0.9467,
+    "avg_conceded": 0.6067,
+    "form_pts": 0.9733,
+    "n_matches": 15
+  },
+  "Cascadia": {
+    "attack": 1.1868,
+    "defense": 1.3188,
+    "avg_scored": 1.5429,
+    "avg_conceded": 0.9857,
+    "form_pts": 0.9,
+    "n_matches": 7
+  },
+  "Catalonia": {
+    "attack": 0.1442,
+    "defense": 13.0,
+    "avg_scored": 0.1875,
+    "avg_conceded": 0.1,
+    "form_pts": 0.1625,
+    "n_matches": 8
+  },
+  "Cayman Islands": {
+    "attack": 0.3795,
+    "defense": 0.9466,
+    "avg_scored": 0.4933,
+    "avg_conceded": 1.3733,
+    "form_pts": 0.63,
+    "n_matches": 15
+  },
+  "Central African Republic": {
+    "attack": 0.3128,
+    "defense": 0.8159,
+    "avg_scored": 0.4067,
+    "avg_conceded": 1.5933,
+    "form_pts": 0.4133,
+    "n_matches": 15
+  },
+  "Chad": {
+    "attack": 0.2564,
+    "defense": 0.9559,
+    "avg_scored": 0.3333,
+    "avg_conceded": 1.36,
+    "form_pts": 0.16,
+    "n_matches": 15
+  },
+  "Chagos Islands": {
+    "attack": 0.3949,
+    "defense": 0.6724,
+    "avg_scored": 0.5133,
+    "avg_conceded": 1.9333,
+    "form_pts": 0.1867,
+    "n_matches": 15
+  },
+  "Chameria": {
+    "attack": 0.9231,
+    "defense": 1.8958,
+    "avg_scored": 1.2,
+    "avg_conceded": 0.6857,
+    "form_pts": 0.9429,
+    "n_matches": 7
+  },
+  "Chile": {
+    "attack": 0.4359,
+    "defense": 1.4773,
+    "avg_scored": 0.5667,
+    "avg_conceded": 0.88,
+    "form_pts": 0.5533,
+    "n_matches": 15
+  },
+  "China": {
+    "attack": 0.441,
+    "defense": 0.907,
+    "avg_scored": 0.5733,
+    "avg_conceded": 1.4333,
+    "form_pts": 0.7533,
+    "n_matches": 15
+  },
+  "Cilento": {
+    "attack": 0.0,
+    "defense": 6.5,
+    "avg_scored": 0.0,
+    "avg_conceded": 0.2,
+    "form_pts": 0.0,
+    "n_matches": 1
+  },
+  "Colombia": {
+    "attack": 0.9026,
+    "defense": 2.5325,
+    "avg_scored": 1.1733,
+    "avg_conceded": 0.5133,
+    "form_pts": 1.1067,
+    "n_matches": 15
+  },
+  "Comoros": {
+    "attack": 0.4,
+    "defense": 1.625,
+    "avg_scored": 0.52,
+    "avg_conceded": 0.8,
+    "form_pts": 0.42,
+    "n_matches": 15
+  },
+  "Congo": {
+    "attack": 0.4256,
+    "defense": 0.7895,
+    "avg_scored": 0.5533,
+    "avg_conceded": 1.6467,
+    "form_pts": 0.3933,
+    "n_matches": 15
+  },
+  "Congo DR": {
+    "attack": 0.5795,
+    "defense": 2.6351,
+    "avg_scored": 0.7533,
+    "avg_conceded": 0.4933,
+    "form_pts": 1.24,
+    "n_matches": 15
+  },
+  "Cook Islands": {
+    "attack": 0.4564,
+    "defense": 0.9375,
+    "avg_scored": 0.5933,
+    "avg_conceded": 1.3867,
+    "form_pts": 0.7067,
+    "n_matches": 15
+  },
+  "Corsica": {
+    "attack": 0.2821,
+    "defense": 9.75,
+    "avg_scored": 0.3667,
+    "avg_conceded": 0.1333,
+    "form_pts": 0.5333,
+    "n_matches": 6
+  },
+  "Costa Rica": {
+    "attack": 0.7744,
+    "defense": 1.6387,
+    "avg_scored": 1.0067,
+    "avg_conceded": 0.7933,
+    "form_pts": 0.9933,
+    "n_matches": 15
+  },
+  "County of Nice": {
+    "attack": 0.9744,
+    "defense": 1.5,
+    "avg_scored": 1.2667,
+    "avg_conceded": 0.8667,
+    "form_pts": 1.2667,
+    "n_matches": 9
+  },
+  "Croatia": {
+    "attack": 1.5128,
+    "defense": 1.9118,
+    "avg_scored": 1.9667,
+    "avg_conceded": 0.68,
+    "form_pts": 1.7067,
+    "n_matches": 15
+  },
+  "Cuba": {
+    "attack": 0.6872,
+    "defense": 1.4286,
+    "avg_scored": 0.8933,
+    "avg_conceded": 0.91,
+    "form_pts": 0.72,
+    "n_matches": 15
+  },
+  "Cura\u00e7ao": {
+    "attack": 0.8359,
+    "defense": 1.0598,
+    "avg_scored": 1.0867,
+    "avg_conceded": 1.2267,
+    "form_pts": 0.9267,
+    "n_matches": 15
+  },
+  "Cyprus": {
+    "attack": 0.6538,
+    "defense": 1.3,
+    "avg_scored": 0.85,
+    "avg_conceded": 1.0,
+    "form_pts": 0.5867,
+    "n_matches": 15
+  },
+  "Czech Republic": {
+    "attack": 0.9692,
+    "defense": 1.1272,
+    "avg_scored": 1.26,
+    "avg_conceded": 1.1533,
+    "form_pts": 0.9333,
+    "n_matches": 15
+  },
+  "Darfur": {
+    "attack": 0.1099,
+    "defense": 0.122,
+    "avg_scored": 0.1429,
+    "avg_conceded": 10.6571,
+    "form_pts": 0.0,
+    "n_matches": 7
+  },
+  "Denmark": {
+    "attack": 1.2897,
+    "defense": 1.5058,
+    "avg_scored": 1.6767,
+    "avg_conceded": 0.8633,
+    "form_pts": 1.2667,
+    "n_matches": 15
+  },
+  "Djibouti": {
+    "attack": 0.3538,
+    "defense": 0.5493,
+    "avg_scored": 0.46,
+    "avg_conceded": 2.3667,
+    "form_pts": 0.2333,
+    "n_matches": 15
+  },
+  "Dominica": {
+    "attack": 0.5795,
+    "defense": 0.7588,
+    "avg_scored": 0.7533,
+    "avg_conceded": 1.7133,
+    "form_pts": 0.4533,
+    "n_matches": 15
+  },
+  "Dominican Republic": {
+    "attack": 0.8667,
+    "defense": 1.8483,
+    "avg_scored": 1.1267,
+    "avg_conceded": 0.7033,
+    "form_pts": 0.6567,
+    "n_matches": 15
+  },
+  "Donetsk PR": {
+    "attack": 0.1026,
+    "defense": 11.1429,
+    "avg_scored": 0.1333,
+    "avg_conceded": 0.1167,
+    "form_pts": 0.1333,
+    "n_matches": 6
+  },
+  "D\u00e9lvid\u00e9k": {
+    "attack": 0.9231,
+    "defense": 1.4444,
+    "avg_scored": 1.2,
+    "avg_conceded": 0.9,
+    "form_pts": 0.9,
+    "n_matches": 2
+  },
+  "East Turkestan": {
+    "attack": 0.7692,
+    "defense": 0.6633,
+    "avg_scored": 1.0,
+    "avg_conceded": 1.96,
+    "form_pts": 0.42,
+    "n_matches": 5
+  },
+  "Ecuador": {
+    "attack": 0.2103,
+    "defense": 7.8,
+    "avg_scored": 0.2733,
+    "avg_conceded": 0.1667,
+    "form_pts": 0.76,
+    "n_matches": 15
+  },
+  "Egypt": {
+    "attack": 0.5436,
+    "defense": 2.5658,
+    "avg_scored": 0.7067,
+    "avg_conceded": 0.5067,
+    "form_pts": 0.9133,
+    "n_matches": 15
+  },
+  "El Salvador": {
+    "attack": 0.4,
+    "defense": 1.242,
+    "avg_scored": 0.52,
+    "avg_conceded": 1.0467,
+    "form_pts": 0.6733,
+    "n_matches": 15
+  },
+  "Elba Island": {
+    "attack": 0.3462,
+    "defense": 13.0,
+    "avg_scored": 0.45,
+    "avg_conceded": 0.1,
+    "form_pts": 0.3,
+    "n_matches": 2
+  },
+  "Ellan Vannin": {
+    "attack": 0.8769,
+    "defense": 1.681,
+    "avg_scored": 1.14,
+    "avg_conceded": 0.7733,
+    "form_pts": 0.8267,
+    "n_matches": 15
+  },
+  "England": {
+    "attack": 1.2769,
+    "defense": 7.8,
+    "avg_scored": 1.66,
+    "avg_conceded": 0.1667,
+    "form_pts": 1.7333,
+    "n_matches": 15
+  },
+  "Equatorial Guinea": {
+    "attack": 0.441,
+    "defense": 1.5854,
+    "avg_scored": 0.5733,
+    "avg_conceded": 0.82,
+    "form_pts": 0.5667,
+    "n_matches": 15
+  },
+  "Eritrea": {
+    "attack": 0.3077,
+    "defense": 0.8244,
+    "avg_scored": 0.4,
+    "avg_conceded": 1.5769,
+    "form_pts": 0.1231,
+    "n_matches": 13
+  },
+  "Estonia": {
+    "attack": 0.5231,
+    "defense": 0.8211,
+    "avg_scored": 0.68,
+    "avg_conceded": 1.5833,
+    "form_pts": 0.5733,
+    "n_matches": 15
+  },
+  "Eswatini": {
+    "attack": 0.4308,
+    "defense": 0.78,
+    "avg_scored": 0.56,
+    "avg_conceded": 1.6667,
+    "form_pts": 0.32,
+    "n_matches": 15
+  },
+  "Ethiopia": {
+    "attack": 0.5641,
+    "defense": 1.0656,
+    "avg_scored": 0.7333,
+    "avg_conceded": 1.22,
+    "form_pts": 0.6533,
+    "n_matches": 15
+  },
+  "Falkland Islands": {
+    "attack": 0.4615,
+    "defense": 0.6019,
+    "avg_scored": 0.6,
+    "avg_conceded": 2.16,
+    "form_pts": 0.28,
+    "n_matches": 15
+  },
+  "Faroe Islands": {
+    "attack": 0.6487,
+    "defense": 1.8483,
+    "avg_scored": 0.8433,
+    "avg_conceded": 0.7033,
+    "form_pts": 1.11,
+    "n_matches": 15
+  },
+  "Felvid\u00e9k": {
+    "attack": 0.5385,
+    "defense": 1.3,
+    "avg_scored": 0.7,
+    "avg_conceded": 1.0,
+    "form_pts": 0.85,
+    "n_matches": 12
+  },
+  "Fiji": {
+    "attack": 0.5077,
+    "defense": 0.8193,
+    "avg_scored": 0.66,
+    "avg_conceded": 1.5867,
+    "form_pts": 0.6933,
+    "n_matches": 15
+  },
+  "Finland": {
+    "attack": 0.5282,
+    "defense": 1.1607,
+    "avg_scored": 0.6867,
+    "avg_conceded": 1.12,
+    "form_pts": 0.8467,
+    "n_matches": 15
+  },
+  "France": {
+    "attack": 1.4821,
+    "defense": 2.1081,
+    "avg_scored": 1.9267,
+    "avg_conceded": 0.6167,
+    "form_pts": 1.8267,
+    "n_matches": 15
+  },
+  "Franconia": {
+    "attack": 0.2051,
+    "defense": 0.9512,
+    "avg_scored": 0.2667,
+    "avg_conceded": 1.3667,
+    "form_pts": 0.2,
+    "n_matches": 3
+  },
+  "French Guiana": {
+    "attack": 0.8077,
+    "defense": 1.1504,
+    "avg_scored": 1.05,
+    "avg_conceded": 1.13,
+    "form_pts": 0.76,
+    "n_matches": 15
+  },
+  "Fr\u00f8ya": {
+    "attack": 0.4615,
+    "defense": 0.4392,
+    "avg_scored": 0.6,
+    "avg_conceded": 2.96,
+    "form_pts": 0.16,
+    "n_matches": 15
+  },
+  "Gabon": {
+    "attack": 1.0923,
+    "defense": 1.25,
+    "avg_scored": 1.42,
+    "avg_conceded": 1.04,
+    "form_pts": 1.2467,
+    "n_matches": 15
+  },
+  "Galicia": {
+    "attack": 0.0769,
+    "defense": 4.7273,
+    "avg_scored": 0.1,
+    "avg_conceded": 0.275,
+    "form_pts": 0.1,
+    "n_matches": 4
+  },
+  "Gambia": {
+    "attack": 1.0821,
+    "defense": 1.6525,
+    "avg_scored": 1.4067,
+    "avg_conceded": 0.7867,
+    "form_pts": 0.98,
+    "n_matches": 15
+  },
+  "Georgia": {
+    "attack": 0.7897,
+    "defense": 1.1048,
+    "avg_scored": 1.0267,
+    "avg_conceded": 1.1767,
+    "form_pts": 0.58,
+    "n_matches": 15
+  },
+  "Germany": {
+    "attack": 1.4333,
+    "defense": 1.8571,
+    "avg_scored": 1.8633,
+    "avg_conceded": 0.7,
+    "form_pts": 1.48,
+    "n_matches": 15
+  },
+  "Ghana": {
+    "attack": 0.7846,
+    "defense": 4.3333,
+    "avg_scored": 1.02,
+    "avg_conceded": 0.3,
+    "form_pts": 1.26,
+    "n_matches": 15
+  },
+  "Gibraltar": {
+    "attack": 0.259,
+    "defense": 0.6644,
+    "avg_scored": 0.3367,
+    "avg_conceded": 1.9567,
+    "form_pts": 0.1167,
+    "n_matches": 15
+  },
+  "Gotland": {
+    "attack": 1.2692,
+    "defense": 0.9286,
+    "avg_scored": 1.65,
+    "avg_conceded": 1.4,
+    "form_pts": 0.45,
+    "n_matches": 12
+  },
+  "Gozo": {
+    "attack": 0.6224,
+    "defense": 1.1626,
+    "avg_scored": 0.8091,
+    "avg_conceded": 1.1182,
+    "form_pts": 0.7364,
+    "n_matches": 11
+  },
+  "Greece": {
+    "attack": 0.7564,
+    "defense": 1.4717,
+    "avg_scored": 0.9833,
+    "avg_conceded": 0.8833,
+    "form_pts": 0.82,
+    "n_matches": 15
+  },
+  "Greenland": {
+    "attack": 0.8923,
+    "defense": 1.4885,
+    "avg_scored": 1.16,
+    "avg_conceded": 0.8733,
+    "form_pts": 1.0,
+    "n_matches": 15
+  },
+  "Grenada": {
+    "attack": 0.6615,
+    "defense": 1.8571,
+    "avg_scored": 0.86,
+    "avg_conceded": 0.7,
+    "form_pts": 0.6667,
+    "n_matches": 15
+  },
+  "Guadeloupe": {
+    "attack": 0.9077,
+    "defense": 1.8571,
+    "avg_scored": 1.18,
+    "avg_conceded": 0.7,
+    "form_pts": 1.19,
+    "n_matches": 15
+  },
+  "Guam": {
+    "attack": 0.4667,
+    "defense": 0.6311,
+    "avg_scored": 0.6067,
+    "avg_conceded": 2.06,
+    "form_pts": 0.28,
+    "n_matches": 15
+  },
+  "Guatemala": {
+    "attack": 0.6,
+    "defense": 1.2914,
+    "avg_scored": 0.78,
+    "avg_conceded": 1.0067,
+    "form_pts": 0.8133,
+    "n_matches": 15
+  },
+  "Guernsey": {
+    "attack": 0.8615,
+    "defense": 2.7083,
+    "avg_scored": 1.12,
+    "avg_conceded": 0.48,
+    "form_pts": 1.12,
+    "n_matches": 15
+  },
+  "Guinea": {
+    "attack": 0.6821,
+    "defense": 2.7083,
+    "avg_scored": 0.8867,
+    "avg_conceded": 0.48,
+    "form_pts": 1.0267,
+    "n_matches": 15
+  },
+  "Guinea-Bissau": {
+    "attack": 0.3538,
+    "defense": 1.56,
+    "avg_scored": 0.46,
+    "avg_conceded": 0.8333,
+    "form_pts": 0.3533,
+    "n_matches": 15
+  },
+  "Guyana": {
+    "attack": 1.2769,
+    "defense": 1.029,
+    "avg_scored": 1.66,
+    "avg_conceded": 1.2633,
+    "form_pts": 1.35,
+    "n_matches": 15
+  },
+  "Haiti": {
+    "attack": 0.6564,
+    "defense": 1.2037,
+    "avg_scored": 0.8533,
+    "avg_conceded": 1.08,
+    "form_pts": 0.8,
+    "n_matches": 15
+  },
+  "Hitra": {
+    "attack": 0.9538,
+    "defense": 0.7386,
+    "avg_scored": 1.24,
+    "avg_conceded": 1.76,
+    "form_pts": 0.64,
+    "n_matches": 15
+  },
+  "Hmong": {
+    "attack": 0.9231,
+    "defense": 0.65,
+    "avg_scored": 1.2,
+    "avg_conceded": 2.0,
+    "form_pts": 0.6,
+    "n_matches": 3
+  },
+  "Honduras": {
+    "attack": 0.5744,
+    "defense": 2.5,
+    "avg_scored": 0.7467,
+    "avg_conceded": 0.52,
+    "form_pts": 1.2867,
+    "n_matches": 15
+  },
+  "Hong Kong": {
+    "attack": 0.8974,
+    "defense": 2.8261,
+    "avg_scored": 1.1667,
+    "avg_conceded": 0.46,
+    "form_pts": 0.96,
+    "n_matches": 15
+  },
+  "Hungary": {
+    "attack": 0.6821,
+    "defense": 1.2381,
+    "avg_scored": 0.8867,
+    "avg_conceded": 1.05,
+    "form_pts": 0.67,
+    "n_matches": 15
+  },
+  "Iceland": {
+    "attack": 0.7744,
+    "defense": 1.215,
+    "avg_scored": 1.0067,
+    "avg_conceded": 1.07,
+    "form_pts": 0.5,
+    "n_matches": 15
+  },
+  "India": {
+    "attack": 0.1179,
+    "defense": 2.3214,
+    "avg_scored": 0.1533,
+    "avg_conceded": 0.56,
+    "form_pts": 0.1867,
+    "n_matches": 15
+  },
+  "Indonesia": {
+    "attack": 0.5231,
+    "defense": 1.0484,
+    "avg_scored": 0.68,
+    "avg_conceded": 1.24,
+    "form_pts": 0.6267,
+    "n_matches": 15
+  },
+  "Iran": {
+    "attack": 0.6872,
+    "defense": 2.6,
+    "avg_scored": 0.8933,
+    "avg_conceded": 0.5,
+    "form_pts": 0.96,
+    "n_matches": 15
+  },
+  "Iraq": {
+    "attack": 0.5231,
+    "defense": 1.5354,
+    "avg_scored": 0.68,
+    "avg_conceded": 0.8467,
+    "form_pts": 1.12,
+    "n_matches": 15
+  },
+  "Iraqi Kurdistan": {
+    "attack": 1.2718,
+    "defense": 2.3214,
+    "avg_scored": 1.6533,
+    "avg_conceded": 0.56,
+    "form_pts": 1.4,
+    "n_matches": 15
+  },
+  "Isle of Man": {
+    "attack": 1.8462,
+    "defense": 1.625,
+    "avg_scored": 2.4,
+    "avg_conceded": 0.8,
+    "form_pts": 1.32,
+    "n_matches": 15
+  },
+  "Isle of Wight": {
+    "attack": 1.0651,
+    "defense": 2.5606,
+    "avg_scored": 1.3846,
+    "avg_conceded": 0.5077,
+    "form_pts": 1.4308,
+    "n_matches": 13
+  },
+  "Israel": {
+    "attack": 1.0718,
+    "defense": 0.8405,
+    "avg_scored": 1.3933,
+    "avg_conceded": 1.5467,
+    "form_pts": 1.0533,
+    "n_matches": 15
+  },
+  "Italy": {
+    "attack": 1.4333,
+    "defense": 1.0263,
+    "avg_scored": 1.8633,
+    "avg_conceded": 1.2667,
+    "form_pts": 1.5567,
+    "n_matches": 15
+  },
+  "Ivory Coast": {
+    "attack": 1.0718,
+    "defense": 3.3621,
+    "avg_scored": 1.3933,
+    "avg_conceded": 0.3867,
+    "form_pts": 1.28,
+    "n_matches": 15
+  },
+  "Jamaica": {
+    "attack": 0.7744,
+    "defense": 2.0526,
+    "avg_scored": 1.0067,
+    "avg_conceded": 0.6333,
+    "form_pts": 1.1933,
+    "n_matches": 15
+  },
+  "Japan": {
+    "attack": 0.9897,
+    "defense": 2.9545,
+    "avg_scored": 1.2867,
+    "avg_conceded": 0.44,
+    "form_pts": 1.0667,
+    "n_matches": 15
+  },
+  "Jersey": {
+    "attack": 1.4769,
+    "defense": 2.5,
+    "avg_scored": 1.92,
+    "avg_conceded": 0.52,
+    "form_pts": 1.48,
+    "n_matches": 15
+  },
+  "Jordan": {
+    "attack": 0.5282,
+    "defense": 1.95,
+    "avg_scored": 0.6867,
+    "avg_conceded": 0.6667,
+    "form_pts": 0.6133,
+    "n_matches": 15
+  },
+  "Kabylia": {
+    "attack": 0.6154,
+    "defense": 0.8667,
+    "avg_scored": 0.8,
+    "avg_conceded": 1.5,
+    "form_pts": 0.5,
+    "n_matches": 6
+  },
+  "Kazakhstan": {
+    "attack": 0.5795,
+    "defense": 1.4029,
+    "avg_scored": 0.7533,
+    "avg_conceded": 0.9267,
+    "form_pts": 0.8,
+    "n_matches": 15
+  },
+  "Kenya": {
+    "attack": 0.7949,
+    "defense": 1.413,
+    "avg_scored": 1.0333,
+    "avg_conceded": 0.92,
+    "form_pts": 0.82,
+    "n_matches": 15
+  },
+  "Kernow": {
+    "attack": 0.6538,
+    "defense": 4.3333,
+    "avg_scored": 0.85,
+    "avg_conceded": 0.3,
+    "form_pts": 1.05,
+    "n_matches": 2
+  },
+  "Kiribati": {
+    "attack": 0.2308,
+    "defense": 0.1884,
+    "avg_scored": 0.3,
+    "avg_conceded": 6.9,
+    "form_pts": 0.0,
+    "n_matches": 4
+  },
+  "Kosovo": {
+    "attack": 0.8103,
+    "defense": 1.7568,
+    "avg_scored": 1.0533,
+    "avg_conceded": 0.74,
+    "form_pts": 1.4433,
+    "n_matches": 15
+  },
+  "Kurdistan": {
+    "attack": 1.1077,
+    "defense": 5.4167,
+    "avg_scored": 1.44,
+    "avg_conceded": 0.24,
+    "form_pts": 1.56,
+    "n_matches": 5
+  },
+  "Kuwait": {
+    "attack": 0.3385,
+    "defense": 1.2581,
+    "avg_scored": 0.44,
+    "avg_conceded": 1.0333,
+    "form_pts": 0.3067,
+    "n_matches": 15
+  },
+  "Kyrgyzstan": {
+    "attack": 0.6769,
+    "defense": 0.9949,
+    "avg_scored": 0.88,
+    "avg_conceded": 1.3067,
+    "form_pts": 0.6133,
+    "n_matches": 15
+  },
+  "K\u00e1rp\u00e1talja": {
+    "attack": 1.049,
+    "defense": 1.8333,
+    "avg_scored": 1.3636,
+    "avg_conceded": 0.7091,
+    "form_pts": 1.0909,
+    "n_matches": 11
+  },
+  "Laos": {
+    "attack": 0.4359,
+    "defense": 0.8405,
+    "avg_scored": 0.5667,
+    "avg_conceded": 1.5467,
+    "form_pts": 0.3133,
+    "n_matches": 15
+  },
+  "Latvia": {
+    "attack": 0.3641,
+    "defense": 1.0156,
+    "avg_scored": 0.4733,
+    "avg_conceded": 1.28,
+    "form_pts": 0.4367,
+    "n_matches": 15
+  },
+  "Lebanon": {
+    "attack": 0.8872,
+    "defense": 8.4783,
+    "avg_scored": 1.1533,
+    "avg_conceded": 0.1533,
+    "form_pts": 1.0733,
+    "n_matches": 15
+  },
+  "Lesotho": {
+    "attack": 0.3744,
+    "defense": 1.0833,
+    "avg_scored": 0.4867,
+    "avg_conceded": 1.2,
+    "form_pts": 0.64,
+    "n_matches": 15
+  },
+  "Liberia": {
+    "attack": 0.5795,
+    "defense": 1.2188,
+    "avg_scored": 0.7533,
+    "avg_conceded": 1.0667,
+    "form_pts": 0.7133,
+    "n_matches": 15
+  },
+  "Libya": {
+    "attack": 0.5692,
+    "defense": 1.8396,
+    "avg_scored": 0.74,
+    "avg_conceded": 0.7067,
+    "form_pts": 0.94,
+    "n_matches": 15
+  },
+  "Liechtenstein": {
+    "attack": 0.1051,
+    "defense": 0.5321,
+    "avg_scored": 0.1367,
+    "avg_conceded": 2.4433,
+    "form_pts": 0.12,
+    "n_matches": 15
+  },
+  "Lithuania": {
+    "attack": 0.3487,
+    "defense": 1.1048,
+    "avg_scored": 0.4533,
+    "avg_conceded": 1.1767,
+    "form_pts": 0.2667,
+    "n_matches": 15
+  },
+  "Luhansk PR": {
+    "attack": 0.1154,
+    "defense": 6.5,
+    "avg_scored": 0.15,
+    "avg_conceded": 0.2,
+    "form_pts": 0.1167,
+    "n_matches": 6
+  },
+  "Luxembourg": {
+    "attack": 0.1821,
+    "defense": 1.1818,
+    "avg_scored": 0.2367,
+    "avg_conceded": 1.1,
+    "form_pts": 0.1467,
+    "n_matches": 15
+  },
+  "Macau": {
+    "attack": 0.1949,
+    "defense": 0.975,
+    "avg_scored": 0.2533,
+    "avg_conceded": 1.3333,
+    "form_pts": 0.3067,
+    "n_matches": 15
+  },
+  "Madagascar": {
+    "attack": 0.7538,
+    "defense": 1.3356,
+    "avg_scored": 0.98,
+    "avg_conceded": 0.9733,
+    "form_pts": 0.8867,
+    "n_matches": 15
+  },
+  "Madrid": {
+    "attack": 0.0769,
+    "defense": 6.5,
+    "avg_scored": 0.1,
+    "avg_conceded": 0.2,
+    "form_pts": 0.0,
+    "n_matches": 1
+  },
+  "Malawi": {
+    "attack": 0.4615,
+    "defense": 1.8056,
+    "avg_scored": 0.6,
+    "avg_conceded": 0.72,
+    "form_pts": 0.66,
+    "n_matches": 15
+  },
+  "Malaysia": {
+    "attack": 0.8103,
+    "defense": 4.3333,
+    "avg_scored": 1.0533,
+    "avg_conceded": 0.3,
+    "form_pts": 1.0733,
+    "n_matches": 15
+  },
+  "Maldives": {
+    "attack": 0.2564,
+    "defense": 1.2264,
+    "avg_scored": 0.3333,
+    "avg_conceded": 1.06,
+    "form_pts": 0.2133,
+    "n_matches": 15
+  },
+  "Mali": {
+    "attack": 0.7231,
+    "defense": 3.9796,
+    "avg_scored": 0.94,
+    "avg_conceded": 0.3267,
+    "form_pts": 1.0533,
+    "n_matches": 15
+  },
+  "Malta": {
+    "attack": 0.2897,
+    "defense": 0.9898,
+    "avg_scored": 0.3767,
+    "avg_conceded": 1.3133,
+    "form_pts": 0.5933,
+    "n_matches": 15
+  },
+  "Mapuche": {
+    "attack": 0.6923,
+    "defense": 2.1667,
+    "avg_scored": 0.9,
+    "avg_conceded": 0.6,
+    "form_pts": 0.9,
+    "n_matches": 2
+  },
+  "Marshall Islands": {
+    "attack": 0.4615,
+    "defense": 0.619,
+    "avg_scored": 0.6,
+    "avg_conceded": 2.1,
+    "form_pts": 0.0,
+    "n_matches": 2
+  },
+  "Martinique": {
+    "attack": 0.2974,
+    "defense": 1.8932,
+    "avg_scored": 0.3867,
+    "avg_conceded": 0.6867,
+    "form_pts": 0.6867,
+    "n_matches": 15
+  },
+  "Matabeleland": {
+    "attack": 0.4038,
+    "defense": 1.2381,
+    "avg_scored": 0.525,
+    "avg_conceded": 1.05,
+    "form_pts": 0.825,
+    "n_matches": 8
+  },
+  "Maule Sur": {
+    "attack": 0.4615,
+    "defense": 13.0,
+    "avg_scored": 0.6,
+    "avg_conceded": 0.0,
+    "form_pts": 1.8,
+    "n_matches": 2
+  },
+  "Mauritania": {
+    "attack": 0.2615,
+    "defense": 1.9697,
+    "avg_scored": 0.34,
+    "avg_conceded": 0.66,
+    "form_pts": 0.56,
+    "n_matches": 15
+  },
+  "Mauritius": {
+    "attack": 0.3897,
+    "defense": 0.9701,
+    "avg_scored": 0.5067,
+    "avg_conceded": 1.34,
+    "form_pts": 0.44,
+    "n_matches": 15
+  },
+  "Mayotte": {
+    "attack": 0.5538,
+    "defense": 2.3214,
+    "avg_scored": 0.72,
+    "avg_conceded": 0.56,
+    "form_pts": 0.96,
+    "n_matches": 15
+  },
+  "Menorca": {
+    "attack": 0.8923,
+    "defense": 1.7105,
+    "avg_scored": 1.16,
+    "avg_conceded": 0.76,
+    "form_pts": 0.88,
+    "n_matches": 15
+  },
+  "Mexico": {
+    "attack": 0.3949,
+    "defense": 13.0,
+    "avg_scored": 0.5133,
+    "avg_conceded": 0.06,
+    "form_pts": 0.7467,
+    "n_matches": 15
+  },
+  "Moldova": {
+    "attack": 0.2923,
+    "defense": 0.5856,
+    "avg_scored": 0.38,
+    "avg_conceded": 2.22,
+    "form_pts": 0.0867,
+    "n_matches": 15
+  },
+  "Monaco": {
+    "attack": 0.0865,
+    "defense": 4.3333,
+    "avg_scored": 0.1125,
+    "avg_conceded": 0.3,
+    "form_pts": 0.125,
+    "n_matches": 8
+  },
+  "Mongolia": {
+    "attack": 0.2205,
+    "defense": 1.383,
+    "avg_scored": 0.2867,
+    "avg_conceded": 0.94,
+    "form_pts": 0.34,
+    "n_matches": 15
+  },
+  "Montenegro": {
+    "attack": 0.5821,
+    "defense": 1.0512,
+    "avg_scored": 0.7567,
+    "avg_conceded": 1.2367,
+    "form_pts": 0.8233,
+    "n_matches": 15
+  },
+  "Montserrat": {
+    "attack": 0.5,
+    "defense": 0.7358,
+    "avg_scored": 0.65,
+    "avg_conceded": 1.7667,
+    "form_pts": 0.65,
+    "n_matches": 15
+  },
+  "Morocco": {
+    "attack": 0.7436,
+    "defense": 5.0,
+    "avg_scored": 0.9667,
+    "avg_conceded": 0.26,
+    "form_pts": 1.22,
+    "n_matches": 15
+  },
+  "Mozambique": {
+    "attack": 0.6051,
+    "defense": 1.0484,
+    "avg_scored": 0.7867,
+    "avg_conceded": 1.24,
+    "form_pts": 0.8467,
+    "n_matches": 15
+  },
+  "Myanmar": {
+    "attack": 0.5385,
+    "defense": 1.1538,
+    "avg_scored": 0.7,
+    "avg_conceded": 1.1267,
+    "form_pts": 0.6333,
+    "n_matches": 15
+  },
+  "Namibia": {
+    "attack": 0.4205,
+    "defense": 1.3636,
+    "avg_scored": 0.5467,
+    "avg_conceded": 0.9533,
+    "form_pts": 0.5867,
+    "n_matches": 15
+  },
+  "Nepal": {
+    "attack": 0.2103,
+    "defense": 0.8945,
+    "avg_scored": 0.2733,
+    "avg_conceded": 1.4533,
+    "form_pts": 0.1267,
+    "n_matches": 15
+  },
+  "Netherlands": {
+    "attack": 1.9231,
+    "defense": 2.3214,
+    "avg_scored": 2.5,
+    "avg_conceded": 0.56,
+    "form_pts": 1.8467,
+    "n_matches": 15
+  },
+  "New Caledonia": {
+    "attack": 1.2974,
+    "defense": 1.8396,
+    "avg_scored": 1.6867,
+    "avg_conceded": 0.7067,
+    "form_pts": 1.3267,
+    "n_matches": 15
+  },
+  "New Zealand": {
+    "attack": 0.5333,
+    "defense": 1.6957,
+    "avg_scored": 0.6933,
+    "avg_conceded": 0.7667,
+    "form_pts": 0.5133,
+    "n_matches": 15
+  },
+  "Nicaragua": {
+    "attack": 0.3821,
+    "defense": 1.0541,
+    "avg_scored": 0.4967,
+    "avg_conceded": 1.2333,
+    "form_pts": 0.63,
+    "n_matches": 15
+  },
+  "Niger": {
+    "attack": 0.4462,
+    "defense": 1.9118,
+    "avg_scored": 0.58,
+    "avg_conceded": 0.68,
+    "form_pts": 0.82,
+    "n_matches": 15
+  },
+  "Nigeria": {
+    "attack": 0.8769,
+    "defense": 3.8235,
+    "avg_scored": 1.14,
+    "avg_conceded": 0.34,
+    "form_pts": 1.22,
+    "n_matches": 15
+  },
+  "North Korea": {
+    "attack": 0.7282,
+    "defense": 0.8744,
+    "avg_scored": 0.9467,
+    "avg_conceded": 1.4867,
+    "form_pts": 0.6133,
+    "n_matches": 15
+  },
+  "North Macedonia": {
+    "attack": 0.7103,
+    "defense": 1.3356,
+    "avg_scored": 0.9233,
+    "avg_conceded": 0.9733,
+    "form_pts": 1.0367,
+    "n_matches": 15
+  },
+  "Northern Cyprus": {
+    "attack": 1.2,
+    "defense": 2.9545,
+    "avg_scored": 1.56,
+    "avg_conceded": 0.44,
+    "form_pts": 1.2,
+    "n_matches": 15
+  },
+  "Northern Ireland": {
+    "attack": 0.4718,
+    "defense": 1.8224,
+    "avg_scored": 0.6133,
+    "avg_conceded": 0.7133,
+    "form_pts": 0.7033,
+    "n_matches": 15
+  },
+  "Northern Mariana Islands": {
+    "attack": 0.4,
+    "defense": 0.5328,
+    "avg_scored": 0.52,
+    "avg_conceded": 2.44,
+    "form_pts": 0.44,
+    "n_matches": 15
+  },
+  "Norway": {
+    "attack": 2.0359,
+    "defense": 2.2941,
+    "avg_scored": 2.6467,
+    "avg_conceded": 0.5667,
+    "form_pts": 1.86,
+    "n_matches": 15
+  },
+  "Occitania": {
+    "attack": 1.4615,
+    "defense": 3.1452,
+    "avg_scored": 1.9,
+    "avg_conceded": 0.4133,
+    "form_pts": 1.28,
+    "n_matches": 15
+  },
+  "Oman": {
+    "attack": 0.3128,
+    "defense": 2.0968,
+    "avg_scored": 0.4067,
+    "avg_conceded": 0.62,
+    "form_pts": 0.6467,
+    "n_matches": 15
+  },
+  "Orkney": {
+    "attack": 0.7692,
+    "defense": 1.1607,
+    "avg_scored": 1.0,
+    "avg_conceded": 1.12,
+    "form_pts": 0.88,
+    "n_matches": 15
+  },
+  "Padania": {
+    "attack": 1.0769,
+    "defense": 2.7083,
+    "avg_scored": 1.4,
+    "avg_conceded": 0.48,
+    "form_pts": 1.04,
+    "n_matches": 15
+  },
+  "Pakistan": {
+    "attack": 0.359,
+    "defense": 0.5873,
+    "avg_scored": 0.4667,
+    "avg_conceded": 2.2133,
+    "form_pts": 0.6667,
+    "n_matches": 15
+  },
+  "Palestine": {
+    "attack": 0.4821,
+    "defense": 1.9898,
+    "avg_scored": 0.6267,
+    "avg_conceded": 0.6533,
+    "form_pts": 0.7867,
+    "n_matches": 15
+  },
+  "Panama": {
+    "attack": 0.5179,
+    "defense": 2.6712,
+    "avg_scored": 0.6733,
+    "avg_conceded": 0.4867,
+    "form_pts": 0.86,
+    "n_matches": 15
+  },
+  "Panjab": {
+    "attack": 0.8974,
+    "defense": 2.6712,
+    "avg_scored": 1.1667,
+    "avg_conceded": 0.4867,
+    "form_pts": 0.76,
+    "n_matches": 15
+  },
+  "Papua New Guinea": {
+    "attack": 0.7179,
+    "defense": 1.0052,
+    "avg_scored": 0.9333,
+    "avg_conceded": 1.2933,
+    "form_pts": 0.8267,
+    "n_matches": 15
+  },
+  "Paraguay": {
+    "attack": 0.4667,
+    "defense": 2.191,
+    "avg_scored": 0.6067,
+    "avg_conceded": 0.5933,
+    "form_pts": 0.9,
+    "n_matches": 15
+  },
+  "Parishes of Jersey": {
+    "attack": 1.4359,
+    "defense": 2.0526,
+    "avg_scored": 1.8667,
+    "avg_conceded": 0.6333,
+    "form_pts": 0.7,
+    "n_matches": 3
+  },
+  "Peru": {
+    "attack": 0.1949,
+    "defense": 2.3494,
+    "avg_scored": 0.2533,
+    "avg_conceded": 0.5533,
+    "form_pts": 0.4333,
+    "n_matches": 15
+  },
+  "Philippines": {
+    "attack": 1.1077,
+    "defense": 2.1196,
+    "avg_scored": 1.44,
+    "avg_conceded": 0.6133,
+    "form_pts": 1.3133,
+    "n_matches": 15
+  },
+  "Poland": {
+    "attack": 0.9872,
+    "defense": 1.5116,
+    "avg_scored": 1.2833,
+    "avg_conceded": 0.86,
+    "form_pts": 1.38,
+    "n_matches": 15
+  },
+  "Portugal": {
+    "attack": 1.7103,
+    "defense": 1.6318,
+    "avg_scored": 2.2233,
+    "avg_conceded": 0.7967,
+    "form_pts": 1.55,
+    "n_matches": 15
+  },
+  "Provence": {
+    "attack": 2.609,
+    "defense": 0.8387,
+    "avg_scored": 3.3917,
+    "avg_conceded": 1.55,
+    "form_pts": 0.7,
+    "n_matches": 12
+  },
+  "Puerto Rico": {
+    "attack": 0.7256,
+    "defense": 1.5726,
+    "avg_scored": 0.9433,
+    "avg_conceded": 0.8267,
+    "form_pts": 0.9033,
+    "n_matches": 15
+  },
+  "Qatar": {
+    "attack": 0.2667,
+    "defense": 1.0773,
+    "avg_scored": 0.3467,
+    "avg_conceded": 1.2067,
+    "form_pts": 0.3933,
+    "n_matches": 15
+  },
+  "Quebec": {
+    "attack": 3.6923,
+    "defense": 3.25,
+    "avg_scored": 4.8,
+    "avg_conceded": 0.4,
+    "form_pts": 1.2,
+    "n_matches": 3
+  },
+  "Raetia": {
+    "attack": 0.6,
+    "defense": 1.1207,
+    "avg_scored": 0.78,
+    "avg_conceded": 1.16,
+    "form_pts": 0.32,
+    "n_matches": 15
+  },
+  "Republic of Ireland": {
+    "attack": 0.759,
+    "defense": 1.8224,
+    "avg_scored": 0.9867,
+    "avg_conceded": 0.7133,
+    "form_pts": 1.1,
+    "n_matches": 15
+  },
+  "Rhodes": {
+    "attack": 0.4615,
+    "defense": 1.4444,
+    "avg_scored": 0.6,
+    "avg_conceded": 0.9,
+    "form_pts": 0.9,
+    "n_matches": 2
+  },
+  "Romani people": {
+    "attack": 0.641,
+    "defense": 0.9176,
+    "avg_scored": 0.8333,
+    "avg_conceded": 1.4167,
+    "form_pts": 0.3,
+    "n_matches": 6
+  },
+  "Romania": {
+    "attack": 1.1538,
+    "defense": 1.5538,
+    "avg_scored": 1.5,
+    "avg_conceded": 0.8367,
+    "form_pts": 1.0633,
+    "n_matches": 15
+  },
+  "Russia": {
+    "attack": 0.1744,
+    "defense": 13.0,
+    "avg_scored": 0.2267,
+    "avg_conceded": 0.06,
+    "form_pts": 0.2067,
+    "n_matches": 15
+  },
+  "Rwanda": {
+    "attack": 0.4103,
+    "defense": 1.625,
+    "avg_scored": 0.5333,
+    "avg_conceded": 0.8,
+    "form_pts": 0.7867,
+    "n_matches": 15
+  },
+  "Ry\u016bky\u016b": {
+    "attack": 0.0,
+    "defense": 1.4444,
+    "avg_scored": 0.0,
+    "avg_conceded": 0.9,
+    "form_pts": 0.0,
+    "n_matches": 1
+  },
+  "R\u00e9union": {
+    "attack": 0.7692,
+    "defense": 3.6111,
+    "avg_scored": 1.0,
+    "avg_conceded": 0.36,
+    "form_pts": 1.24,
+    "n_matches": 15
+  },
+  "Saare County": {
+    "attack": 0.7972,
+    "defense": 0.9931,
+    "avg_scored": 1.0364,
+    "avg_conceded": 1.3091,
+    "form_pts": 0.6545,
+    "n_matches": 11
+  },
+  "Saint Barth\u00e9lemy": {
+    "attack": 0.1923,
+    "defense": 4.3333,
+    "avg_scored": 0.25,
+    "avg_conceded": 0.3,
+    "form_pts": 0.13,
+    "n_matches": 10
+  },
+  "Saint Helena": {
+    "attack": 0.25,
+    "defense": 0.4929,
+    "avg_scored": 0.325,
+    "avg_conceded": 2.6375,
+    "form_pts": 0.0,
+    "n_matches": 8
+  },
+  "Saint Kitts and Nevis": {
+    "attack": 0.6821,
+    "defense": 0.8725,
+    "avg_scored": 0.8867,
+    "avg_conceded": 1.49,
+    "form_pts": 0.57,
+    "n_matches": 15
+  },
+  "Saint Lucia": {
+    "attack": 0.6256,
+    "defense": 0.6736,
+    "avg_scored": 0.8133,
+    "avg_conceded": 1.93,
+    "form_pts": 0.7667,
+    "n_matches": 15
+  },
+  "Saint Martin": {
+    "attack": 1.0974,
+    "defense": 1.5,
+    "avg_scored": 1.4267,
+    "avg_conceded": 0.8667,
+    "form_pts": 1.11,
+    "n_matches": 15
+  },
+  "Saint Pierre and Miquelon": {
+    "attack": 0.1319,
+    "defense": 0.1944,
+    "avg_scored": 0.1714,
+    "avg_conceded": 6.6857,
+    "form_pts": 0.0,
+    "n_matches": 7
+  },
+  "Saint Vincent and the Grenadines": {
+    "attack": 0.8026,
+    "defense": 1.9024,
+    "avg_scored": 1.0433,
+    "avg_conceded": 0.6833,
+    "form_pts": 0.7233,
+    "n_matches": 15
+  },
+  "Samoa": {
+    "attack": 0.9026,
+    "defense": 0.5945,
+    "avg_scored": 1.1733,
+    "avg_conceded": 2.1867,
+    "form_pts": 0.88,
+    "n_matches": 15
+  },
+  "San Marino": {
+    "attack": 0.2385,
+    "defense": 0.4785,
+    "avg_scored": 0.31,
+    "avg_conceded": 2.7167,
+    "form_pts": 0.1567,
+    "n_matches": 15
+  },
+  "Saudi Arabia": {
+    "attack": 0.2974,
+    "defense": 2.1667,
+    "avg_scored": 0.3867,
+    "avg_conceded": 0.6,
+    "form_pts": 0.54,
+    "n_matches": 15
+  },
+  "Saugeais": {
+    "attack": 0.0769,
+    "defense": 13.0,
+    "avg_scored": 0.1,
+    "avg_conceded": 0.1,
+    "form_pts": 0.1,
+    "n_matches": 1
+  },
+  "Scotland": {
+    "attack": 0.7846,
+    "defense": 1.681,
+    "avg_scored": 1.02,
+    "avg_conceded": 0.7733,
+    "form_pts": 1.1267,
+    "n_matches": 15
+  },
+  "Sealand": {
+    "attack": 0.3497,
+    "defense": 1.3883,
+    "avg_scored": 0.4545,
+    "avg_conceded": 0.9364,
+    "form_pts": 0.1909,
+    "n_matches": 11
+  },
+  "Seborga": {
+    "attack": 0.1538,
+    "defense": 4.3333,
+    "avg_scored": 0.2,
+    "avg_conceded": 0.3,
+    "form_pts": 0.0,
+    "n_matches": 1
+  },
+  "Senegal": {
+    "attack": 0.6,
+    "defense": 2.0312,
+    "avg_scored": 0.78,
+    "avg_conceded": 0.64,
+    "form_pts": 0.7067,
+    "n_matches": 15
+  },
+  "Serbia": {
+    "attack": 0.5923,
+    "defense": 1.6318,
+    "avg_scored": 0.77,
+    "avg_conceded": 0.7967,
+    "form_pts": 1.1367,
+    "n_matches": 15
+  },
+  "Seychelles": {
+    "attack": 0.1641,
+    "defense": 0.3272,
+    "avg_scored": 0.2133,
+    "avg_conceded": 3.9733,
+    "form_pts": 0.0,
+    "n_matches": 15
+  },
+  "Shetland": {
+    "attack": 0.9538,
+    "defense": 0.9848,
+    "avg_scored": 1.24,
+    "avg_conceded": 1.32,
+    "form_pts": 0.68,
+    "n_matches": 15
+  },
+  "Sierra Leone": {
+    "attack": 0.6051,
+    "defense": 1.6387,
+    "avg_scored": 0.7867,
+    "avg_conceded": 0.7933,
+    "form_pts": 0.9267,
+    "n_matches": 15
+  },
+  "Singapore": {
+    "attack": 0.3795,
+    "defense": 2.7083,
+    "avg_scored": 0.4933,
+    "avg_conceded": 0.48,
+    "form_pts": 0.6733,
+    "n_matches": 15
+  },
+  "Sint Maarten": {
+    "attack": 0.6462,
+    "defense": 0.8333,
+    "avg_scored": 0.84,
+    "avg_conceded": 1.56,
+    "form_pts": 1.07,
+    "n_matches": 15
+  },
+  "Slovakia": {
+    "attack": 0.5359,
+    "defense": 1.4391,
+    "avg_scored": 0.6967,
+    "avg_conceded": 0.9033,
+    "form_pts": 1.0467,
+    "n_matches": 15
+  },
+  "Slovenia": {
+    "attack": 0.2718,
+    "defense": 2.0635,
+    "avg_scored": 0.3533,
+    "avg_conceded": 0.63,
+    "form_pts": 0.5833,
+    "n_matches": 15
+  },
+  "Solomon Islands": {
+    "attack": 0.5744,
+    "defense": 0.7992,
+    "avg_scored": 0.7467,
+    "avg_conceded": 1.6267,
+    "form_pts": 0.32,
+    "n_matches": 15
+  },
+  "Somalia": {
+    "attack": 0.2256,
+    "defense": 0.8369,
+    "avg_scored": 0.2933,
+    "avg_conceded": 1.5533,
+    "form_pts": 0.1667,
+    "n_matches": 15
+  },
+  "Somaliland": {
+    "attack": 0.8205,
+    "defense": 0.975,
+    "avg_scored": 1.0667,
+    "avg_conceded": 1.3333,
+    "form_pts": 0.6167,
+    "n_matches": 6
+  },
+  "South Africa": {
+    "attack": 0.5231,
+    "defense": 2.4375,
+    "avg_scored": 0.68,
+    "avg_conceded": 0.5333,
+    "form_pts": 0.8933,
+    "n_matches": 15
+  },
+  "South Korea": {
+    "attack": 0.4872,
+    "defense": 4.6429,
+    "avg_scored": 0.6333,
+    "avg_conceded": 0.28,
+    "form_pts": 0.7267,
+    "n_matches": 15
+  },
+  "South Ossetia": {
+    "attack": 0.3641,
+    "defense": 1.0598,
+    "avg_scored": 0.4733,
+    "avg_conceded": 1.2267,
+    "form_pts": 0.5,
+    "n_matches": 15
+  },
+  "South Sudan": {
+    "attack": 0.3385,
+    "defense": 0.8333,
+    "avg_scored": 0.44,
+    "avg_conceded": 1.56,
+    "form_pts": 0.3867,
+    "n_matches": 15
+  },
+  "Spain": {
+    "attack": 1.7026,
+    "defense": 2.1788,
+    "avg_scored": 2.2133,
+    "avg_conceded": 0.5967,
+    "form_pts": 1.6367,
+    "n_matches": 15
+  },
+  "Sri Lanka": {
+    "attack": 0.3128,
+    "defense": 1.875,
+    "avg_scored": 0.4067,
+    "avg_conceded": 0.6933,
+    "form_pts": 0.5,
+    "n_matches": 15
+  },
+  "Sudan": {
+    "attack": 0.2051,
+    "defense": 1.4338,
+    "avg_scored": 0.2667,
+    "avg_conceded": 0.9067,
+    "form_pts": 0.48,
+    "n_matches": 15
+  },
+  "Suriname": {
+    "attack": 0.7692,
+    "defense": 1.3131,
+    "avg_scored": 1.0,
+    "avg_conceded": 0.99,
+    "form_pts": 1.1467,
+    "n_matches": 15
+  },
+  "Surrey": {
+    "attack": 0.2308,
+    "defense": 13.0,
+    "avg_scored": 0.3,
+    "avg_conceded": 0.1,
+    "form_pts": 0.3,
+    "n_matches": 1
+  },
+  "Sweden": {
+    "attack": 0.9179,
+    "defense": 0.8553,
+    "avg_scored": 1.1933,
+    "avg_conceded": 1.52,
+    "form_pts": 0.8467,
+    "n_matches": 15
+  },
+  "Switzerland": {
+    "attack": 1.159,
+    "defense": 3.3621,
+    "avg_scored": 1.5067,
+    "avg_conceded": 0.3867,
+    "form_pts": 1.4733,
+    "n_matches": 15
+  },
+  "Syria": {
+    "attack": 0.8308,
+    "defense": 4.3333,
+    "avg_scored": 1.08,
+    "avg_conceded": 0.3,
+    "form_pts": 1.1267,
+    "n_matches": 15
+  },
+  "Sz\u00e9kely Land": {
+    "attack": 1.0769,
+    "defense": 1.1607,
+    "avg_scored": 1.4,
+    "avg_conceded": 1.12,
+    "form_pts": 0.8,
+    "n_matches": 15
+  },
+  "S\u00e1pmi": {
+    "attack": 0.6769,
+    "defense": 1.0833,
+    "avg_scored": 0.88,
+    "avg_conceded": 1.2,
+    "form_pts": 0.6,
+    "n_matches": 15
+  },
+  "S\u00e3o Tom\u00e9 and Pr\u00edncipe": {
+    "attack": 0.2872,
+    "defense": 0.6094,
+    "avg_scored": 0.3733,
+    "avg_conceded": 2.1333,
+    "form_pts": 0.28,
+    "n_matches": 15
+  },
+  "Tahiti": {
+    "attack": 0.7487,
+    "defense": 1.6957,
+    "avg_scored": 0.9733,
+    "avg_conceded": 0.7667,
+    "form_pts": 1.12,
+    "n_matches": 15
+  },
+  "Taiwan": {
+    "attack": 0.4462,
+    "defense": 0.6701,
+    "avg_scored": 0.58,
+    "avg_conceded": 1.94,
+    "form_pts": 0.14,
+    "n_matches": 15
+  },
+  "Tajikistan": {
+    "attack": 0.6,
+    "defense": 3.5455,
+    "avg_scored": 0.78,
+    "avg_conceded": 0.3667,
+    "form_pts": 0.82,
+    "n_matches": 15
+  },
+  "Tamil Eelam": {
+    "attack": 1.0718,
+    "defense": 1.25,
+    "avg_scored": 1.3933,
+    "avg_conceded": 1.04,
+    "form_pts": 1.18,
+    "n_matches": 15
+  },
+  "Tanzania": {
+    "attack": 0.3436,
+    "defense": 1.681,
+    "avg_scored": 0.4467,
+    "avg_conceded": 0.7733,
+    "form_pts": 0.2733,
+    "n_matches": 15
+  },
+  "Thailand": {
+    "attack": 0.8974,
+    "defense": 2.5,
+    "avg_scored": 1.1667,
+    "avg_conceded": 0.52,
+    "form_pts": 0.9533,
+    "n_matches": 15
+  },
+  "Tibet": {
+    "attack": 0.9053,
+    "defense": 0.3373,
+    "avg_scored": 1.1769,
+    "avg_conceded": 3.8538,
+    "form_pts": 0.1923,
+    "n_matches": 13
+  },
+  "Ticino": {
+    "attack": 0.2692,
+    "defense": 0.4906,
+    "avg_scored": 0.35,
+    "avg_conceded": 2.65,
+    "form_pts": 0.0,
+    "n_matches": 2
+  },
+  "Timor-Leste": {
+    "attack": 0.4103,
+    "defense": 0.7222,
+    "avg_scored": 0.5333,
+    "avg_conceded": 1.8,
+    "form_pts": 0.48,
+    "n_matches": 15
+  },
+  "Togo": {
+    "attack": 0.4615,
+    "defense": 1.413,
+    "avg_scored": 0.6,
+    "avg_conceded": 0.92,
+    "form_pts": 0.68,
+    "n_matches": 15
+  },
+  "Tonga": {
+    "attack": 0.6051,
+    "defense": 0.4924,
+    "avg_scored": 0.7867,
+    "avg_conceded": 2.64,
+    "form_pts": 0.32,
+    "n_matches": 15
+  },
+  "Trinidad and Tobago": {
+    "attack": 0.5641,
+    "defense": 1.1538,
+    "avg_scored": 0.7333,
+    "avg_conceded": 1.1267,
+    "form_pts": 0.5867,
+    "n_matches": 15
+  },
+  "Tunisia": {
+    "attack": 0.4821,
+    "defense": 1.0773,
+    "avg_scored": 0.6267,
+    "avg_conceded": 1.2067,
+    "form_pts": 0.3933,
+    "n_matches": 15
+  },
+  "Turkey": {
+    "attack": 1.1692,
+    "defense": 1.1272,
+    "avg_scored": 1.52,
+    "avg_conceded": 1.1533,
+    "form_pts": 1.5267,
+    "n_matches": 15
+  },
+  "Turkmenistan": {
+    "attack": 0.6462,
+    "defense": 1.0541,
+    "avg_scored": 0.84,
+    "avg_conceded": 1.2333,
+    "form_pts": 0.8,
+    "n_matches": 15
+  },
+  "Turks and Caicos Islands": {
+    "attack": 0.559,
+    "defense": 1.0512,
+    "avg_scored": 0.7267,
+    "avg_conceded": 1.2367,
+    "form_pts": 0.9433,
+    "n_matches": 15
+  },
+  "Tuvalu": {
+    "attack": 0.5538,
+    "defense": 0.4114,
+    "avg_scored": 0.72,
+    "avg_conceded": 3.16,
+    "form_pts": 0.4,
+    "n_matches": 15
+  },
+  "Two Sicilies": {
+    "attack": 0.3333,
+    "defense": 0.5571,
+    "avg_scored": 0.4333,
+    "avg_conceded": 2.3333,
+    "form_pts": 0.5,
+    "n_matches": 6
+  },
+  "USA": {
+    "attack": 0.5949,
+    "defense": 2.6,
+    "avg_scored": 0.7733,
+    "avg_conceded": 0.5,
+    "form_pts": 0.6267,
+    "n_matches": 15
+  },
+  "Uganda": {
+    "attack": 0.6513,
+    "defense": 1.7257,
+    "avg_scored": 0.8467,
+    "avg_conceded": 0.7533,
+    "form_pts": 0.9867,
+    "n_matches": 15
+  },
+  "Ukraine": {
+    "attack": 0.9,
+    "defense": 0.9308,
+    "avg_scored": 1.17,
+    "avg_conceded": 1.3967,
+    "form_pts": 1.1267,
+    "n_matches": 15
+  },
+  "United Arab Emirates": {
+    "attack": 0.6154,
+    "defense": 1.3087,
+    "avg_scored": 0.8,
+    "avg_conceded": 0.9933,
+    "form_pts": 0.84,
+    "n_matches": 15
+  },
+  "United Koreans in Japan": {
+    "attack": 0.4808,
+    "defense": 2.3636,
+    "avg_scored": 0.625,
+    "avg_conceded": 0.55,
+    "form_pts": 0.625,
+    "n_matches": 12
+  },
+  "United States Virgin Islands": {
+    "attack": 0.7436,
+    "defense": 0.8041,
+    "avg_scored": 0.9667,
+    "avg_conceded": 1.6167,
+    "form_pts": 0.5133,
+    "n_matches": 15
+  },
+  "Uruguay": {
+    "attack": 0.4872,
+    "defense": 2.5325,
+    "avg_scored": 0.6333,
+    "avg_conceded": 0.5133,
+    "form_pts": 0.7933,
+    "n_matches": 15
+  },
+  "Uzbekistan": {
+    "attack": 0.5436,
+    "defense": 1.7105,
+    "avg_scored": 0.7067,
+    "avg_conceded": 0.76,
+    "form_pts": 0.88,
+    "n_matches": 15
+  },
+  "Vanuatu": {
+    "attack": 0.6974,
+    "defense": 0.8228,
+    "avg_scored": 0.9067,
+    "avg_conceded": 1.58,
+    "form_pts": 0.78,
+    "n_matches": 15
+  },
+  "Vatican City": {
+    "attack": 0.0659,
+    "defense": 4.3333,
+    "avg_scored": 0.0857,
+    "avg_conceded": 0.3,
+    "form_pts": 0.0286,
+    "n_matches": 7
+  },
+  "Venezuela": {
+    "attack": 0.6103,
+    "defense": 1.0598,
+    "avg_scored": 0.7933,
+    "avg_conceded": 1.2267,
+    "form_pts": 0.6,
+    "n_matches": 15
+  },
+  "Vietnam": {
+    "attack": 1.1231,
+    "defense": 2.5325,
+    "avg_scored": 1.46,
+    "avg_conceded": 0.5133,
+    "form_pts": 1.56,
+    "n_matches": 15
+  },
+  "Wales": {
+    "attack": 1.2974,
+    "defense": 1.4391,
+    "avg_scored": 1.6867,
+    "avg_conceded": 0.9033,
+    "form_pts": 1.2967,
+    "n_matches": 15
+  },
+  "West Papua": {
+    "attack": 0.1154,
+    "defense": 2.8889,
+    "avg_scored": 0.15,
+    "avg_conceded": 0.45,
+    "form_pts": 0.05,
+    "n_matches": 2
+  },
+  "Western Armenia": {
+    "attack": 0.6769,
+    "defense": 1.625,
+    "avg_scored": 0.88,
+    "avg_conceded": 0.8,
+    "form_pts": 0.64,
+    "n_matches": 15
+  },
+  "Western Isles": {
+    "attack": 0.5538,
+    "defense": 0.9559,
+    "avg_scored": 0.72,
+    "avg_conceded": 1.36,
+    "form_pts": 0.68,
+    "n_matches": 15
+  },
+  "Western Sahara": {
+    "attack": 1.1827,
+    "defense": 0.3852,
+    "avg_scored": 1.5375,
+    "avg_conceded": 3.375,
+    "form_pts": 0.75,
+    "n_matches": 8
+  },
+  "Yemen": {
+    "attack": 1.1487,
+    "defense": 1.4662,
+    "avg_scored": 1.4933,
+    "avg_conceded": 0.8867,
+    "form_pts": 0.9,
+    "n_matches": 15
+  },
+  "Ynys M\u00f4n": {
+    "attack": 0.8974,
+    "defense": 1.7727,
+    "avg_scored": 1.1667,
+    "avg_conceded": 0.7333,
+    "form_pts": 1.34,
+    "n_matches": 15
+  },
+  "Yorkshire": {
+    "attack": 0.3516,
+    "defense": 8.2727,
+    "avg_scored": 0.4571,
+    "avg_conceded": 0.1571,
+    "form_pts": 0.4429,
+    "n_matches": 7
+  },
+  "Yoruba Nation": {
+    "attack": 0.2308,
+    "defense": 2.1667,
+    "avg_scored": 0.3,
+    "avg_conceded": 0.6,
+    "form_pts": 0.3,
+    "n_matches": 2
+  },
+  "Zambia": {
+    "attack": 0.3128,
+    "defense": 2.378,
+    "avg_scored": 0.4067,
+    "avg_conceded": 0.5467,
+    "form_pts": 0.8,
+    "n_matches": 15
+  },
+  "Zanzibar": {
+    "attack": 0.5231,
+    "defense": 1.7105,
+    "avg_scored": 0.68,
+    "avg_conceded": 0.76,
+    "form_pts": 0.92,
+    "n_matches": 15
+  },
+  "Zimbabwe": {
+    "attack": 0.3179,
+    "defense": 2.0526,
+    "avg_scored": 0.4133,
+    "avg_conceded": 0.6333,
+    "form_pts": 0.44,
+    "n_matches": 15
+  },
+  "\u00c5land Islands": {
+    "attack": 0.4615,
+    "defense": 1.3,
+    "avg_scored": 0.6,
+    "avg_conceded": 1.0,
+    "form_pts": 0.64,
+    "n_matches": 15
+  }
+}

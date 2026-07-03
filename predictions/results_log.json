@@ -1,0 +1,2909 @@
+{
+  "last_updated": "2026-07-02T08:03:31.751526",
+  "matches_scored": [
+    537327,
+    537328,
+    537329,
+    537330,
+    537331,
+    537332,
+    537333,
+    537334,
+    537335,
+    537336,
+    537337,
+    537338,
+    537339,
+    537340,
+    537341,
+    537342,
+    537343,
+    537344,
+    537345,
+    537346,
+    537347,
+    537348,
+    537349,
+    537350,
+    537351,
+    537352,
+    537353,
+    537354,
+    537355,
+    537356,
+    537357,
+    537358,
+    537359,
+    537360,
+    537361,
+    537362,
+    537363,
+    537364,
+    537365,
+    537366,
+    537367,
+    537368,
+    537369,
+    537370,
+    537371,
+    537372,
+    537373,
+    537374,
+    537391,
+    537392,
+    537393,
+    537394,
+    537395,
+    537396,
+    537397,
+    537398,
+    537399,
+    537400,
+    537401,
+    537402,
+    537403,
+    537404,
+    537405,
+    537406,
+    537407,
+    537408,
+    537409,
+    537410,
+    537411,
+    537412,
+    537413,
+    537414,
+    537416,
+    537418,
+    537421,
+    537423,
+    537424,
+    537425
+  ],
+  "results": [
+    {
+      "fixture_id": 537327,
+      "date": "2026-06-11",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "score": "2-0",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.5899,
+        "model_probs": {
+          "home": 0.3789,
+          "draw": 0.3857,
+          "away": 0.2354
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2467,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3244
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:21.990374"
+    },
+    {
+      "fixture_id": 537328,
+      "date": "2026-06-12",
+      "home_team": "South Korea",
+      "away_team": "Czech Republic",
+      "score": "2-1",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.4611,
+        "model_probs": {
+          "home": 0.4472,
+          "draw": 0.2399,
+          "away": 0.313
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.5148
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:21.994478"
+    },
+    {
+      "fixture_id": 537333,
+      "date": "2026-06-12",
+      "home_team": "Canada",
+      "away_team": "Bosnia and Herzegovina",
+      "score": "1-1",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.8087,
+        "model_probs": {
+          "home": 0.6018,
+          "draw": 0.3348,
+          "away": 0.0634
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.1846,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.1593
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:21.998520"
+    },
+    {
+      "fixture_id": 537345,
+      "date": "2026-06-13",
+      "home_team": "USA",
+      "away_team": "Paraguay",
+      "score": "4-1",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.8274,
+        "model_probs": {
+          "home": 0.2574,
+          "draw": 0.3638,
+          "away": 0.3789
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3082,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3815
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-13T12:14:22.003366"
+    },
+    {
+      "fixture_id": 537334,
+      "date": "2026-06-13",
+      "home_team": "Qatar",
+      "away_team": "Switzerland",
+      "score": "1-1",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.2206,
+        "model_probs": {
+          "home": 0.0929,
+          "draw": 0.1765,
+          "away": 0.7306
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Under",
+        "correct": false,
+        "p_over_2_5": 0.7018,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.567
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-14T09:04:43.604755"
+    },
+    {
+      "fixture_id": 537339,
+      "date": "2026-06-13",
+      "home_team": "Brazil",
+      "away_team": "Morocco",
+      "score": "1-1",
+      "group": "GROUP_C",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.648,
+        "model_probs": {
+          "home": 0.4164,
+          "draw": 0.3514,
+          "away": 0.2323
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.3306,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3943
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-14T09:04:43.612638"
+    },
+    {
+      "fixture_id": 537340,
+      "date": "2026-06-14",
+      "home_team": "Haiti",
+      "away_team": "Scotland",
+      "score": "0-1",
+      "group": "GROUP_C",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2731,
+        "model_probs": {
+          "home": 0.2205,
+          "draw": 0.2061,
+          "away": 0.5734
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4357
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-14T09:04:43.621043"
+    },
+    {
+      "fixture_id": 537346,
+      "date": "2026-06-14",
+      "home_team": "Australia",
+      "away_team": "Turkey",
+      "score": "2-0",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.6867,
+        "model_probs": {
+          "home": 0.3245,
+          "draw": 0.3714,
+          "away": 0.304
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2969,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3765
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-14T09:04:43.628795"
+    },
+    {
+      "fixture_id": 537351,
+      "date": "2026-06-14",
+      "home_team": "Germany",
+      "away_team": "Cura\u00e7ao",
+      "score": "7-1",
+      "group": "GROUP_E",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0528,
+        "model_probs": {
+          "home": 0.8148,
+          "draw": 0.1186,
+          "away": 0.0666
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5194,
+        "actual_total_goals": 8
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2686
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-15T08:21:43.291354"
+    },
+    {
+      "fixture_id": 537357,
+      "date": "2026-06-14",
+      "home_team": "Netherlands",
+      "away_team": "Japan",
+      "score": "2-2",
+      "group": "GROUP_F",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.8273,
+        "model_probs": {
+          "home": 0.3798,
+          "draw": 0.2574,
+          "away": 0.3628
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.529
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-15T08:21:43.306124"
+    },
+    {
+      "fixture_id": 537352,
+      "date": "2026-06-14",
+      "home_team": "Ivory Coast",
+      "away_team": "Ecuador",
+      "score": "1-0",
+      "group": "GROUP_E",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.979,
+        "model_probs": {
+          "home": 0.2001,
+          "draw": 0.4982,
+          "away": 0.3016
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.081,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.1522
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-15T08:21:43.319603"
+    },
+    {
+      "fixture_id": 537358,
+      "date": "2026-06-15",
+      "home_team": "Sweden",
+      "away_team": "Tunisia",
+      "score": "5-1",
+      "group": "GROUP_F",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.5451,
+        "model_probs": {
+          "home": 0.3997,
+          "draw": 0.2522,
+          "away": 0.3481
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.527
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-15T08:21:43.331818"
+    },
+    {
+      "fixture_id": 537369,
+      "date": "2026-06-15",
+      "home_team": "Spain",
+      "away_team": "Cape Verde Islands",
+      "score": "0-0",
+      "group": "GROUP_H",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.6612,
+        "model_probs": {
+          "home": 0.8947,
+          "draw": 0.0728,
+          "away": 0.0325
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Under",
+        "correct": false,
+        "p_over_2_5": 0.5445,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2713
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-16T11:54:45.339981"
+    },
+    {
+      "fixture_id": 537363,
+      "date": "2026-06-15",
+      "home_team": "Belgium",
+      "away_team": "Egypt",
+      "score": "1-1",
+      "group": "GROUP_G",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.6395,
+        "model_probs": {
+          "home": 0.4115,
+          "draw": 0.3552,
+          "away": 0.2333
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.3207,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3865
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-16T11:54:45.357649"
+    },
+    {
+      "fixture_id": 537370,
+      "date": "2026-06-15",
+      "home_team": "Saudi Arabia",
+      "away_team": "Uruguay",
+      "score": "1-1",
+      "group": "GROUP_H",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.6955,
+        "model_probs": {
+          "home": 0.0779,
+          "draw": 0.3752,
+          "away": 0.5469
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.1498,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.1537
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-16T11:54:45.374448"
+    },
+    {
+      "fixture_id": 537364,
+      "date": "2026-06-16",
+      "home_team": "Iran",
+      "away_team": "New Zealand",
+      "score": "2-2",
+      "group": "GROUP_G",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.6078,
+        "model_probs": {
+          "home": 0.3856,
+          "draw": 0.3686,
+          "away": 0.2459
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.2915,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3652
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-16T11:54:45.391518"
+    },
+    {
+      "fixture_id": 537391,
+      "date": "2026-06-16",
+      "home_team": "France",
+      "away_team": "Senegal",
+      "score": "3-1",
+      "group": "GROUP_I",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.2853,
+        "model_probs": {
+          "home": 0.5679,
+          "draw": 0.2676,
+          "away": 0.1644
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5229,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.5082
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-17T07:55:36.430461"
+    },
+    {
+      "fixture_id": 537392,
+      "date": "2026-06-16",
+      "home_team": "Iraq",
+      "away_team": "Norway",
+      "score": "1-4",
+      "group": "GROUP_I",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.162,
+        "model_probs": {
+          "home": 0.1521,
+          "draw": 0.1762,
+          "away": 0.6717
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3355
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-17T07:55:36.451723"
+    },
+    {
+      "fixture_id": 537397,
+      "date": "2026-06-17",
+      "home_team": "Argentina",
+      "away_team": "Algeria",
+      "score": "3-0",
+      "group": "GROUP_J",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.485,
+        "model_probs": {
+          "home": 0.4597,
+          "draw": 0.4236,
+          "away": 0.1166
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.125,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.1668
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-17T07:55:36.471625"
+    },
+    {
+      "fixture_id": 537398,
+      "date": "2026-06-17",
+      "home_team": "Austria",
+      "away_team": "Jordan",
+      "score": "3-1",
+      "group": "GROUP_J",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.5358,
+        "model_probs": {
+          "home": 0.4086,
+          "draw": 0.3705,
+          "away": 0.2209
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.2753,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3454
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-17T07:55:36.491081"
+    },
+    {
+      "fixture_id": 537403,
+      "date": "2026-06-17",
+      "home_team": "Portugal",
+      "away_team": "Congo DR",
+      "score": "1-1",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.8208,
+        "model_probs": {
+          "home": 0.585,
+          "draw": 0.3154,
+          "away": 0.0996
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2777,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2705
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-18T08:50:03.494226"
+    },
+    {
+      "fixture_id": 537409,
+      "date": "2026-06-17",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "score": "4-2",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.3846,
+        "model_probs": {
+          "home": 0.4945,
+          "draw": 0.2275,
+          "away": 0.278
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4927
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-18T08:50:03.519452"
+    },
+    {
+      "fixture_id": 537410,
+      "date": "2026-06-17",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "score": "1-0",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 1.0356,
+        "model_probs": {
+          "home": 0.202,
+          "draw": 0.1986,
+          "away": 0.5995
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4119
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-18T08:50:03.545769"
+    },
+    {
+      "fixture_id": 537404,
+      "date": "2026-06-18",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "score": "1-3",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2063,
+        "model_probs": {
+          "home": 0.0863,
+          "draw": 0.2692,
+          "away": 0.6445
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.366,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3154
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-18T08:50:03.571813"
+    },
+    {
+      "fixture_id": 537329,
+      "date": "2026-06-18",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "score": "1-1",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.0393,
+        "model_probs": {
+          "home": 0.5972,
+          "draw": 0.1992,
+          "away": 0.2035
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.414
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-19T07:33:52.652619"
+    },
+    {
+      "fixture_id": 537335,
+      "date": "2026-06-18",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia and Herzegovina",
+      "score": "4-1",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0509,
+        "model_probs": {
+          "home": 0.8253,
+          "draw": 0.1378,
+          "away": 0.0369
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.6329,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3806
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-19T07:33:52.679512"
+    },
+    {
+      "fixture_id": 537336,
+      "date": "2026-06-18",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "score": "6-0",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.3658,
+        "model_probs": {
+          "home": 0.5246,
+          "draw": 0.3534,
+          "away": 0.1221
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.2308,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2573
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-19T07:33:52.707554"
+    },
+    {
+      "fixture_id": 537330,
+      "date": "2026-06-19",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "score": "1-0",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.4156,
+        "model_probs": {
+          "home": 0.4774,
+          "draw": 0.3158,
+          "away": 0.2068
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4161,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4524
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-19T07:33:52.735775"
+    },
+    {
+      "fixture_id": 537348,
+      "date": "2026-06-19",
+      "home_team": "USA",
+      "away_team": "Australia",
+      "score": "2-0",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.794,
+        "model_probs": {
+          "home": 0.2731,
+          "draw": 0.3905,
+          "away": 0.3364
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2459,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3293
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-20T07:19:52.651671"
+    },
+    {
+      "fixture_id": 537342,
+      "date": "2026-06-19",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "score": "0-1",
+      "group": "GROUP_C",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.3153,
+        "model_probs": {
+          "home": 0.2434,
+          "draw": 0.2148,
+          "away": 0.5418
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4613
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-20T07:19:52.681062"
+    },
+    {
+      "fixture_id": 537341,
+      "date": "2026-06-20",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "score": "3-0",
+      "group": "GROUP_C",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0719,
+        "model_probs": {
+          "home": 0.783,
+          "draw": 0.1336,
+          "away": 0.0834
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5063,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2671
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-20T07:19:52.710510"
+    },
+    {
+      "fixture_id": 537347,
+      "date": "2026-06-20",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "score": "0-1",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.6045,
+        "model_probs": {
+          "home": 0.2871,
+          "draw": 0.3468,
+          "away": 0.3661
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.3653,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.433
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-20T07:19:52.741696"
+    },
+    {
+      "fixture_id": 537359,
+      "date": "2026-06-20",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "score": "5-1",
+      "group": "GROUP_F",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.1728,
+        "model_probs": {
+          "home": 0.6608,
+          "draw": 0.1797,
+          "away": 0.1594
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3479
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-21T09:23:17.094217"
+    },
+    {
+      "fixture_id": 537353,
+      "date": "2026-06-20",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "score": "2-1",
+      "group": "GROUP_E",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.5794,
+        "model_probs": {
+          "home": 0.3806,
+          "draw": 0.354,
+          "away": 0.2654
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3377,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4074
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-21T09:23:17.136430"
+    },
+    {
+      "fixture_id": 537354,
+      "date": "2026-06-21",
+      "home_team": "Ecuador",
+      "away_team": "Cura\u00e7ao",
+      "score": "0-0",
+      "group": "GROUP_E",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.4642,
+        "model_probs": {
+          "home": 0.8225,
+          "draw": 0.1147,
+          "away": 0.0628
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Under",
+        "correct": false,
+        "p_over_2_5": 0.5223,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2689
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-21T09:23:17.184191"
+    },
+    {
+      "fixture_id": 537360,
+      "date": "2026-06-21",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "score": "0-4",
+      "group": "GROUP_F",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.1572,
+        "model_probs": {
+          "home": 0.1489,
+          "draw": 0.1745,
+          "away": 0.6766
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3299
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-21T09:23:17.224528"
+    },
+    {
+      "fixture_id": 537371,
+      "date": "2026-06-21",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "score": "4-0",
+      "group": "GROUP_H",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0856,
+        "model_probs": {
+          "home": 0.7799,
+          "draw": 0.1904,
+          "away": 0.0297
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.391,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.201
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-22T12:06:40.823008"
+    },
+    {
+      "fixture_id": 537365,
+      "date": "2026-06-21",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "score": "0-0",
+      "group": "GROUP_G",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.7394,
+        "model_probs": {
+          "home": 0.489,
+          "draw": 0.3192,
+          "away": 0.1918
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.3918,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.427
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-22T12:06:40.869978"
+    },
+    {
+      "fixture_id": 537372,
+      "date": "2026-06-21",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde Islands",
+      "score": "2-2",
+      "group": "GROUP_H",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.3082,
+        "model_probs": {
+          "home": 0.7541,
+          "draw": 0.1459,
+          "away": 0.1
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.493,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2656
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-22T12:06:40.917770"
+    },
+    {
+      "fixture_id": 537366,
+      "date": "2026-06-22",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "score": "1-3",
+      "group": "GROUP_G",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.5108,
+        "model_probs": {
+          "home": 0.199,
+          "draw": 0.3756,
+          "away": 0.4254
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.2516,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3181
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-22T12:06:40.963413"
+    },
+    {
+      "fixture_id": 537399,
+      "date": "2026-06-22",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "score": "2-0",
+      "group": "GROUP_J",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.4078,
+        "model_probs": {
+          "home": 0.5109,
+          "draw": 0.401,
+          "away": 0.0881
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.13,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.149
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-23T08:10:07.341531"
+    },
+    {
+      "fixture_id": 537393,
+      "date": "2026-06-22",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "score": "3-0",
+      "group": "GROUP_I",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0647,
+        "model_probs": {
+          "home": 0.7944,
+          "draw": 0.1284,
+          "away": 0.0772
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5112,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2677
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-23T08:10:07.380060"
+    },
+    {
+      "fixture_id": 537394,
+      "date": "2026-06-23",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "score": "3-2",
+      "group": "GROUP_I",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.4138,
+        "model_probs": {
+          "home": 0.4759,
+          "draw": 0.2324,
+          "away": 0.2917
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.5025
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-23T08:10:07.418898"
+    },
+    {
+      "fixture_id": 537400,
+      "date": "2026-06-23",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "score": "1-2",
+      "group": "GROUP_J",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.3938,
+        "model_probs": {
+          "home": 0.1675,
+          "draw": 0.3356,
+          "away": 0.4969
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3212,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3595
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-23T08:10:07.457688"
+    },
+    {
+      "fixture_id": 537405,
+      "date": "2026-06-23",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "score": "5-0",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.3133,
+        "model_probs": {
+          "home": 0.5631,
+          "draw": 0.3345,
+          "away": 0.1024
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.2423,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2478
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.840795"
+    },
+    {
+      "fixture_id": 537411,
+      "date": "2026-06-23",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "score": "0-0",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.4973,
+        "model_probs": {
+          "home": 0.8356,
+          "draw": 0.1079,
+          "away": 0.0565
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Under",
+        "correct": false,
+        "p_over_2_5": 0.527,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2695
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.882865"
+    },
+    {
+      "fixture_id": 537412,
+      "date": "2026-06-23",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "score": "0-1",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2543,
+        "model_probs": {
+          "home": 0.2099,
+          "draw": 0.2018,
+          "away": 0.5883
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4224
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.924359"
+    },
+    {
+      "fixture_id": 537406,
+      "date": "2026-06-24",
+      "home_team": "Colombia",
+      "away_team": "Congo DR",
+      "score": "1-0",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.1804,
+        "model_probs": {
+          "home": 0.667,
+          "draw": 0.2504,
+          "away": 0.0826
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4113,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3407
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-24T09:14:06.967013"
+    },
+    {
+      "fixture_id": 537337,
+      "date": "2026-06-24",
+      "home_team": "Switzerland",
+      "away_team": "Canada",
+      "score": "2-1",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.6695,
+        "model_probs": {
+          "home": 0.3343,
+          "draw": 0.3818,
+          "away": 0.2838
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.268,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.35
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-25T10:53:08.963076"
+    },
+    {
+      "fixture_id": 537338,
+      "date": "2026-06-24",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "score": "3-1",
+      "group": "GROUP_B",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 1.0212,
+        "model_probs": {
+          "home": 0.1798,
+          "draw": 0.3323,
+          "away": 0.4879
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3428,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3832
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-25T10:53:09.009070"
+    },
+    {
+      "fixture_id": 537344,
+      "date": "2026-06-24",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "score": "4-2",
+      "group": "GROUP_C",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.1221,
+        "model_probs": {
+          "home": 0.7155,
+          "draw": 0.1609,
+          "away": 0.1236
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2836
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-25T10:53:09.055130"
+    },
+    {
+      "fixture_id": 537343,
+      "date": "2026-06-24",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "score": "0-3",
+      "group": "GROUP_C",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.1986,
+        "model_probs": {
+          "home": 0.1762,
+          "draw": 0.1875,
+          "away": 0.6362
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3748
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-25T10:53:09.100125"
+    },
+    {
+      "fixture_id": 537331,
+      "date": "2026-06-25",
+      "home_team": "Czech Republic",
+      "away_team": "Mexico",
+      "score": "0-3",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.3153,
+        "model_probs": {
+          "home": 0.2434,
+          "draw": 0.2148,
+          "away": 0.5418
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4613
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-25T10:53:09.144692"
+    },
+    {
+      "fixture_id": 537332,
+      "date": "2026-06-25",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "score": "1-0",
+      "group": "GROUP_A",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.6177,
+        "model_probs": {
+          "home": 0.361,
+          "draw": 0.3705,
+          "away": 0.2685
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2938,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.371
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-25T10:53:09.190567"
+    },
+    {
+      "fixture_id": 537355,
+      "date": "2026-06-25",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "score": "2-1",
+      "group": "GROUP_E",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.7385,
+        "model_probs": {
+          "home": 0.3044,
+          "draw": 0.4274,
+          "away": 0.2682
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.172,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2586
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-26T07:30:34.597052"
+    },
+    {
+      "fixture_id": 537356,
+      "date": "2026-06-25",
+      "home_team": "Cura\u00e7ao",
+      "away_team": "Ivory Coast",
+      "score": "0-2",
+      "group": "GROUP_E",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.1941,
+        "model_probs": {
+          "home": 0.1734,
+          "draw": 0.1862,
+          "away": 0.6404
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3703
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-26T07:30:34.651619"
+    },
+    {
+      "fixture_id": 537361,
+      "date": "2026-06-25",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "score": "1-3",
+      "group": "GROUP_F",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.1499,
+        "model_probs": {
+          "home": 0.1438,
+          "draw": 0.1719,
+          "away": 0.6843
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3209
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-26T07:30:34.706479"
+    },
+    {
+      "fixture_id": 537362,
+      "date": "2026-06-25",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "score": "1-1",
+      "group": "GROUP_F",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 1.122,
+        "model_probs": {
+          "home": 0.6528,
+          "draw": 0.1823,
+          "away": 0.1649
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.3569
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-26T07:30:34.759885"
+    },
+    {
+      "fixture_id": 537349,
+      "date": "2026-06-26",
+      "home_team": "Turkey",
+      "away_team": "USA",
+      "score": "3-2",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.5686,
+        "model_probs": {
+          "home": 0.3846,
+          "draw": 0.2911,
+          "away": 0.3243
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5606,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.59
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-26T07:30:34.809287"
+    },
+    {
+      "fixture_id": 537350,
+      "date": "2026-06-26",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "score": "0-0",
+      "group": "GROUP_D",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "D",
+        "correct": true,
+        "brier_score": 0.4503,
+        "model_probs": {
+          "home": 0.2942,
+          "draw": 0.4526,
+          "away": 0.2532
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.133,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2171
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-26T07:30:34.859084"
+    },
+    {
+      "fixture_id": 537395,
+      "date": "2026-06-26",
+      "home_team": "Norway",
+      "away_team": "France",
+      "score": "1-4",
+      "group": "GROUP_I",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.3023,
+        "model_probs": {
+          "home": 0.2365,
+          "draw": 0.2122,
+          "away": 0.5513
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.454
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-27T07:39:05.333304"
+    },
+    {
+      "fixture_id": 537396,
+      "date": "2026-06-26",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "score": "5-0",
+      "group": "GROUP_I",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.2629,
+        "model_probs": {
+          "home": 0.5814,
+          "draw": 0.2038,
+          "away": 0.2148
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 5
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.4286
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-27T07:39:05.392310"
+    },
+    {
+      "fixture_id": 537373,
+      "date": "2026-06-27",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "score": "0-1",
+      "group": "GROUP_H",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.4404,
+        "model_probs": {
+          "home": 0.1715,
+          "draw": 0.3594,
+          "away": 0.4691
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2676,
+        "actual_total_goals": 1
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.3193
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-27T07:39:05.447619"
+    },
+    {
+      "fixture_id": 537374,
+      "date": "2026-06-27",
+      "home_team": "Cape Verde Islands",
+      "away_team": "Saudi Arabia",
+      "score": "0-0",
+      "group": "GROUP_H",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "D",
+        "correct": false,
+        "brier_score": 0.8778,
+        "model_probs": {
+          "home": 0.3111,
+          "draw": 0.2392,
+          "away": 0.4497
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "No",
+        "correct": false,
+        "p_btts": 0.5139
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-27T07:39:05.502431"
+    },
+    {
+      "fixture_id": 537367,
+      "date": "2026-06-27",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "score": "1-5",
+      "group": "GROUP_G",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2639,
+        "model_probs": {
+          "home": 0.1378,
+          "draw": 0.2742,
+          "away": 0.588
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4589,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4405
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-27T07:39:05.556402"
+    },
+    {
+      "fixture_id": 537368,
+      "date": "2026-06-27",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "score": "1-1",
+      "group": "GROUP_G",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "D",
+        "correct": true,
+        "brier_score": 0.5386,
+        "model_probs": {
+          "home": 0.345,
+          "draw": 0.4032,
+          "away": 0.2518
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.2144,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2981
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-27T07:39:05.611821"
+    },
+    {
+      "fixture_id": 537413,
+      "date": "2026-06-27",
+      "home_team": "Panama",
+      "away_team": "England",
+      "score": "0-2",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.1429,
+        "model_probs": {
+          "home": 0.1388,
+          "draw": 0.1693,
+          "away": 0.6918
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.4816,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.312
+      },
+      "value_bets_results": [
+        {
+          "market": "BTTS No",
+          "odds": 1.71,
+          "edge_pct": 10.81,
+          "rating": "\ud83d\udd25 STRONG",
+          "won": true,
+          "pnl_units": 0.71
+        }
+      ],
+      "scored_at": "2026-06-28T07:31:11.819196"
+    },
+    {
+      "fixture_id": 537414,
+      "date": "2026-06-27",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "score": "2-1",
+      "group": "GROUP_L",
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0824,
+        "model_probs": {
+          "home": 0.7673,
+          "draw": 0.1404,
+          "away": 0.0923
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4992,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2663
+      },
+      "value_bets_results": [
+        {
+          "market": "BTTS No",
+          "odds": 1.82,
+          "edge_pct": 27.4,
+          "rating": "\ud83d\udd25 STRONG",
+          "won": false,
+          "pnl_units": -1.0
+        }
+      ],
+      "scored_at": "2026-06-28T07:31:11.873289"
+    },
+    {
+      "fixture_id": 537407,
+      "date": "2026-06-27",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "score": "0-0",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "D",
+        "correct": true,
+        "brier_score": 0.6208,
+        "model_probs": {
+          "home": 0.35,
+          "draw": 0.3575,
+          "away": 0.2924
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.3345,
+        "actual_total_goals": 0
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.408
+      },
+      "value_bets_results": [
+        {
+          "market": "Home Win",
+          "odds": 3.7,
+          "edge_pct": 26.45,
+          "rating": "\ud83d\udd25 STRONG",
+          "won": false,
+          "pnl_units": -1.0
+        },
+        {
+          "market": "BTTS No",
+          "odds": 2.24,
+          "edge_pct": 25.96,
+          "rating": "\ud83d\udd25 STRONG",
+          "won": true,
+          "pnl_units": 1.24
+        }
+      ],
+      "scored_at": "2026-06-28T07:31:11.926772"
+    },
+    {
+      "fixture_id": 537408,
+      "date": "2026-06-27",
+      "home_team": "Congo DR",
+      "away_team": "Uzbekistan",
+      "score": "3-1",
+      "group": "GROUP_K",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.7862,
+        "model_probs": {
+          "home": 0.2808,
+          "draw": 0.4311,
+          "away": 0.2882
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.1663,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.2532
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-28T07:31:11.979721"
+    },
+    {
+      "fixture_id": 537401,
+      "date": "2026-06-28",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "score": "1-3",
+      "group": "GROUP_J",
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.1163,
+        "model_probs": {
+          "home": 0.0479,
+          "draw": 0.2136,
+          "away": 0.7385
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.4067,
+        "actual_total_goals": 4
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.267
+      },
+      "value_bets_results": [
+        {
+          "market": "BTTS No",
+          "odds": 1.59,
+          "edge_pct": 11.48,
+          "rating": "\ud83d\udd25 STRONG",
+          "won": false,
+          "pnl_units": -1.0
+        }
+      ],
+      "scored_at": "2026-06-28T07:31:12.033632"
+    },
+    {
+      "fixture_id": 537402,
+      "date": "2026-06-28",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "score": "3-3",
+      "group": "GROUP_J",
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "D",
+        "correct": true,
+        "brier_score": 0.4303,
+        "model_probs": {
+          "home": 0.3179,
+          "draw": 0.4677,
+          "away": 0.2143
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.1108,
+        "actual_total_goals": 6
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.1887
+      },
+      "value_bets_results": [
+        {
+          "market": "Draw",
+          "odds": 2.25,
+          "edge_pct": 7.1,
+          "rating": "\u2705 GOOD",
+          "won": true,
+          "pnl_units": 1.25
+        }
+      ],
+      "scored_at": "2026-06-28T07:31:12.087691"
+    },
+    {
+      "fixture_id": 537423,
+      "date": "2026-06-29",
+      "home_team": "Brazil",
+      "away_team": "Japan",
+      "score": "2-1",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.5341,
+        "model_probs": {
+          "home": 0.4071,
+          "draw": 0.3549,
+          "away": 0.2379
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Over",
+        "correct": false,
+        "p_over_2_5": 0.3449,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4083
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-30T07:23:04.207748"
+    },
+    {
+      "fixture_id": 537418,
+      "date": "2026-06-30",
+      "home_team": "Netherlands",
+      "away_team": "Morocco",
+      "score": "3-4",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "A",
+        "correct": false,
+        "brier_score": 0.6503,
+        "model_probs": {
+          "home": 0.4009,
+          "draw": 0.2519,
+          "away": 0.3472
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.554,
+        "actual_total_goals": 7
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "Yes",
+        "correct": true,
+        "p_btts": 0.5833
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-06-30T07:23:04.317777"
+    },
+    {
+      "fixture_id": 537424,
+      "date": "2026-06-30",
+      "home_team": "Ivory Coast",
+      "away_team": "Norway",
+      "score": "1-2",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "A",
+        "actual_outcome": "A",
+        "correct": true,
+        "brier_score": 0.2791,
+        "model_probs": {
+          "home": 0.2239,
+          "draw": 0.2074,
+          "away": 0.5688
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.554,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "Yes",
+        "correct": false,
+        "p_btts": 0.4893
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-01T09:10:29.126920"
+    },
+    {
+      "fixture_id": 537416,
+      "date": "2026-06-30",
+      "home_team": "France",
+      "away_team": "Sweden",
+      "score": "3-0",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.0923,
+        "model_probs": {
+          "home": 0.7533,
+          "draw": 0.1462,
+          "away": 0.1005
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Over",
+        "correct": true,
+        "p_over_2_5": 0.5561,
+        "actual_total_goals": 3
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2725
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-01T09:10:29.153021"
+    },
+    {
+      "fixture_id": 537425,
+      "date": "2026-07-01",
+      "home_team": "Mexico",
+      "away_team": "Ecuador",
+      "score": "2-0",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "D",
+        "actual_outcome": "H",
+        "correct": false,
+        "brier_score": 0.9266,
+        "model_probs": {
+          "home": 0.2178,
+          "draw": 0.4577,
+          "away": 0.3245
+        }
+      },
+      "scored_totals": {
+        "predicted": "Under",
+        "actual": "Under",
+        "correct": true,
+        "p_over_2_5": 0.1302,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "No",
+        "actual": "No",
+        "correct": true,
+        "p_btts": 0.2106
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-01T09:10:29.178617"
+    },
+    {
+      "fixture_id": 537421,
+      "date": "2026-07-02",
+      "home_team": "USA",
+      "away_team": "Bosnia and Herzegovina",
+      "score": "2-0",
+      "group": null,
+      "scored_1x2": {
+        "predicted_outcome": "H",
+        "actual_outcome": "H",
+        "correct": true,
+        "brier_score": 0.2786,
+        "model_probs": {
+          "home": 0.5724,
+          "draw": 0.2606,
+          "away": 0.167
+        }
+      },
+      "scored_totals": {
+        "predicted": "Over",
+        "actual": "Under",
+        "correct": false,
+        "p_over_2_5": 0.5729,
+        "actual_total_goals": 2
+      },
+      "scored_btts": {
+        "predicted": "Yes",
+        "actual": "No",
+        "correct": false,
+        "p_btts": 0.5485
+      },
+      "value_bets_results": [],
+      "scored_at": "2026-07-02T08:03:31.751419"
+    }
+  ],
+  "summary": {
+    "total_matches": 78,
+    "1x2_correct": 49,
+    "1x2_accuracy": 0.6282,
+    "avg_brier_score": 0.5312,
+    "totals_correct": 38,
+    "totals_accuracy": 0.4872,
+    "btts_correct": 42,
+    "btts_accuracy": 0.5385,
+    "value_bets": {
+      "total_bets": 6,
+      "wins": 3,
+      "win_rate": 0.5,
+      "total_pnl_units": 0.2,
+      "roi_pct": 3.33,
+      "by_rating": {
+        "\ud83d\udd25 STRONG": {
+          "n_bets": 5,
+          "wins": 2,
+          "win_rate": 0.4,
+          "pnl_units": -1.05,
+          "roi_pct": -21.0
+        },
+        "\u2705 GOOD": {
+          "n_bets": 1,
+          "wins": 1,
+          "win_rate": 1.0,
+          "pnl_units": 1.25,
+          "roi_pct": 125.0
+        }
+      }
+    },
+    "by_group": {
+      "GROUP_A": {
+        "n": 6,
+        "correct": 3
+      },
+      "GROUP_B": {
+        "n": 6,
+        "correct": 2
+      },
+      "GROUP_D": {
+        "n": 6,
+        "correct": 3
+      },
+      "GROUP_C": {
+        "n": 6,
+        "correct": 5
+      },
+      "GROUP_E": {
+        "n": 6,
+        "correct": 3
+      },
+      "GROUP_F": {
+        "n": 6,
+        "correct": 4
+      },
+      "GROUP_H": {
+        "n": 6,
+        "correct": 2
+      },
+      "GROUP_G": {
+        "n": 6,
+        "correct": 3
+      },
+      "GROUP_I": {
+        "n": 6,
+        "correct": 6
+      },
+      "GROUP_J": {
+        "n": 6,
+        "correct": 6
+      },
+      "GROUP_K": {
+        "n": 6,
+        "correct": 4
+      },
+      "GROUP_L": {
+        "n": 6,
+        "correct": 4
+      },
+      "null": {
+        "n": 6,
+        "correct": 4
+      }
+    },
+    "last_5_results": [
+      {
+        "match": "Netherlands 3-4 Morocco",
+        "predicted": "H",
+        "actual": "A",
+        "correct": false
+      },
+      {
+        "match": "Ivory Coast 1-2 Norway",
+        "predicted": "A",
+        "actual": "A",
+        "correct": true
+      },
+      {
+        "match": "France 3-0 Sweden",
+        "predicted": "H",
+        "actual": "H",
+        "correct": true
+      },
+      {
+        "match": "Mexico 2-0 Ecuador",
+        "predicted": "D",
+        "actual": "H",
+        "correct": false
+      },
+      {
+        "match": "USA 2-0 Bosnia and Herzegovina",
+        "predicted": "H",
+        "actual": "H",
+        "correct": true
+      }
+    ]
+  }
+}

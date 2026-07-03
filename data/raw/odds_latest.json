@@ -1,0 +1,1322 @@
+{
+  "Spain vs Austria": {
+    "home_team": "Spain",
+    "away_team": "Austria",
+    "commence_time": "2026-07-02T19:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "books": {
+        "fanduel": {
+          "home_american": -320,
+          "away_american": 1000,
+          "draw_american": 410,
+          "home_decimal": 1.3125,
+          "away_decimal": 11.0,
+          "draw_decimal": 5.1,
+          "home_implied": 0.7264,
+          "away_implied": 0.0867,
+          "draw_implied": 0.187
+        },
+        "betfair_ex_eu": {
+          "home_american": -286,
+          "away_american": 1150,
+          "draw_american": 440,
+          "home_decimal": 1.3497,
+          "away_decimal": 12.5,
+          "draw_decimal": 5.4,
+          "home_implied": 0.7364,
+          "away_implied": 0.0795,
+          "draw_implied": 0.1841
+        },
+        "sport888": {
+          "home_american": -333,
+          "away_american": 800,
+          "draw_american": 380,
+          "home_decimal": 1.3003,
+          "away_decimal": 9.0,
+          "draw_decimal": 4.8,
+          "home_implied": 0.7066,
+          "away_implied": 0.1021,
+          "draw_implied": 0.1914
+        },
+        "draftkings": {
+          "home_american": -295,
+          "away_american": 900,
+          "draw_american": 425,
+          "home_decimal": 1.339,
+          "away_decimal": 10.0,
+          "draw_decimal": 5.25,
+          "home_implied": 0.7199,
+          "away_implied": 0.0964,
+          "draw_implied": 0.1836
+        },
+        "pinnacle": {
+          "home_american": -292,
+          "away_american": 985,
+          "draw_american": 430,
+          "home_decimal": 1.3425,
+          "away_decimal": 10.85,
+          "draw_decimal": 5.3,
+          "home_implied": 0.7262,
+          "away_implied": 0.0899,
+          "draw_implied": 0.184
+        }
+      },
+      "consensus": {
+        "home_implied": 0.7231,
+        "draw_implied": 0.1865,
+        "away_implied": 0.0905
+      },
+      "best_home_odds": 1.3497,
+      "best_away_odds": 12.5,
+      "best_draw_odds": 5.4
+    },
+    "totals": {
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "totals": {
+        "2.75_over": {
+          "avg_implied": 0.5146,
+          "best_decimal": 1.9434,
+          "n_books": 1
+        },
+        "2.75_under": {
+          "avg_implied": 0.5098,
+          "best_decimal": 1.9615,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.4665,
+          "best_decimal": 2.28,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.5952,
+          "best_decimal": 1.78,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "spreads": {
+        "Austria_+1.5": {
+          "team": "Austria",
+          "handicap": 1.5,
+          "avg_implied": 0.5305,
+          "best_decimal": 1.885
+        },
+        "Spain_-1.5": {
+          "team": "Spain",
+          "handicap": -1.5,
+          "avg_implied": 0.4902,
+          "best_decimal": 2.04
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:07:59.318760"
+  },
+  "Portugal vs Croatia": {
+    "home_team": "Portugal",
+    "away_team": "Croatia",
+    "commence_time": "2026-07-02T23:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Portugal",
+      "away_team": "Croatia",
+      "books": {
+        "fanduel": {
+          "home_american": -140,
+          "away_american": 420,
+          "draw_american": 260,
+          "home_decimal": 1.7143,
+          "away_decimal": 5.2,
+          "draw_decimal": 3.6,
+          "home_implied": 0.5537,
+          "away_implied": 0.1826,
+          "draw_implied": 0.2637
+        },
+        "sport888": {
+          "home_american": -150,
+          "away_american": 360,
+          "draw_american": 250,
+          "home_decimal": 1.6667,
+          "away_decimal": 4.6,
+          "draw_decimal": 3.5,
+          "home_implied": 0.5439,
+          "away_implied": 0.1971,
+          "draw_implied": 0.259
+        },
+        "betfair_ex_eu": {
+          "home_american": -127,
+          "away_american": 450,
+          "draw_american": 275,
+          "home_decimal": 1.7874,
+          "away_decimal": 5.5,
+          "draw_decimal": 3.75,
+          "home_implied": 0.5551,
+          "away_implied": 0.1804,
+          "draw_implied": 0.2646
+        },
+        "draftkings": {
+          "home_american": -140,
+          "away_american": 400,
+          "draw_american": 280,
+          "home_decimal": 1.7143,
+          "away_decimal": 5.0,
+          "draw_decimal": 3.8,
+          "home_implied": 0.5574,
+          "away_implied": 0.1911,
+          "draw_implied": 0.2515
+        },
+        "pinnacle": {
+          "home_american": -130,
+          "away_american": 418,
+          "draw_american": 275,
+          "home_decimal": 1.7692,
+          "away_decimal": 5.18,
+          "draw_decimal": 3.75,
+          "home_implied": 0.5514,
+          "away_implied": 0.1884,
+          "draw_implied": 0.2602
+        }
+      },
+      "consensus": {
+        "home_implied": 0.5501,
+        "draw_implied": 0.2613,
+        "away_implied": 0.1886
+      },
+      "best_home_odds": 1.7874,
+      "best_away_odds": 5.5,
+      "best_draw_odds": 3.8
+    },
+    "totals": {
+      "home_team": "Portugal",
+      "away_team": "Croatia",
+      "totals": {
+        "2.75_over": {
+          "avg_implied": 0.5025,
+          "best_decimal": 1.9901,
+          "n_books": 1
+        },
+        "2.75_under": {
+          "avg_implied": 0.5215,
+          "best_decimal": 1.9174,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.5794,
+          "best_decimal": 1.8,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.4831,
+          "best_decimal": 2.26,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Portugal",
+      "away_team": "Croatia",
+      "spreads": {
+        "Croatia_+0.8": {
+          "team": "Croatia",
+          "handicap": 0.75,
+          "avg_implied": 0.5169,
+          "best_decimal": 1.9346
+        },
+        "Portugal_-0.8": {
+          "team": "Portugal",
+          "handicap": -0.75,
+          "avg_implied": 0.5049,
+          "best_decimal": 1.9804
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:07:59.600580"
+  },
+  "Switzerland vs Algeria": {
+    "home_team": "Switzerland",
+    "away_team": "Algeria",
+    "commence_time": "2026-07-03T03:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "books": {
+        "fanduel": {
+          "home_american": 100,
+          "away_american": 320,
+          "draw_american": 210,
+          "home_decimal": 2.0,
+          "away_decimal": 4.2,
+          "draw_decimal": 3.1,
+          "home_implied": 0.4714,
+          "away_implied": 0.2245,
+          "draw_implied": 0.3041
+        },
+        "betfair_ex_eu": {
+          "home_american": 110,
+          "away_american": 340,
+          "draw_american": 230,
+          "home_decimal": 2.1,
+          "away_decimal": 4.4,
+          "draw_decimal": 3.3,
+          "home_implied": 0.4731,
+          "away_implied": 0.2258,
+          "draw_implied": 0.301
+        },
+        "sport888": {
+          "home_american": 100,
+          "away_american": 280,
+          "draw_american": 210,
+          "home_decimal": 2.0,
+          "away_decimal": 3.8,
+          "draw_decimal": 3.1,
+          "home_implied": 0.4605,
+          "away_implied": 0.2424,
+          "draw_implied": 0.2971
+        },
+        "draftkings": {
+          "home_american": 100,
+          "away_american": 320,
+          "draw_american": 225,
+          "home_decimal": 2.0,
+          "away_decimal": 4.2,
+          "draw_decimal": 3.25,
+          "home_implied": 0.4781,
+          "away_implied": 0.2277,
+          "draw_implied": 0.2942
+        },
+        "pinnacle": {
+          "home_american": 104,
+          "away_american": 336,
+          "draw_american": 230,
+          "home_decimal": 2.04,
+          "away_decimal": 4.36,
+          "draw_decimal": 3.3,
+          "home_implied": 0.4794,
+          "away_implied": 0.2243,
+          "draw_implied": 0.2963
+        }
+      },
+      "consensus": {
+        "home_implied": 0.471,
+        "draw_implied": 0.2981,
+        "away_implied": 0.2308
+      },
+      "best_home_odds": 2.1,
+      "best_away_odds": 4.4,
+      "best_draw_odds": 3.3
+    },
+    "totals": {
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "totals": {
+        "2.25_over": {
+          "avg_implied": 0.5169,
+          "best_decimal": 1.9346,
+          "n_books": 1
+        },
+        "2.25_under": {
+          "avg_implied": 0.5074,
+          "best_decimal": 1.9709,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.5305,
+          "best_decimal": 1.95,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.5308,
+          "best_decimal": 2.02,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "spreads": {
+        "Algeria_+0.5": {
+          "team": "Algeria",
+          "handicap": 0.5,
+          "avg_implied": 0.5283,
+          "best_decimal": 1.8929
+        },
+        "Switzerland_-0.5": {
+          "team": "Switzerland",
+          "handicap": -0.5,
+          "avg_implied": 0.4902,
+          "best_decimal": 2.04
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:07:59.892907"
+  },
+  "Australia vs Egypt": {
+    "home_team": "Australia",
+    "away_team": "Egypt",
+    "commence_time": "2026-07-03T18:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Australia",
+      "away_team": "Egypt",
+      "books": {
+        "fanduel": {
+          "home_american": 240,
+          "away_american": 145,
+          "draw_american": 180,
+          "home_decimal": 3.4,
+          "away_decimal": 2.45,
+          "draw_decimal": 2.8,
+          "home_implied": 0.2776,
+          "away_implied": 0.3853,
+          "draw_implied": 0.3371
+        },
+        "betfair_ex_eu": {
+          "home_american": 260,
+          "away_american": 158,
+          "draw_american": 196,
+          "home_decimal": 3.6,
+          "away_decimal": 2.58,
+          "draw_decimal": 2.96,
+          "home_implied": 0.2769,
+          "away_implied": 0.3864,
+          "draw_implied": 0.3367
+        },
+        "pinnacle": {
+          "home_american": 240,
+          "away_american": 152,
+          "draw_american": 192,
+          "home_decimal": 3.4,
+          "away_decimal": 2.52,
+          "draw_decimal": 2.92,
+          "home_implied": 0.2846,
+          "away_implied": 0.384,
+          "draw_implied": 0.3314
+        },
+        "sport888": {
+          "home_american": 210,
+          "away_american": 140,
+          "draw_american": 180,
+          "home_decimal": 3.1,
+          "away_decimal": 2.4,
+          "draw_decimal": 2.8,
+          "home_implied": 0.2942,
+          "away_implied": 0.3801,
+          "draw_implied": 0.3257
+        },
+        "draftkings": {
+          "home_american": 230,
+          "away_american": 150,
+          "draw_american": 190,
+          "home_decimal": 3.3,
+          "away_decimal": 2.5,
+          "draw_decimal": 2.9,
+          "home_implied": 0.2892,
+          "away_implied": 0.3818,
+          "draw_implied": 0.3291
+        }
+      },
+      "consensus": {
+        "home_implied": 0.2852,
+        "draw_implied": 0.3313,
+        "away_implied": 0.3835
+      },
+      "best_home_odds": 3.6,
+      "best_away_odds": 2.58,
+      "best_draw_odds": 2.96
+    },
+    "totals": {
+      "home_team": "Australia",
+      "away_team": "Egypt",
+      "totals": {
+        "2.0_over": {
+          "avg_implied": 0.4808,
+          "best_decimal": 2.08,
+          "n_books": 1
+        },
+        "2.0_under": {
+          "avg_implied": 0.5475,
+          "best_decimal": 1.8264,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.4568,
+          "best_decimal": 2.26,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.6062,
+          "best_decimal": 1.75,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Australia",
+      "away_team": "Egypt",
+      "spreads": {
+        "Australia_+0.2": {
+          "team": "Australia",
+          "handicap": 0.25,
+          "avg_implied": 0.5516,
+          "best_decimal": 1.813
+        },
+        "Egypt_-0.2": {
+          "team": "Egypt",
+          "handicap": -0.25,
+          "avg_implied": 0.4717,
+          "best_decimal": 2.12
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:00.188222"
+  },
+  "Argentina vs Cape Verde": {
+    "home_team": "Argentina",
+    "away_team": "Cape Verde",
+    "commence_time": "2026-07-03T22:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Argentina",
+      "away_team": "Cape Verde",
+      "books": {
+        "pinnacle": {
+          "home_american": -628,
+          "away_american": 1849,
+          "draw_american": 729,
+          "home_decimal": 1.1592,
+          "away_decimal": 19.49,
+          "draw_decimal": 8.29,
+          "home_implied": 0.8338,
+          "away_implied": 0.0496,
+          "draw_implied": 0.1166
+        },
+        "sport888": {
+          "home_american": -654,
+          "away_american": 1600,
+          "draw_american": 600,
+          "home_decimal": 1.1529,
+          "away_decimal": 17.0,
+          "draw_decimal": 7.0,
+          "home_implied": 0.8113,
+          "away_implied": 0.055,
+          "draw_implied": 0.1337
+        },
+        "draftkings": {
+          "home_american": -600,
+          "away_american": 1800,
+          "draw_american": 700,
+          "home_decimal": 1.1667,
+          "away_decimal": 19.0,
+          "draw_decimal": 8.0,
+          "home_implied": 0.8284,
+          "away_implied": 0.0508,
+          "draw_implied": 0.1208
+        },
+        "fanduel": {
+          "home_american": -700,
+          "away_american": 1900,
+          "draw_american": 650,
+          "home_decimal": 1.1429,
+          "away_decimal": 20.0,
+          "draw_decimal": 7.5,
+          "home_implied": 0.8268,
+          "away_implied": 0.0472,
+          "draw_implied": 0.126
+        },
+        "betfair_ex_eu": {
+          "home_american": -556,
+          "away_american": 2400,
+          "draw_american": 740,
+          "home_decimal": 1.1799,
+          "away_decimal": 25.0,
+          "draw_decimal": 8.4,
+          "home_implied": 0.842,
+          "away_implied": 0.0397,
+          "draw_implied": 0.1182
+        }
+      },
+      "consensus": {
+        "home_implied": 0.829,
+        "draw_implied": 0.1228,
+        "away_implied": 0.0481
+      },
+      "best_home_odds": 1.1799,
+      "best_away_odds": 25.0,
+      "best_draw_odds": 8.4
+    },
+    "totals": {
+      "home_team": "Argentina",
+      "away_team": "Cape Verde",
+      "totals": {
+        "2.75_over": {
+          "avg_implied": 0.5392,
+          "best_decimal": 1.8547,
+          "n_books": 1
+        },
+        "2.75_under": {
+          "avg_implied": 0.4902,
+          "best_decimal": 2.04,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.3542,
+          "best_decimal": 3.0,
+          "n_books": 15
+        },
+        "btts_no": {
+          "avg_implied": 0.7122,
+          "best_decimal": 1.48,
+          "n_books": 15
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Argentina",
+      "away_team": "Cape Verde",
+      "spreads": {
+        "Argentina_-2.0": {
+          "team": "Argentina",
+          "handicap": -2.0,
+          "avg_implied": 0.5122,
+          "best_decimal": 1.9524
+        },
+        "Cape Verde_+2.0": {
+          "team": "Cape Verde",
+          "handicap": 2.0,
+          "avg_implied": 0.5122,
+          "best_decimal": 1.9524
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:00.478187"
+  },
+  "Colombia vs Ghana": {
+    "home_team": "Colombia",
+    "away_team": "Ghana",
+    "commence_time": "2026-07-04T01:30:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Colombia",
+      "away_team": "Ghana",
+      "books": {
+        "fanduel": {
+          "home_american": -200,
+          "away_american": 650,
+          "draw_american": 290,
+          "home_decimal": 1.5,
+          "away_decimal": 7.5,
+          "draw_decimal": 3.9,
+          "home_implied": 0.6311,
+          "away_implied": 0.1262,
+          "draw_implied": 0.2427
+        },
+        "sport888": {
+          "home_american": -200,
+          "away_american": 600,
+          "draw_american": 270,
+          "home_decimal": 1.5,
+          "away_decimal": 7.0,
+          "draw_decimal": 3.7,
+          "home_implied": 0.6174,
+          "away_implied": 0.1323,
+          "draw_implied": 0.2503
+        },
+        "betfair_ex_eu": {
+          "home_american": -179,
+          "away_american": 740,
+          "draw_american": 310,
+          "home_decimal": 1.5587,
+          "away_decimal": 8.4,
+          "draw_decimal": 4.1,
+          "home_implied": 0.6387,
+          "away_implied": 0.1185,
+          "draw_implied": 0.2428
+        },
+        "draftkings": {
+          "home_american": -190,
+          "away_american": 600,
+          "draw_american": 310,
+          "home_decimal": 1.5263,
+          "away_decimal": 7.0,
+          "draw_decimal": 4.1,
+          "home_implied": 0.6288,
+          "away_implied": 0.1371,
+          "draw_implied": 0.2341
+        },
+        "pinnacle": {
+          "home_american": -190,
+          "away_american": 640,
+          "draw_american": 305,
+          "home_decimal": 1.5263,
+          "away_decimal": 7.4,
+          "draw_decimal": 4.05,
+          "home_implied": 0.6317,
+          "away_implied": 0.1303,
+          "draw_implied": 0.238
+        }
+      },
+      "consensus": {
+        "home_implied": 0.6293,
+        "draw_implied": 0.2437,
+        "away_implied": 0.127
+      },
+      "best_home_odds": 1.5587,
+      "best_away_odds": 8.4,
+      "best_draw_odds": 4.1
+    },
+    "totals": {
+      "home_team": "Colombia",
+      "away_team": "Ghana",
+      "totals": {
+        "2.25_over": {
+          "avg_implied": 0.5025,
+          "best_decimal": 1.9901,
+          "n_books": 1
+        },
+        "2.25_under": {
+          "avg_implied": 0.5261,
+          "best_decimal": 1.9009,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.4251,
+          "best_decimal": 2.55,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.6391,
+          "best_decimal": 1.63,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Colombia",
+      "away_team": "Ghana",
+      "spreads": {
+        "Colombia_-1.0": {
+          "team": "Colombia",
+          "handicap": -1.0,
+          "avg_implied": 0.5215,
+          "best_decimal": 1.9174
+        },
+        "Ghana_+1.0": {
+          "team": "Ghana",
+          "handicap": 1.0,
+          "avg_implied": 0.5025,
+          "best_decimal": 1.9901
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:00.771498"
+  },
+  "Canada vs Morocco": {
+    "home_team": "Canada",
+    "away_team": "Morocco",
+    "commence_time": "2026-07-04T17:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Canada",
+      "away_team": "Morocco",
+      "books": {
+        "pinnacle": {
+          "home_american": 420,
+          "away_american": -126,
+          "draw_american": 250,
+          "home_decimal": 5.2,
+          "away_decimal": 1.7937,
+          "draw_decimal": 3.5,
+          "home_implied": 0.1857,
+          "away_implied": 0.5384,
+          "draw_implied": 0.2759
+        },
+        "fanduel": {
+          "home_american": 420,
+          "away_american": -130,
+          "draw_american": 240,
+          "home_decimal": 5.2,
+          "away_decimal": 1.7692,
+          "draw_decimal": 3.4,
+          "home_implied": 0.1829,
+          "away_implied": 0.5375,
+          "draw_implied": 0.2797
+        },
+        "betfair_ex_eu": {
+          "home_american": 450,
+          "away_american": -119,
+          "draw_american": 255,
+          "home_decimal": 5.5,
+          "away_decimal": 1.8403,
+          "draw_decimal": 3.55,
+          "home_implied": 0.1806,
+          "away_implied": 0.5397,
+          "draw_implied": 0.2798
+        },
+        "sport888": {
+          "home_american": 360,
+          "away_american": -133,
+          "draw_american": 225,
+          "home_decimal": 4.6,
+          "away_decimal": 1.7519,
+          "draw_decimal": 3.25,
+          "home_implied": 0.1984,
+          "away_implied": 0.5209,
+          "draw_implied": 0.2808
+        },
+        "draftkings": {
+          "home_american": 400,
+          "away_american": -125,
+          "draw_american": 250,
+          "home_decimal": 5.0,
+          "away_decimal": 1.8,
+          "draw_decimal": 3.5,
+          "home_implied": 0.1921,
+          "away_implied": 0.5336,
+          "draw_implied": 0.2744
+        }
+      },
+      "consensus": {
+        "home_implied": 0.1882,
+        "draw_implied": 0.2788,
+        "away_implied": 0.533
+      },
+      "best_home_odds": 5.5,
+      "best_away_odds": 1.8403,
+      "best_draw_odds": 3.55
+    },
+    "totals": {
+      "home_team": "Canada",
+      "away_team": "Morocco",
+      "totals": {
+        "2.25_over": {
+          "avg_implied": 0.4854,
+          "best_decimal": 2.06,
+          "n_books": 1
+        },
+        "2.25_under": {
+          "avg_implied": 0.5434,
+          "best_decimal": 1.8403,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.481,
+          "best_decimal": 2.18,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.582,
+          "best_decimal": 1.79,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Canada",
+      "away_team": "Morocco",
+      "spreads": {
+        "Canada_+0.8": {
+          "team": "Canada",
+          "handicap": 0.75,
+          "avg_implied": 0.5434,
+          "best_decimal": 1.8403
+        },
+        "Morocco_-0.8": {
+          "team": "Morocco",
+          "handicap": -0.75,
+          "avg_implied": 0.4808,
+          "best_decimal": 2.08
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:01.064283"
+  },
+  "Paraguay vs France": {
+    "home_team": "Paraguay",
+    "away_team": "France",
+    "commence_time": "2026-07-04T21:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Paraguay",
+      "away_team": "France",
+      "books": {
+        "pinnacle": {
+          "home_american": 1644,
+          "away_american": -521,
+          "draw_american": 617,
+          "home_decimal": 17.44,
+          "away_decimal": 1.1919,
+          "draw_decimal": 7.17,
+          "home_implied": 0.0553,
+          "away_implied": 0.81,
+          "draw_implied": 0.1347
+        },
+        "draftkings": {
+          "home_american": 1800,
+          "away_american": -575,
+          "draw_american": 600,
+          "home_decimal": 19.0,
+          "away_decimal": 1.1739,
+          "draw_decimal": 7.0,
+          "home_implied": 0.0502,
+          "away_implied": 0.8133,
+          "draw_implied": 0.1364
+        },
+        "betfair_ex_eu": {
+          "home_american": 2200,
+          "away_american": -500,
+          "draw_american": 660,
+          "home_decimal": 23.0,
+          "away_decimal": 1.2,
+          "draw_decimal": 7.6,
+          "home_implied": 0.0431,
+          "away_implied": 0.8264,
+          "draw_implied": 0.1305
+        },
+        "sport888": {
+          "home_american": 1200,
+          "away_american": -549,
+          "draw_american": 500,
+          "home_decimal": 13.0,
+          "away_decimal": 1.1821,
+          "draw_decimal": 6.0,
+          "home_implied": 0.0706,
+          "away_implied": 0.7764,
+          "draw_implied": 0.153
+        },
+        "fanduel": {
+          "home_american": 1800,
+          "away_american": -600,
+          "draw_american": 600,
+          "home_decimal": 19.0,
+          "away_decimal": 1.1667,
+          "draw_decimal": 7.0,
+          "home_implied": 0.05,
+          "away_implied": 0.8143,
+          "draw_implied": 0.1358
+        }
+      },
+      "consensus": {
+        "home_implied": 0.0563,
+        "draw_implied": 0.1394,
+        "away_implied": 0.8043
+      },
+      "best_home_odds": 23.0,
+      "best_away_odds": 1.2,
+      "best_draw_odds": 7.6
+    },
+    "totals": {
+      "home_team": "Paraguay",
+      "away_team": "France",
+      "totals": {
+        "3.0_over": {
+          "avg_implied": 0.4831,
+          "best_decimal": 2.07,
+          "n_books": 1
+        },
+        "3.0_under": {
+          "avg_implied": 0.5475,
+          "best_decimal": 1.8264,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.3972,
+          "best_decimal": 2.72,
+          "n_books": 15
+        },
+        "btts_no": {
+          "avg_implied": 0.6691,
+          "best_decimal": 1.55,
+          "n_books": 15
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Paraguay",
+      "away_team": "France",
+      "spreads": {
+        "France_-2.0": {
+          "team": "France",
+          "handicap": -2.0,
+          "avg_implied": 0.4926,
+          "best_decimal": 2.03
+        },
+        "Paraguay_+2.0": {
+          "team": "Paraguay",
+          "handicap": 2.0,
+          "avg_implied": 0.5305,
+          "best_decimal": 1.885
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:01.343505"
+  },
+  "Brazil vs Norway": {
+    "home_team": "Brazil",
+    "away_team": "Norway",
+    "commence_time": "2026-07-05T20:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Brazil",
+      "away_team": "Norway",
+      "books": {
+        "sport888": {
+          "home_american": -118,
+          "away_american": 280,
+          "draw_american": 240,
+          "home_decimal": 1.8475,
+          "away_decimal": 3.8,
+          "draw_decimal": 3.4,
+          "home_implied": 0.4927,
+          "away_implied": 0.2396,
+          "draw_implied": 0.2677
+        },
+        "betfair_ex_eu": {
+          "home_american": -105,
+          "away_american": 340,
+          "draw_american": 275,
+          "home_decimal": 1.9524,
+          "away_decimal": 4.4,
+          "draw_decimal": 3.75,
+          "home_implied": 0.509,
+          "away_implied": 0.2259,
+          "draw_implied": 0.2651
+        },
+        "pinnacle": {
+          "home_american": -111,
+          "away_american": 309,
+          "draw_american": 276,
+          "home_decimal": 1.9009,
+          "away_decimal": 4.09,
+          "draw_decimal": 3.76,
+          "home_implied": 0.5075,
+          "away_implied": 0.2359,
+          "draw_implied": 0.2566
+        },
+        "draftkings": {
+          "home_american": -110,
+          "away_american": 300,
+          "draw_american": 270,
+          "home_decimal": 1.9091,
+          "away_decimal": 4.0,
+          "draw_decimal": 3.7,
+          "home_implied": 0.5017,
+          "away_implied": 0.2394,
+          "draw_implied": 0.2589
+        },
+        "fanduel": {
+          "home_american": -115,
+          "away_american": 320,
+          "draw_american": 260,
+          "home_decimal": 1.8696,
+          "away_decimal": 4.2,
+          "draw_decimal": 3.6,
+          "home_implied": 0.509,
+          "away_implied": 0.2266,
+          "draw_implied": 0.2644
+        }
+      },
+      "consensus": {
+        "home_implied": 0.5031,
+        "draw_implied": 0.2631,
+        "away_implied": 0.2338
+      },
+      "best_home_odds": 1.9524,
+      "best_away_odds": 4.4,
+      "best_draw_odds": 3.76
+    },
+    "totals": {
+      "home_team": "Brazil",
+      "away_team": "Norway",
+      "totals": {
+        "2.75_over": {
+          "avg_implied": 0.5025,
+          "best_decimal": 1.9901,
+          "n_books": 1
+        },
+        "2.75_under": {
+          "avg_implied": 0.5261,
+          "best_decimal": 1.9009,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.5989,
+          "best_decimal": 1.73,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.4669,
+          "best_decimal": 2.3,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Brazil",
+      "away_team": "Norway",
+      "spreads": {
+        "Brazil_-0.5": {
+          "team": "Brazil",
+          "handicap": -0.5,
+          "avg_implied": 0.5215,
+          "best_decimal": 1.9174
+        },
+        "Norway_+0.5": {
+          "team": "Norway",
+          "handicap": 0.5,
+          "avg_implied": 0.5025,
+          "best_decimal": 1.9901
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:01.633347"
+  },
+  "Mexico vs England": {
+    "home_team": "Mexico",
+    "away_team": "England",
+    "commence_time": "2026-07-06T00:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "Mexico",
+      "away_team": "England",
+      "books": {
+        "fanduel": {
+          "home_american": 195,
+          "away_american": 150,
+          "draw_american": 210,
+          "home_decimal": 2.95,
+          "away_decimal": 2.5,
+          "draw_decimal": 3.1,
+          "home_implied": 0.3193,
+          "away_implied": 0.3768,
+          "draw_implied": 0.3039
+        },
+        "pinnacle": {
+          "home_american": 204,
+          "away_american": 157,
+          "draw_american": 218,
+          "home_decimal": 3.04,
+          "away_decimal": 2.57,
+          "draw_decimal": 3.18,
+          "home_implied": 0.3185,
+          "away_implied": 0.3769,
+          "draw_implied": 0.3046
+        },
+        "sport888": {
+          "home_american": 190,
+          "away_american": 150,
+          "draw_american": 190,
+          "home_decimal": 2.9,
+          "away_decimal": 2.5,
+          "draw_decimal": 2.9,
+          "home_implied": 0.3164,
+          "away_implied": 0.3671,
+          "draw_implied": 0.3164
+        },
+        "betfair_ex_eu": {
+          "home_american": 215,
+          "away_american": 158,
+          "draw_american": 230,
+          "home_decimal": 3.15,
+          "away_decimal": 2.58,
+          "draw_decimal": 3.3,
+          "home_implied": 0.3149,
+          "away_implied": 0.3845,
+          "draw_implied": 0.3006
+        },
+        "draftkings": {
+          "home_american": 205,
+          "away_american": 155,
+          "draw_american": 215,
+          "home_decimal": 3.05,
+          "away_decimal": 2.55,
+          "draw_decimal": 3.15,
+          "home_implied": 0.316,
+          "away_implied": 0.378,
+          "draw_implied": 0.306
+        }
+      },
+      "consensus": {
+        "home_implied": 0.3166,
+        "draw_implied": 0.3072,
+        "away_implied": 0.3762
+      },
+      "best_home_odds": 3.15,
+      "best_away_odds": 2.58,
+      "best_draw_odds": 3.3
+    },
+    "totals": {
+      "home_team": "Mexico",
+      "away_team": "England",
+      "totals": {
+        "2.0_over": {
+          "avg_implied": 0.5261,
+          "best_decimal": 1.9009,
+          "n_books": 1
+        },
+        "2.0_under": {
+          "avg_implied": 0.5049,
+          "best_decimal": 1.9804,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.4905,
+          "best_decimal": 2.15,
+          "n_books": 16
+        },
+        "btts_no": {
+          "avg_implied": 0.5725,
+          "best_decimal": 1.83,
+          "n_books": 16
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "Mexico",
+      "away_team": "England",
+      "spreads": {
+        "England_-0.0": {
+          "team": "England",
+          "handicap": -0.0,
+          "avg_implied": 0.5556,
+          "best_decimal": 1.8
+        },
+        "Mexico_+0.0": {
+          "team": "Mexico",
+          "handicap": 0.0,
+          "avg_implied": 0.4695,
+          "best_decimal": 2.13
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:01.944106"
+  },
+  "USA vs Belgium": {
+    "home_team": "USA",
+    "away_team": "Belgium",
+    "commence_time": "2026-07-07T00:00:00Z",
+    "sport": "FIFA World Cup",
+    "h2h": {
+      "home_team": "USA",
+      "away_team": "Belgium",
+      "books": {
+        "fanduel": {
+          "home_american": 150,
+          "away_american": 180,
+          "draw_american": 230,
+          "home_decimal": 2.5,
+          "away_decimal": 2.8,
+          "draw_decimal": 3.3,
+          "home_implied": 0.3773,
+          "away_implied": 0.3369,
+          "draw_implied": 0.2858
+        },
+        "betfair_ex_eu": {
+          "home_american": 164,
+          "away_american": 188,
+          "draw_american": 250,
+          "home_decimal": 2.64,
+          "away_decimal": 2.88,
+          "draw_decimal": 3.5,
+          "home_implied": 0.3744,
+          "away_implied": 0.3432,
+          "draw_implied": 0.2824
+        },
+        "pinnacle": {
+          "home_american": 160,
+          "away_american": 178,
+          "draw_american": 247,
+          "home_decimal": 2.6,
+          "away_decimal": 2.78,
+          "draw_decimal": 3.47,
+          "home_implied": 0.3725,
+          "away_implied": 0.3484,
+          "draw_implied": 0.2791
+        },
+        "draftkings": {
+          "home_american": 150,
+          "away_american": 180,
+          "draw_american": 250,
+          "home_decimal": 2.5,
+          "away_decimal": 2.8,
+          "draw_decimal": 3.5,
+          "home_implied": 0.3836,
+          "away_implied": 0.3424,
+          "draw_implied": 0.274
+        },
+        "sport888": {
+          "home_american": 150,
+          "away_american": 162,
+          "draw_american": 220,
+          "home_decimal": 2.5,
+          "away_decimal": 2.62,
+          "draw_decimal": 3.2,
+          "home_implied": 0.3656,
+          "away_implied": 0.3488,
+          "draw_implied": 0.2856
+        }
+      },
+      "consensus": {
+        "home_implied": 0.3708,
+        "draw_implied": 0.2824,
+        "away_implied": 0.3468
+      },
+      "best_home_odds": 2.64,
+      "best_away_odds": 2.88,
+      "best_draw_odds": 3.5
+    },
+    "totals": {
+      "home_team": "USA",
+      "away_team": "Belgium",
+      "totals": {
+        "2.75_over": {
+          "avg_implied": 0.5,
+          "best_decimal": 2.0,
+          "n_books": 1
+        },
+        "2.75_under": {
+          "avg_implied": 0.5283,
+          "best_decimal": 1.8929,
+          "n_books": 1
+        },
+        "btts_yes": {
+          "avg_implied": 0.6294,
+          "best_decimal": 1.67,
+          "n_books": 15
+        },
+        "btts_no": {
+          "avg_implied": 0.4338,
+          "best_decimal": 2.44,
+          "n_books": 15
+        }
+      }
+    },
+    "spreads": {
+      "home_team": "USA",
+      "away_team": "Belgium",
+      "spreads": {
+        "Belgium_-0.0": {
+          "team": "Belgium",
+          "handicap": -0.0,
+          "avg_implied": 0.495,
+          "best_decimal": 2.02
+        },
+        "USA_+0.0": {
+          "team": "USA",
+          "handicap": 0.0,
+          "avg_implied": 0.5283,
+          "best_decimal": 1.8929
+        }
+      }
+    },
+    "fetched_at": "2026-07-02T08:08:02.235638"
+  }
+}
