@@ -644,7 +644,7 @@ async function loadData() {
 const GITHUB_REPO   = "ben79sf-del/worldcup-model";
 const GITHUB_BRANCH = "main";
 const TRACKER_PATH  = "predictions/tracker_log.json";
-const GITHUB_TOKEN  = "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";
+const GITHUB_TOKEN  = "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";
 const TRACKER_RAW_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/${TRACKER_PATH}`;
 
 let _trackerState = null;  // in-memory cache
@@ -875,7 +875,7 @@ function renderBetTable(bets, showResultPicker) {
   </div>`;
 }
 
-function toggleResult(id) {
+async function toggleResult(id) {
   const state = await loadTrackerState();
   if (!state[id]) return;
   // Cycle: win → loss → void → win
