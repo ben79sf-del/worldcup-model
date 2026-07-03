@@ -565,7 +565,12 @@
 
   <!-- RESULTS TAB -->
   <div id="tab-results" class="tab-content">
-    <div class="section-title">🎯 Value Bet Tracker</div>
+    <div class="section-title">🎯 Value Bet Tracker
+      <span style="float:right;display:flex;gap:8px;margin-top:-2px">
+        <button onclick="exportTracker()" style="font-size:11px;padding:4px 10px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:6px;cursor:pointer">📤 Export</button>
+        <button onclick="importTracker()" style="font-size:11px;padding:4px 10px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:6px;cursor:pointer">📥 Import</button>
+      </span>
+    </div>
     <div id="resultsContent"></div>
   </div>
 
@@ -640,46 +645,14 @@ async function loadData() {
 }
 
 // ── Value Bet Tracker ────────────────────────────────────────────────────────
-// Tracker state — persisted in GitHub Gist so all devices stay in sync
-const GIST_ID    = "2f6154c1330ed93c234dd6dd51b7aad5";
-const GIST_FILE  = "wc2026_tracker.json";
-const GIST_TOKEN = atob("cDdleFAxWlIxdzVVVmpxNUFWYjJtM3Z2SEFsdWY5RXczZzVTX3BoZw==").split("").reverse().join("");
-const GIST_URL   = `https://api.github.com/gists/${GIST_ID}`;
-
-let _trackerState   = null;
-let _trackerLoading = null;
+// Tracker state — persisted in localStorage
+const TRACKER_KEY = "wc2026_vb_tracker_v1";
 
 async function loadTrackerState() {
-  if (_trackerState) return _trackerState;
-  if (_trackerLoading) return _trackerLoading;
-  _trackerLoading = (async () => {
-    try {
-      const res = await fetch(GIST_URL + "?t=" + Date.now(), {
-        headers: { Authorization: `token ${GIST_TOKEN}` }
-      });
-      if (res.ok) {
-        const data = await res.json();
-        const raw = data.files?.[GIST_FILE]?.content || "{}";
-        _trackerState = JSON.parse(raw);
-      } else {
-        _trackerState = {};
-      }
-    } catch { _trackerState = {}; }
-    _trackerLoading = null;
-    return _trackerState;
-  })();
-  return _trackerLoading;
+  try { return JSON.parse(localStorage.getItem(TRACKER_KEY) || "{}"); } catch { return {}; }
 }
-
 async function saveTrackerState(state) {
-  _trackerState = state;
-  try {
-    await fetch(GIST_URL, {
-      method: "PATCH",
-      headers: { Authorization: `token ${GIST_TOKEN}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ files: { [GIST_FILE]: { content: JSON.stringify(state, null, 2) } } })
-    });
-  } catch(e) { console.error("Tracker save failed:", e); }
+  localStorage.setItem(TRACKER_KEY, JSON.stringify(state));
 }
 
 // Called after predictions load — syncs any new value bets into tracker
@@ -732,6 +705,29 @@ async function setResult(id, result) {
   }
   await saveTrackerState(state);
   renderTracker();
+}
+
+async function exportTracker() {
+  const state = await loadTrackerState();
+  const json = JSON.stringify(state, null, 2);
+  navigator.clipboard.writeText(json).then(() => {
+    alert("Tracker data copied to clipboard!\n\nPaste it into the Import box on your other device.");
+  }).catch(() => {
+    prompt("Copy this tracker data:", json);
+  });
+}
+
+async function importTracker() {
+  const json = prompt("Paste tracker data from your other device:");
+  if (!json) return;
+  try {
+    const state = JSON.parse(json);
+    await saveTrackerState(state);
+    renderTracker();
+    alert("Tracker imported successfully!");
+  } catch(e) {
+    alert("Invalid data — make sure you pasted the full export.");
+  }
 }
 
 async function renderTracker() {
