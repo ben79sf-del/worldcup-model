@@ -1,10 +1,10 @@
 
 ============================================================
   🌍 WORLD CUP 2026 — Daily Predictions
-  Monday, July 06 2026
+  Tuesday, July 07 2026
 ============================================================
-  Fixtures predicted: 15
-  Value bets found:   1
+  Fixtures predicted: 16
+  Value bets found:   4
 
   📅 2026-06-29
     Brazil vs Japan
@@ -49,7 +49,12 @@
   📅 2026-07-09
     France vs Morocco
       1X2: 47.9% / 31.9% / 20.3%  |  xG: 1.48–0.91  |  O2.5: 42.7%
-      ✅ GOOD Under 2.5 @ 1.8547 (edge: +6.3%, Kelly: 1.8%)
+      ✅ GOOD Under 2.5 @ 1.885 (edge: +8.0%, Kelly: 2.3%)
+
+  📅 2026-07-10
+    Spain vs Belgium
+      1X2: 52.3% / 30.4% / 17.3%  |  xG: 1.59–0.85  |  O2.5: 44.2%
+      🔥 STRONG Draw @ 4.1 (edge: +24.5%, Kelly: 2.0%)
 
   📅 2026-07-11
     Norway vs England
