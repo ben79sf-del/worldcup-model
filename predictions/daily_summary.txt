@@ -1,9 +1,9 @@
 
 ============================================================
   🌍 WORLD CUP 2026 — Daily Predictions
-  Wednesday, July 15 2026
+  Thursday, July 16 2026
 ============================================================
-  Fixtures predicted: 14
+  Fixtures predicted: 15
   Value bets found:   1
 
   📅 2026-06-29
@@ -46,7 +46,11 @@
     Brazil vs Norway
       1X2: 46.2% / 23.6% / 30.2%  |  xG: 1.75–1.15  |  O2.5: 55.4%
 
-  📅 2026-07-15
-    England vs Argentina
-      1X2: 11.7% / 40.9% / 47.3%  |  xG: 0.37–0.96  |  O2.5: 14.9%
-      🔥 STRONG Draw @ 2.98 (edge: +22.0%, Kelly: 2.8%)
+  📅 2026-07-18
+    France vs England
+      1X2: 44.8% / 34.8% / 20.4%  |  xG: 1.28–0.80  |  O2.5: 34.4%
+
+  📅 2026-07-19
+    Spain vs Argentina
+      1X2: 20.8% / 39.2% / 40.0%  |  xG: 0.67–1.01  |  O2.5: 23.6%
+      🔥 STRONG Draw @ 3.1 (edge: +21.6%, Kelly: 2.6%)
