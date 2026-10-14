@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T15:37:08.108618",
+  "generated_at": "2026-10-14T13:20:19.362259",
   "tournament": "FIFA World Cup 2026",
   "total_fixtures": 13,
   "total_value_bets": 0,
@@ -24,9 +24,9 @@
         "p_home_win": 0.4071,
         "p_draw": 0.3549,
         "p_away_win": 0.2379,
-        "p_over_2_5": 0.34488860035333635,
-        "p_under_2_5": 0.6551113996466637,
-        "p_over_3_5": 0.15753755331374802,
+        "p_over_2_5": 0.3448886003533363,
+        "p_under_2_5": 0.6551113996466638,
+        "p_over_3_5": 0.157537553313748,
         "p_btts": 0.4083,
         "p_no_btts": 0.5917,
         "most_likely_score": "1-1",
@@ -126,7 +126,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.013421",
+      "generated_at": "2026-10-14T13:20:19.317167",
       "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
@@ -172,7 +172,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.015874",
+      "generated_at": "2026-10-14T13:20:19.318734",
       "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
@@ -218,7 +218,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.016150",
+      "generated_at": "2026-10-14T13:20:19.318876",
       "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
@@ -264,7 +264,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.016410",
+      "generated_at": "2026-10-14T13:20:19.318998",
       "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
@@ -391,7 +391,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.034617",
+      "generated_at": "2026-10-14T13:20:19.327319",
       "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
@@ -518,7 +518,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.052542",
+      "generated_at": "2026-10-14T13:20:19.335616",
       "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
@@ -543,7 +543,7 @@
         "p_home_win": 0.5998,
         "p_draw": 0.2899,
         "p_away_win": 0.1103,
-        "p_over_2_5": 0.38173655230330455,
+        "p_over_2_5": 0.3817365523033045,
         "p_under_2_5": 0.6182634476966955,
         "p_over_3_5": 0.18390549617537127,
         "p_btts": 0.3603,
@@ -645,7 +645,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.070479",
+      "generated_at": "2026-10-14T13:20:19.343847",
       "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
@@ -691,7 +691,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.070788",
+      "generated_at": "2026-10-14T13:20:19.343987",
       "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
@@ -818,7 +818,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.089887",
+      "generated_at": "2026-10-14T13:20:19.353628",
       "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
@@ -945,7 +945,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.107774",
+      "generated_at": "2026-10-14T13:20:19.361840",
       "market_odds": {},
       "confidence": "LOW",
       "bet_recommendation": "No value identified"
@@ -991,7 +991,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.108057",
+      "generated_at": "2026-10-14T13:20:19.361977",
       "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
@@ -1037,7 +1037,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.108311",
+      "generated_at": "2026-10-14T13:20:19.362097",
       "market_odds": {},
       "confidence": "HIGH",
       "bet_recommendation": "No value identified"
@@ -1083,7 +1083,7 @@
       },
       "value_bets": [],
       "market_comparison": {},
-      "generated_at": "2026-10-13T15:37:08.108556",
+      "generated_at": "2026-10-14T13:20:19.362215",
       "market_odds": {},
       "confidence": "MEDIUM",
       "bet_recommendation": "No value identified"
